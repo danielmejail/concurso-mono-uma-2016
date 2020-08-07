@@ -1,0 +1,285 @@
+
+Por \emph{forma cuadr\'{a}tica} nos referiremos a funciones, polinomios
+homog\'{e}neos de dos variables, $x,y$, con coeficientes, $a,b,c$,
+enteros:
+
+\begin{align*}
+f(x,y) & \,=\,ax^{2}\,+\,bxy\,+\,cy^{2}\text{ .}
+\end{align*}
+Una forma cuadr\'{a}tica se dice \emph{primitiva}, si sus coeficientes
+son coprimos. Un entero $m$ se dice \emph{representado} por una forma
+$f$, si existen soluciones a $m=f(x,y)$, y
+\emph{representado propiamente}, si $x$ e $y$ se pueden tomar
+coprimos.
+
+El grupo $\GL{2}(\bb{Z})$ act\'{u}a sobre el conjunto de formas
+cuadr\'{a}ticas binarias de la siguiente manera: si
+$a$, $b$, $c$ y $d$ son enteros tales que
+$ad-bc\in\bb{Z}^{\times}=\{\pm 1\}$, y si $f$ es una forma, entonces
+la funci\'{o}n de dos variables
+
+\begin{align*}
+g(x,y)\,=\,
+\begin{bmatrix}a&b\\c&d\end{bmatrix}\,\cdot\,f(x,y) &
+\,=\,f(ax+by,cx+dy)\text{ ,}
+\end{align*}
+es una forma cuadr\'{a}tica. Las formas $f$ y $g$ se dicen
+\emph{equivalentes}. Si la matriz que realiza la equivalencia
+pertenece a $\SL{2}(\bb{Z})$, entonces $f$ y $g$ son
+\emph{propiamente equivalentes}.
+
+El discriminante de una forma $f=ax^{2}+bxy+cy^{2}$, se define como
+
+\begin{align*}
+D & \,=\,b^{2}\,-\,4ac\text{ .}
+\end{align*}
+Una forma cuadr\'{a}tica se dice \emph{indefinida}, si representa
+tanto valores positivos, como valores negativos. En caso contrario,
+se dice \emph{definida} (\emph{positivamente} o \emph{indefinidamente},
+dependiendo de cu\'{a}l de estos dos conjuntos continen elemnentos
+representados). Esta caracter\'{\i}stica queda determinada por el
+valor del discriminante: si $D$ es negativo, la correspondiente
+forma es definida, y, en ese caso, si el coeficiente de $x^{2}$ es
+positivo, la forma es definida positivamente. Estas propiedades son
+invariantes dentro de una misma clase de equivalencia.
+
+\begin{definicionesLemaRepPorFormasDeDiscriminanteFijo}
+Sea $D$ congruente a $0$ o a $1$ \textit{modulo} $4$, y sea $m$ un
+entero impar coprimo con $D$. Entonces $m$ est\'{a} representado
+propiamente por una forma de discriminante $D$, si, y s\'{o}lo si
+$D$ es un cuadrado \textit{modulo} $m$.
+\end{definicionesLemaRepPorFormasDeDiscriminanteFijo}
+
+\begin{proof}
+Si una forma $f$ de discriminante $D$ representa propiamente a $m$,
+entonces $f$ es propiamente equivalente a una forma como
+
+\begin{align*}
+g & \,=\,mx^{2}\,+\,bxy\,+\,cy^{2}\text{ ,}
+\end{align*}
+con $b,c\in\bb{Z}$. Pero, entonces los discriminantes de $f$ y de $g$
+difieren en un cuadrado de $\bb{Z}$, y el discriminante de $g$ es
+congruente a $b^{2}\,(\rm{mod}\,m)$.
+
+Rec\'{\i}procamente, si $D\equiv b^{2}\,(m)$, reemplazando $b$ por
+$b+m$, se puede asumir que $b$ y $D$ tienen la misma paridad. As\'{\i},
+existe $c\in\bb{Z}$ tal que $D\equiv b^{2}\,(4m)$. Entonces la forma
+$mx^{2}+bxy+cy^{2}$ representa a $m$ propiamente, para cierto $c$
+entero.
+\end{proof}
+
+Una forma primitiva definida positivamente, $f=ax^{2}+bxy+cy^{2}$,
+se dice \emph{reducida}, si se satisface
+
+\begin{itemize}
+\item $|b|\leq a\leq c$, y
+\item $b\geq 0$, si $|b|=a$ o si $a=c$.
+\end{itemize}
+
+\begin{definicionesTeoFormasPrimitivasEquivalenciaPropia}
+Toda forma primitiva definida positivamente es propiamente
+equivalente a una \'{u}nica forma reducida.
+\end{definicionesTeoFormasPrimitivasEquivalenciaPropia}
+
+Sea $f$ una forma cuadr\'{a}tica definida positiva, y sea $D<0$
+su discriminante. Si $f$ es reducida, se puede ver que el coeficiente
+de en $x^{2}$ est\'{a} acotado superiormente por $\sqrt{(-D)/3}$.
+Siendo $f$ reducida, existen finitas elecciones posibles para los
+coeficientes.
+
+\begin{definicionesTeoNumDeClases}
+Sea $D$ un entero negativo congruente a $0$ o a $1$ \textit{modulo}
+$4$. Entonces el n\'{u}mero de clases de formas cuadr\'{a}ticas
+primitivas definidas positivamente de discriminante $D$ es finito.
+\end{definicionesTeoNumDeClases}
+
+Al n\'{u}mero de clases de formas primitivas de discriminante $D$
+lo denotaremos con $h(D)$. Esta cantidad coincide con el n\'{u}mero de
+formas cuadr\'{a}ticas reducidas de discriminante $D$. Al conjunto de
+clases lo denotaremos con $C(D)$.
+
+\paragraph{El grupo de clases de formas}
+De ahora en adelante las formas que se considerar\'{a}n, exceptuando
+los casos en que se mencione, ser\'{a}n formas cuadr\'{a}ticas
+primitivas y definidas positivamente.
+
+Dadas dos formas $f$ y $g$, definimos su composici\'{o}n de la
+siguiente manera: si $f$ y $g$ est\'{a}n dadas por
+
+\begin{align*}
+f & \,=\,ax^{2}\,+\,bxy\,+\,cy^{2}\text{ ,}\\
+g & \,=\,a'x^{2}\,+\,b'xy\,+\,c'y^{2}\text{ ,}
+\end{align*}
+ambas de discriminante $D<0$, y son tales que el m\'{a}ximo com\'{u}n
+divisor de $a$, $a'$ y $(b+b')/2$ sea igual a $1$, entonces la forma
+
+\begin{align*}
+F(x,y) & \,=\,aa'x^{2}\,+\,Bxy\,+\,\frac{B^{2}-D}{4aa'}y^{2}
+\end{align*}
+es una forma cuadr\'{a}tica primitiva y definida positiva denominada
+\emph{composici\'{o}n de Dirichlet} de $f$ y $g$ (el entero $B$
+est\'{a} determinado por ciertas ecuaciones de congruencia). Si bien
+dos formas pueden no satisfacer la condici\'{o}n que se requiere de sus
+coeficientes, de manera que, con esta noci\'{o}n de composici\'{o}n,
+no es posible componer dos formas cualesquiera. De todas maneras,
+es posible hallar otro par de formas propiamente equivalentes respectivamente para el cual esta condici\'{o}n se cumple.
+
+\begin{definicionesCompositioGrupoDeClasesDeFormas}
+Sea $D<0,D\equiv 0,1\,(4)$. Sea $C(D)$ el conjunto de clases de formas
+(primitivas y definidas positivamente) de discriminante $D$. La
+composici\'{o}n de Dirichlet induce un operaci\'{o}n bien definida
+en $C(D)$. Si llamamos \emph{clase pricipal} a la clase que contiene
+la forma --denominada \emph{forma principal}--
+
+\begin{align*}
+& x^{2}\,-\,\frac{D}{4}y^{2}\text{ o}\\
+& x^{2}\,+\,xy\,+\,\frac{1-D}{4}y^{2}\text{ ,}
+\end{align*}
+si $D\equiv 0$ (en el primer caso) o si $D\equiv 1$ (en el segundo),
+entonces esta operaci\'{o}n y la clase principal determinan una
+estructura de grupo abeliano finito en $C(D)$; el inverso de la clase
+de $ax^{2}+bxy+cy^{2}$ es la clase de la forma opuesta:
+$ax^{2}-bxy+cy^{2}$.
+\end{definicionesCompositioGrupoDeClasesDeFormas}
+
+Una de las propiedades de la composici\'{o}n, $F$, de dos formas,
+$f$ y $g$, es: existen formas bilineales $B_{1}$y $B_{2}$:
+
+\begin{align*}
+B_{i}(x,y;z,w) & \,=\, a_{i}xz\,+\,b_{i}xw\,+\,
+c_{i}yz\,+\,d_{i}yw
+\end{align*}
+($i$ en $\{1,2\}$), tales que
+
+\begin{align*}
+f(x,y)g(z,w) & \,=\,F(B_{1}(x,y;z,w),B_{2}(x,y;z,w))
+\text{ .}
+\end{align*}
+
+Particularmente importantes son los elementos de orden $\leq 2$ en
+el grupo de clases de formas de discriminante $D$.
+
+\begin{definicionesLemaFormasDeOrdenDos}
+Una forma de discriminante $D$, $f=ax^{2}+bxy+cy^{2}$, reducida
+tiene orden menor o igual a $2$ en $C(D)$, si, y s\'{o}lo si,
+$b=0$, $a=b$ o $a=c$.
+\end{definicionesLemaFormasDeOrdenDos}
+
+\begin{proof}
+Sea $g$ la forma opuesta de $f$. El orden de la clase de $f$ es
+$\leq 2$, si, y s\'{o}lo si $f$ y $g$ son propiamente equivalentes.
+Como $f$ es reducida, hay dos casos a considerar: o bien
+$|b|<a<c$, o bien vale alguna de $b=a$ y $a=c$. En el primer caso,
+$g$ tambi\'{e}n es una forma reducida, y es propiamente equivalente a
+$f$, si, y s\'{o}lo si $b=0$ (unicidad).
+En el segundo caso, usando las transformaciones $S$ (si $a=c$)
+y $T$ (si $b=a$), donde
+
+\begin{align*}
+S & \begin{bmatrix}0&-1\\1&0\end{bmatrix}\,=\,
+\text{ y}\\
+T & \,=\, \begin{bmatrix}1&1\\0&1\end{bmatrix}
+\text{ ,}
+\end{align*}
+se puede ver que $f$ y $g$ son propiamente equivalentes.
+\end{proof}
+
+\begin{definicionesPropoFormasDeOrdenDos}
+Sea $D<0,D\equiv 0,1\,(4)$, y sea $r$ la cantidad de primos impares
+que dividen a $D$. Si $D\equiv 1$, sea $\mu:=r$. Si $D=-4n$, definimos $\mu$ de la siguiente manera: si $n\equiv 3\,(4)$, entonces $\mu:=r$;
+si $n\equiv 1,2\,(4)$, se toma $\mu:=r+1$; si $n\equiv 4\,(8)$,
+$\mu:=r+1$; si $n\equiv 0\,(8)$, $\mu:=r+2$. Entonces, loos
+elementos de orden, a lo sumo, $2$ en $C(D)$ son $2^{\mu-1}$.
+\end{definicionesPropoFormasDeOrdenDos}
+
+\paragraph{G\'{e}nero}
+Sea $D$, un entero negativo, el discriminante de una forma
+cuadr\'{a}tica. Se puede ver que existe un (\'{u}nico)
+morfismo de grupos
+
+\begin{align*}
+\chi & \,:\,(\bb{Z}/D\bb{Z})^{\times}\rightarrow
+\left\lbrace\pm 1\right\rbrace
+\end{align*}
+tal que $\chi([p])=(D/p)$ para todo primo impar $p$ que no divide a
+$D$, donde $[p]$ indica la clase de $p$ en $\bb{Z}/D\bb{Z}$, y
+$(D/p)$ es el s\'{\i}mbolo de Legendre. Usando los resultados
+ya enunciados, se puede deducir la siguiente proposici\'{o}n:
+
+\begin{definicionesPropoRepDePrimosPorFormas}
+Sea $D\equiv 0,1\,(\rm{mod}\,4)$ y negativo. Sea $\chi$ el morfismo
+mencionado. Si $p$ es un primo impar que no divide a $D$, entonces
+$p$ est\'{a} representado por una de las formas
+(primitivas, definidas positivamente y) reducidas de discriminante $D$,
+si, y s\'{o}lo si la clase $[p]$ pertenece al n\'{u}cleo de $\chi$.
+\end{definicionesPropoRepDePrimosPorFormas}
+
+Si $D$ es de la forma $-4n$ y $p$ es un primo impar, se tiene la
+igualdad
+
+\begin{align*}
+\left( \frac{D}{p} \right) & \,=\,\left( \frac{-n}{p} \right)
+\text{ .}
+\end{align*}
+Por ejemplo, para $n=14$, $D=-56$, por reciprocidad cuadr\'{a}tica,
+est\'{a}n caracterizados los primos $p$ para los que $(-14/p)=1$
+de acuerdo a su clase \textit{modulo} $56$. Hay cuatro formas
+reducidas de discriminante $-56$. Por el resultado anterior, para $p$,
+$(-14/p)=1$ es equivalente a ser representado por una de estas formas.
+Se puede verificar que las formas $x^{2}+5y^{2}$ y $2x^{2}+7y^{2}$
+representan las clases en $\{1,9,15,23,25,29\}$, mientras que
+$3x^{2}+2xy+5y^{2}$ y $3x^{2}-2xy+5y^{2}$ representan su complemento
+en $(\bb{Z}/56\bb{Z})^{\times}$.
+
+Fijado el discriminante $D$, decimos que dos formas pertenecen al
+mismo \emph{g\'{e}nero}, si representan los mismos valores en
+$(\bb{Z}/D\bb{Z})^{\times}$.
+
+\begin{definicionesLemaClasesRepresentadas}
+Dado $D<0,D\equiv 0,1\,(4)$, sea $\chi$ el morfismo definido arriba.
+Sea $f$ una forma de discriminante $D$. Las clases en
+$(\bb{Z}/D\bb{Z})^{\times}$ representadas por la forma principal
+consforma un subgrupo, $H$, de $\ker(\chi)$. Las clases representadas
+por $f$ conforman una coclase de $H$ en $\ker(\chi)$.
+\end{definicionesLemaClasesRepresentadas}
+
+Podemos dar, as\'{\i}, la siguiente definici\'{o}n: si $H'$ es una
+coclase de $H$ en $\ker(\chi)$, definimos el g\'{e}nero de $H'$ como
+el conjunto de aquellas formas que representan los elementos en $H'$.
+De esta manera, queda definida una aplicaci\'{o}n,
+
+\begin{align*}
+\Phi & \,:\,C(D)\rightarrow\ker(\chi)/H\text{ ,}
+\end{align*}
+del grupo de clases de formas en el conjunto de coclases de $H$ en
+$\ker(\chi)$. Recordemos que, si $f$ y $g$ son dos formas
+cadr\'{a}ticas para las cuales su composici\'{o}n de Dirichlet $F$
+est\'{a} definida, existen entonces formas bilineales $B_{1}$ y $B_{2}$
+tales que
+
+\begin{align*}
+F(B_{1}(x,y;z,w),B_{2}(x,y;z,w)) & \,=\,f(x,y)g(z,w)\text{ .}
+\end{align*}
+En particular, dadas dos clases de formas en $C(D)$, y respectivos representantes $f$ y $g$, pertenecientes a g\'{e}neros
+$\Phi^{-1}(H')$ y $\Phi^{-1}(H'')$, respectivamente, para las cuales
+la composici\'{o}n $F$ est\'{a} definida, $f$ representa elementos en
+$H'$, $g$ en $H''$ y $F$ en $H'H''$. De esto se deduce que $\Phi$ es
+un morfismo de grupos.
+
+En primera instancia, esto implica que todos los g\'{e}neros en que
+$C(D)$ se subdivide contienen la misma cantidad de clases, y que,
+como el subgrupo $H$ contiene todos los cuadrados de
+$(\bb{Z}/D\bb{Z})^{\times}$, %evaluando la forma principal en $(x,0)$
+el cociente $\ker(\chi)/H$ es isomorfo $\{\pm 1\}^{m}$ para
+alg\'{u}n entero $m$, y, por lo tanto, el n\'{u}mero de g\'{e}neros es
+una potencia de $2$.
+%La imagen de $\Phi$ es un subgrupo de este cociente
+Espec\'{\i}ficamente se tiene el siguiente resultado:
+
+\begin{definicionesGeneraYCuadrados}
+Sea $D<0,D\equiv 0,1\,(4)$, y sea $\mu$ el n\'{u}mero definido en
+\ref{definicionesPropoFormasDeOrdenDos}. Entonces hay $2^{\mu-1}$
+g\'{e}neros de formas de discriminante $D$, y el g\'{e}nero principal
+coincide con el subgrupo $C(D)^{2}$ de cuadrados en el grupo de
+clases de formas.
+\end{definicionesGeneraYCuadrados}

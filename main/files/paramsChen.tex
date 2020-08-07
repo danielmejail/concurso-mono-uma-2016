@@ -1,0 +1,108 @@
+Dado un cuerpo cuadr\'{a}tico imaginario $K$ y $N\geq 1$ entero tal que sus
+divisores primos sean inertes en $K$, se obtiene, a partir de una curva
+el\'{\i}ptica definida sobre $\bb{Q}$ con CM por el orden $\cal{O}_{K}$, un
+\'{u}nico punto \'{\i}ntegro en $Y_{ns}^{+}(N)$. El m\'{e}todo para resolver el
+problema del n\'{u}mero de clases $1$ usando las curvas modulares correspondientes
+a grupos de Cartan \textit{non-split} consiste en hallar los puntos enteros de
+$X_{ns}^{+}(N)$. Para conseguir este objetivo es crucial elegir las curvas de
+manera adecuada: de forma que el g\'{e}nero y n\'{u}mero de c\'{u}pides sean
+suficientemente peque\~{n}os para poder hallar una parametrizaci\'{o}n de
+$X_{ns}^{+}(N)$ y suficientemente grandes para permitir s\'{o}lo una cantidad
+finita de puntos enteros.
+
+Sea $X$ una curva proyectiva, no singular, definida sobre $\bb{Q}$ y de g\'{e}nero
+$0$. Para fijar ideas, y porque este es el caso que nos interesar\'{a}, sea $X$
+una de las curvas $X_{ns}^{+}(N)$ (si bien no todas ellas tienen g\'{e}nero %agrega comentario
+$0$). Si $X$ tiene, al menos, un punto %acerca del g\'{e}nero
+$\bb{Q}$-racional, existe un isomorfismo definido sobre $\bb{Q}$
+
+\begin{align*}
+ t & \,:\,X\rightarrow\bb{P}^{1}
+ \text{ ,}
+\end{align*}
+\'{u}nico salvo $\bb{Q}$-automorfismo.
+
+Sean $\widetilde{X}$ y $X$ dos curvas %correcci\'{o}n
+proyectivas, no singulares, definidas sobre $\bb{Q}$ y cada una con, al menos,
+un punto $\bb{Q}$-racional. Asumamos que existe un morfismo
+$\pi:\,X\rightarrow\widetilde{X}$ definido sobre $\bb{Q}$ tal que
+$\pi(X)=\widetilde{X}$ (por ejemplo este morfismo podr\'{\i}a ser la
+proyecci\'{o}n $X_{ns}^{+}(N)\rightarrow X(1)$). Existe un diagrama
+
+\begin{center}
+\begin{tikzcd}
+ X\arrow{r}{u}\arrow{d}{\pi} & \bb{P}^{1}\arrow{d}{\phi_{\pi}}\\
+ \widetilde{X}\arrow{r}{j} & \bb{P}^{1}
+\end{tikzcd} .
+\end{center}
+Ya sea describiendo el morfismo $\phi_{\pi}$ en coordenadas afines, o
+identificando los cuerpos de funciones de las curvas con $\bb{Q}(u)$ y
+con $\bb{Q}(j)$, obtenemos polinomios m\'{o}nicos $P,Q$ con coeficientes en el
+cuerpo $\bb{Q}$ y una constante $\lambda$, tambi\'{e}n racional, tales que,
+
+\begin{align*}
+ \pi^{*}j & \,=\,\lambda\frac{P(u)}{Q(u)}\text{ ,}
+\end{align*}
+donde $\pi^{*}j$ es el \textit{pullback} de $j$ por $\pi$. Por
+\emph{parametrizaci\'{o}n} de una curva $X$ como arriba, nos referiremos a una
+elecci\'{o}n de morfismos $u,j$, junto con su correspondiente relaci\'{o}n en
+t\'{e}rminos de $P$, $Q$ y $\lambda$. Los morfismos como $u$ y $j$ reciben el
+nombre de \emph{uniformizadores}.
+
+Cambiemos, por un momento, el cuerpo de base, $\bb{Q}$, por $\bb{C}$. Podemos
+repetir el mismo argumento de arriba para obtener, una vez elegidos los
+uniformizadores (ahora definidos sobre los complejos), una relaci\'{o}n
+$\pi^{*}j=\lambda P(u)/Q(u)$ (sobre $\bb{C}$).
+Supongamos, ahora, que $X=X_{ns}^{+}(N)$ (o la compactificaci\'{o}n de
+cualquier cociente de $\frak{h}$ por un subgrupo de congruencia) y que
+$\widetilde{X}=X(1)=\SL{2}(\bb{Z})\backs\frak{h}^{*}$. La
+funci\'{o}n $j$, el $j$-invariante, es un ejemplo de uniformizador para la
+curva modular $X(1)$. Pero, adem\'{a}s, en esta situaci\'{o}n, un uniformizador
+se identifica con una funci\'{o}n definida en $\frak{h}$, meromorfa en $\frak{h}$,
+invariante por cierto subgrupo de congruencia y meromorfa en las c\'{u}spides.
+As\'{\i}, la funci\'{o}n $\pi^{*}j$ no es m\'{a}s que la misma funci\'{o}n $j$,
+pero considerada, no como una funci\'{o}n modular para $\SL{2}(\bb{Z})$, sino
+considerada como funci\'{o}n modular para un subgrupo de congruencia.
+
+Sean $X=X_{ns}^{+}(N)$ para cierto $N\geq 1$ entero, y
+$\widetilde{X}=X(1)$. Asumimos que el conjunto de puntos $\bb{Q}$-racionales
+$X(\bb{Q})$ es no vac\'{\i}o. Elegimos el $j$-invariante como uniformizador para
+$X(1)$. Este uniformizador est\'{a} definido sobre $\bb{Q}$. Es decir, los puntos
+$\rho =e^{2\pi i/3}$, $i=\sqrt{-1}$, $\infty$ de $X(1)$ son $\bb{Q}$-racionales, y
+el $j$-invariante --que, a cada clase de isomorfismo de curvas el\'{\i}pticas le
+asigna el correspondiente invariante-- coincide con el uniformizador que, a estos
+tres puntos, asigna los valores $0$, $1728$, $\infty$, respectivamente
+(y \'{e}ste es
+un uniformizador para $X(1)$ en tanto curva definida sobre $\bb{Q}$). De manera
+an\'{a}loga, podemos elegir un uniformizador para $X$ definido sobre $\bb{Q}$, y,
+as\'{\i}, la relaci\'{o}n entre $u$ y $j$ es $j=\lambda P(u)/Q(u)$, donde
+$P,Q\in\bb{Q}[T]$ y $\lambda\in\bb{Q}$. Ahora bien, sobre $\bb{C}$,
+$j$, pensada como funci\'{o}n en $X$, tiene que cumplir con lo siguiente:
+todo cero es un punto en la preimagen de $\rho$, el \'{u}nico cero de
+$j\in\bb{C}(X(1))$, y todo polo es un punto arriba de $\infty$, el \'{u}nico polo
+de $j$ en $X(1)$. Es decir, la relaci\'{o}n entre los uniformizadores es
+
+\begin{align*}
+ j & \,=\,\lambda
+ \frac{\prod_{z|\rho}\,(u\,-\,u(z))^{e_{z}}}%
+ {\prod_{z|\infty}\,(u\,-\,u(z))^{e_{z}}}\text{ ,}
+\end{align*}
+donde, si $\pi:\,X\rightarrow X(1)$ es la proyecci\'{o}n dada por olvidar la
+estructura de nivel, $z| a$ indica que $z$ pertenece a $\pi^{-1}(a)$ y $e_{z}$
+denota el \'{\i}ndice de ramificaci\'{o}n de $\pi$ en $z$. \cite{chenLevelFive}
+
+%
+%Siguiendo \cite{booher}, daremos una soluci\'{o}n
+%relacionada con el argumento en la demostraci\'{o}n original de Heegner.
+%
+%
+%Para poder sacar provecho de las curvas $X_{H}$ ser\'{a} \'{u}til obtener una
+%parametrizaci\'{o}n de las mismas. Para conseguirlo es necesario considerar los
+%morfismos $X_{H}\rightarrow X(1)$, y la informaci\'{o}n relativa a la
+%ramificaci\'{o}n del cubrimiento, en tanto superficies de Riemann. Para los
+%normalizadores de subgrupos de Cartan \textit{non-split} de nivel $N$, sabemos que
+%el grado del morfismo es $N\phi(N)/2^{\omega}$, donde $\omega$ es la cantidad de
+%primos distintos que dividen a $N$. Excepto sobre los puntos el\'{\i}pticos y las
+%c\'{u}spides de $X(1)$, la fibra contiene dicha cantidad de puntos. En general, la
+%suma de los \'{\i}ndices de ramificaci\'{o}n en cada una de las preim\'{a}genes de
+%un punto es igual al grado del morfismo.

@@ -1,0 +1,61 @@
+Una vez hallada esta parametrizaci\'{o}n de $X_{ns}^{+}(5)$, si llamamos
+$t$ al uniformizador de $X_{ns}^{+}(3)$ que es la ra\'{\i}z c\'{u}bica
+de $j$, sabemos que, dado un orden cuadr\'{a}tico imaginario $I$
+cuyo n\'{u}mero de clases es $1$, y elegida una curva el\'{\i}ptica $E$
+(definida sobre $\bb{Q}$) con multiplicaci\'{o}n compleja por $I$,
+si el primo $3$ no ramifica en $I$ y $5$ es inerte, entonces, por medio
+de $t$ y $\eta$, obtenemos enteros $m$, $x$ e $y$ tales que
+$j(E)=m^{3}$, $\eta=x/y$ y $(x,y)=1$. Adem\'{a}s, por la relaci\'{o}n
+con $j$, sabemos que la terna $(x,y,m)$ tiene que ser una soluci\'{o}n
+en $\bb{Z}$ a la ecuaci\'{o}n
+
+\begin{align*}
+m^{3} & \,=\,u(x,y)\,:=\,5^{3}
+\frac{x(2x+y)^{3}(2x^{2}+7xy+8y^{2})^{3}}{(x^{2}+xy-y^{2})^{5}}
+\text{ .}
+\end{align*}
+Las soluciones con $m=0$ son $(0,1,0)$, $(0,-1,0)$, $(-1,2,0)$ y
+$(1,-2,0)$. 
+
+En general, si $(x,y,m)$ es soluci\'{o}n a la ecuaci\'{o}n, tambi\'{e}n
+lo es $(-x,-y,m)$. Supongamos que $m\not =0$ y que $(x,y,m)$ es una
+soluci\'{o}n. Si $l$ es un primo racional que divide a $x^{2}+xy-y^{2}$,
+entonces $(x,y)=1$ implica que $l$ no puede dividir ni a $x$, ni a $y$.
+Dado que $u(x,y)$ es un entero y $l$ divide al denominador en la
+expresi\'{o}n para $u(x,y)$, el primo $l$ tiene que ser $5$. Esto se
+deduce de que el sistema de ecuaciones \textit{modulo} $l$ (con $l$
+primo)
+
+\begin{align*}
+z^{2}\,+\,z\,-\,1 & \,\equiv\, 0\,(\rm{mod}\,l)\\
+2z\,+\,1 & \,\equiv\, 0\,(\rm{mod}\,l)
+\end{align*}
+tiene soluciones en enteras s\'{o}lo si $l=5$, y de que lo mismo es
+cierto para
+
+\begin{align*}
+z^{2}\,+\,z\,-\,1 & \,\equiv\, 0\,(\rm{mod}\,l)\\
+2z^{2}\,+\,7z\,+\,8 & \,\equiv\, 0\,(\rm{mod}\,l)\text{ .}
+\end{align*}
+Pero la ecuaci\'{o}n $z^{2}+z-1\equiv 0\,(5^{2})$ no admite soluciones
+en $\bb{Z}$. En definitiva, si $(x,y,m)$ es una soluci\'{o}n
+para $m^{3}=u(x,y)$ con $x$, $y$ y $m$ en $\bb{Z}$ y $(x,y)=1$,
+la expresi\'{o}n $x^{2}+xy-y^{2}$ es igual a $\pm 5$ o $\pm 1$. En el
+primer caso, $u(x,y)$ no es un cubo en $\bb{Z}$. Por esta raz\'{o}n,
+$x^{2}+xy-y^{2}=\pm 1$.
+
+Si denotamos con $\epsilon$ al elemento $(-1+\sqrt{5})/2$ de
+$F:=\bb{Q}(\sqrt{5})$, y $\cal{O}_{F}$ al anillo de enteros de este
+cuerpo, la condici\'{o}n sobre $x^{2}+xy-y^{2}$ equivale a que
+la norma de $x+y\epsilon\in\cal{O}_{F}$ sea igual a $1$ o a $-1$, a que
+$x+y\epsilon$ sea una unidad en este anillo.
+Pero las unidades de $\cal{O}_{F}=\bb{Z}[\epsilon]$ son de la forma
+
+\begin{align*}
+\pm\epsilon^{n} & \,=\,\pm(x_{n}\,+\,y_{n}\epsilon)\text{ ,}
+\end{align*}
+donde $x_{n}:=(-1)^{n+1}F_{n}$ e $y_{n}:=(-1)^{n}F_{n+1}$
+($F_{n}$ es el $n$-\'{e}simo n\'{u}mero de Fibonacci). En particular,
+Dada la soluci\'{o}n $(x,y,m)$, tenemos $x=\pm x_{n}$ para alg\'{u}n
+$n$. Pero, de la expresi\'{o}n para $u(x,y)$, deducimos que $x$ es un
+cubo en $\bb{Z}$, y que, entonces $x_{n}$ tambi\'{e}n lo es.

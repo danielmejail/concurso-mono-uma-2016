@@ -1,0 +1,192 @@
+%soluci\'{o}n N=24
+
+Sea $N=24$. La referencia para la soluci\'{o}n al problema del n\'{u}mero de
+clases $1$ usando la curva de nivel $24$ es la \cite{booher} (secci\'{o}n 9).
+Para poder encontrar los puntos enteros de $X_{ns}^{+}(24)$,
+nos concentraremos en las curvas $X_{ns}^{+}(3)$ y $X_{ns}^{+}(8)$. Existen
+morfismos naturales definidos sobre $\bb{Q}$:
+
+\begin{center}
+ \begin{tikzcd}[row sep=small, column sep=small]
+  \null & X_{ns}^{+}(3)\arrow{dr} & \\
+  X_{ns}^{+}(24)\arrow{ur}\arrow{dr} & & X(1)\\
+  \null & X_{ns}^{+}(8)\arrow{ur} & 
+ \end{tikzcd}
+\end{center}
+En particular, todo punto $\bb{Q}$-racional en $X_{ns}^{+}(24)$ se proyecta a un
+par de puntos $\bb{Q}$-racionales en $X_{ns}^{+}(3)$ y en $X_{ns}^{+}(8)$. Estas
+dos \'{u}ltimas curvas, %y tambi\'{e}n $X_{ns}^{+}(4)$,
+son de g\'{e}nero $0$ y definidas sobre $\bb{Q}$.
+
+Teniendo en cuenta lo desarrollado en secciones anteriores, la curva
+$X_{ns}^{+}(3)$ es ramificada en $\rho$ y en $\infty$. Los \'{\i}ndices de
+ramificaci\'{o}n son, en ambos casos, iguales a $3$. Arriba de $i$, hay tres
+puntos el\'{\i}pticos no ramificados. Ya hemos mencionado que, en $X(1)$, el
+punto $\rho$ y la c\'{u}spide $\infty$ son racionales (al igual que $i$).
+Como s\'{o}lo existe un punto, $P\in X_{ns}^{+}(3)$, que se proyecta sobre $\infty$
+y s\'{o}lo uno, $Q$, arriba de $\rho$, vemos que tienen que ser invariantes por
+la acci\'{o}n de $\absGal{\bb{Q}}$. Son, entonces, puntos $\bb{Q}$-racionales.
+
+Sea $s:\,X_{ns}^{+}(3)\rightarrow\bb{P}^{1}$ un uniformizador definido sobre
+$\bb{Q}$. Componiendo $s$ con un automorfismo de $\bb{P}^{1}$
+(definido sobre $\bb{Q}$), podemos suponer que $s(P)=\infty$ y que $s(Q)=0$.
+La relaci\'{o}n entre $j$ y $s$ tiene, as\'{\i}, el siguiente aspecto:
+
+\begin{align*}
+ j & \,=\,\lambda s^{3}\text{ ,}
+\end{align*}
+donde la constante $\lambda$ es un n\'{u}mero racional. Pero, adem\'{a}s, $\lambda$
+tiene que ser un cubo, y, modificando nuevamente $s$, obtenemos $j=s^{3}$.
+
+Por un procedimiento similar, se obtiene una parametrizaci\'{o}n para
+$X_{ns}^{+}(8)$.
+
+\begin{teoUnifsOchoYTres}\label{thm:teoUnifsOchoYTres}
+ Existen uniformizadores
+
+ \begin{align*}
+  s & \,:\,X_{ns}^{+}(3)\rightarrow\bb{P}^{1}\text{ ,}\\
+  v & \,:\,X_{ns}^{+}(8)\rightarrow\bb{P}^{1}
+ \end{align*}
+definidos sobre $\bb{Q}$ tales que
+
+\begin{align*}
+ j & \,=\,s^{3}\text{ ,}\\
+ j & \,=\,\frac{-2^{17}(v+1)^{3}(8(v+1){3}+(v^{2}-2)^{2})^{3}}{(v^{2}-2)^{8}}
+ \text{ .}
+\end{align*}
+\end{teoUnifsOchoYTres}
+
+Un punto \'{\i}ntegro en $X_{ns}^{+}(24)$, un punto racional con
+$j$-invariante entero, se proyecta a un punto racional en la curva de nivel $3$
+y a un punto racional en la curva de nivel $8$. Si $j$ ha de ser entero,
+tanto $s$, como $v$, deber\'{a}n ser racionales, pero $s$ deber\'{a}
+ser entero tambi\'{e}n. De las parametrizaciones de
+$X_{ns}^{+}(3)$ y de $X_{ns}^{+}(8)$ se deduce que $s$ y $v$ tienen que cumplir
+con
+
+\begin{align}\label{eq:relUnifsTresYOcho}
+ s^{3} & \,=\,
+ \frac{-2^{17}(v+1)^{3}(8(v+1){3}+(v^{2}-2)^{2})^{3}}{(v^{2}-2)^{8}}
+ \text{ .}
+\end{align}
+Suponiendo que $(v,s)$ es una soluci\'{o}n, y que $v$ es de la forma $v=x/y$,
+con $x$ e $y$ enteros coprimos, homogeneizamos y obtenemos la relaci\'{o}n
+
+\begin{align*}
+ t^{3} & \,=\,
+ \frac{2^{17}y(x+y)^{3}(8(x+y){3}+(x^{2}-2y^{2})^{2})^{3}}{(x^{2}-2y^{2})^{8}}
+ \text{ ,}
+\end{align*}
+donde $t=-s$. El \'{u}nico primo que puede dividir a $x^{2}-2y^{2}$ es $p=2$, y
+como $x$ e $y$ son coprimos, $4$ no divide.
+Todo se reduce, entonces a hallar las soluciones enteras $(x,y)$
+de $x^{2}-2y^{2}=\pm 1,\pm 2$. En cualquier caso, como $t$ tiene que ser un entero,
+el lado derecho tiene que ser un cubo en $\bb{Z}$. Si $x^{2}-2y^{2}=\pm 1$,
+el \'{u}nico factor que no es, \textit{a priori}, un cubo es $2^{17}y$. Pero,
+entonces $y=2z^{3}$, para alg\'{u}n entero $z$. Reemplazando y definiendo
+$w:=2z^{2}$, el problema pasa a ser el de hallar las soluciones enteras de
+$x^{2}=w^{3}\pm 1$. Si, en cambio, $x^{2}-2y^{2}=\pm 2$, el entero $y$ tiene que
+un cubo $z^{3}$. As\'{\i}, $x$ tiene que ser par, y, reemplazando $x$ por $2x_{1}$,
+llegamos a la ecuaci\'{o}n $2x_{1}^{2}=z^{6}\pm 1$.
+
+En la secci\'{o}n 12 de \cite{cox}, la demostraci\'{o}n de que no existe un d\'{e}cimo cuerpo
+cuadr\'{a}tico imaginario con n\'{u}mero de clases $1$, basada en la original de
+Heegner, reduce el problema a hallar las soluciones a las cuatro ecuaciones
+
+\begin{align*}
+x^{2} & \,=\,w^{3}+1\text{ ,}\\
+x^{2} &\,=\,w^{3}-1\text{ ,}\\
+z^{6}\,+\,1 &\,=\,2x_{1}^{2}\text{ ,}\\
+(-w)^{3}\,+\,1 &\,=\,-2x_{1}^{2}\text{ , haciendo el cambio } w=z^{2}\text{ .}
+\end{align*}
+Las soluciones a estas ecuaciones son
+$(x,w)$ igual a $(0,-1)$, $(\pm 1,0)$ o $(\pm 3,2)$ para la primera,
+$(x,w)=(0,1)$ para la segunda, $(x_{1},z)=(\pm1,\pm1)$ para la tercera y
+$(x_{1},w)=(0,1)$ para la cuarta (ver la secci\'{o}n 6 de \cite{booher} o
+la secci\'{o}n 12 de \cite{cox} para una idea de c\'{o}mo demostrarlo).
+Pero, desandando el proceso que nos condujo a
+estas ecuaciones, no todas las soluciones a las mismas dan lugar a posibles
+valores de $v$ y de $t$. Por ejemplo, una soluci\'{o}n a $x^{2}=w^{3}\pm 1$ con
+$x$ igual a $0$ y $w=\pm 1$ no da lugar a $v=x/y$ con $y$ de la forma $2z^{3}$,
+pues $w$ no es de la forma $2z^{2}$.
+
+Los posibles valores para el uniformizador $s$ son $0$, $-32$, $-96$, $-960$,
+$-5280$ y $-640320$. Ya sabemos que el punto de $X_{ns}^{+}(3)$ con $s=0$ es
+$\rho$, y que este punto se obtiene a partir del cuerpo cuadr\'{a}tico imaginario
+$K=\bb{Q}(\sqrt{-3})$: recordemos que el punto asociado es $[E,\varphi]$,
+donde $E$ es una curva el\'{\i}ptica definida sobre $\bb{Q}$ con CM por el anillo
+de enteros de $K$ y $\varphi:\,E[n]\xrightarrow{\sim}(\bb{Z}/N\bb{Z})^{2}$ es una
+estructura de nivel. La funci\'{o}n $j$ en $[E,\varphi]$ toma el valor $j(E)$,
+el $j$-invariante de la curva el\'{\i}ptica, que coincide con $j(\cal{O}_{K})$,
+viendo a $\cal{O}_{K}$ como ret\'{\i}culo en $\bb{C}$. \'{E}ste es el procedimiento
+general para obtener un punto asociado a un cuerpo cuadr\'{a}tico imaginario, $K$,
+cuyo n\'{u}mero de clases es igual a $1$ y tal que todo divisor primo del nivel,
+$N$, es inerte en $K$. De las propiedades equivalentes
+en la proposici\'{o}n \ref{thm:propoEquivsNumClasUno},
+%REVISAR SI EN ALG\'{U}N OTRO LUGAR DEL TRABAJO
+%SE HACE REFERENCIA A OTRA PARTE DEL MISMO
+%
+deducimos que, si $K$ es el cuerpo cuar\'{a}tico imaginario de discriminante $d$,
+y $h(d)=1$, todo primo menor que $(1+|d|)/4$ es inerte.
+Visto del otro lado, esto dice que, fijado $N$, toda curva el\'{\i}ptica con
+multiplicaci\'{o}n compleja por un cuerpo cuadr\'{a}tico imaginario de
+discriminante $d\geq 4p$ (donde $p$ es el primo de valor absoluto mayor entre
+aquellos que dividen a $N$) y n\'{u}mero de clases $1$ da lugar a un punto
+\'{\i}ntegro en $Y_{ns}^{+}(N)$.
+
+Si $d$ es un discriminante fundamental, y $h(d)=1$, el $j$-invariante del orden
+cuadr\'{a}tico imaginario de discriminante $d$ est\'{a} dado por la siguiente
+tabla:
+
+\begin{tabular}[b]{r|l}
+ $d$ & $j$\\% & $j^{1/3}$\\
+ \hline
+ $-3$ & $0$\\% & 0\\
+ $-4$ & $2^{6}\cdot 3^{3}$\\% & $2^{2}\cdot 3$\\
+ $-7$ & $-3^{3}\cdot 5^{3}$\\% & $ -3\cdot 5$\\
+ $-8$ & $2^{6}\cdot 5^{3}$\\% & $2^{2}\cdot 5$\\
+ $-11$ & $-2^{15}$\\% & $-2^{5}$\\
+ $-19$ & $-2^{15}\cdot 3^{3}$\\% & $-2^{5}\cdot 3$\\
+ $-43$ & $-2^{18}\cdot 3^{3}\cdot 5{^3}$\\% & $-2^{6}\cdot 3\cdot 5$\\
+ $-67$ & $-2^{15}\cdot 3^{3}\cdot 5^{3}\cdot 11^{3}$\\% &
+% $-2^{5}\cdot 3\cdot 5\cdot 11$\\
+ $-163$ & $-2^{18}\cdot 3^{3}\cdot 5^{3}\cdot 23^{3}\cdot 29^{3}$\\% &
+% $-2^{6}\cdot 3\cdot 5\cdot 23\cdot 29$
+\end{tabular}
+
+Volvamos a la curva de nivel $24$.
+Si $P$ es un punto $\bb{Q}$-racional de $X_{ns}^{+}(24)$ tal que $j(P)$ es uno
+de $0$, $(-32)^{3}$, $(-96)^{3}$, $(-960)^{3}$,
+$(-5280)^{3}$ o $(-640320)^{3}$, entonces $s(P)$ es la \'{u}nica ra\'{\i}z
+racional de $j(P)$ y $s(P)$ pertenece al conjunto de los posibles valores
+enteros calculados para $s$. Esto que parece obvio lo aplicamos de la siguiente
+manera: conocemos el valor de $j(\cal{O}_{K})$ para cada cuerpo cuadr\'{a}tico
+imaginario de discriminante $d$ que aparece en la tabla. Algunos de estos cuerpos
+dan puntos enteros en $X_{ns}^{+}(24)$ %(lo que podr\'{\i}a fallar es que den
+%puntos, directamente)
+y cada uno de estos puntos tiene asociado un valor de $j$. Por otro lado, si
+$j(\cal{O}_{K})=j(\cal{O}_{K'})$, entonces $K=K'$ y los \'{o}rdenes son iguales.
+Si $d\geq 12$ y $K$ es el cuerpo cuadr\'{a}tico de discriminante $d$, y si
+$h(d)=1$, $K$ tiene asociado un punto \'{\i}ntegro $P$ en la curva.
+Evaluando $j$ en $P$, obtenemos $j(P)=j(\cal{O}_{K})$ y tiene que ser el cubo de
+uno de los posibles de $s$. Pero todo valor de $s$ entero viene de un punto
+asociado a uno de los cuerpos de discriminante $-3$, $-11$, $-19$, $-43$, $-67$
+y $-163$, con lo cual, $K$, cuyo discriminante $d$ es $d\leq -12$,
+tiene que ser uno de estos seis. Como para $0>d>-12$, los \'{u}nicos con
+$h(d)=1$ son los de la tabla, esto demuestra que no hay un d\'{e}cimo cuerpo
+cuadr\'{a}tico imaginario con n\'{u}mero de clases $1$.
+
+\begin{obsSerre}\label{thm:obsSerre}
+De la relaci\'{o}n entre los uniformizadores $s$ y $v$,
+la ecuaci\'{o}n \ref{eq:relUnifsTresYOcho},
+notemos que $s$ ser\'{a} racional, si $4/(v^{2}-2)^{2}$ es un cubo.
+Equivalentemente, ser\'{a} suficiente que $4(v^{2}-2)$ sea un cubo. Para hallar
+los posibles valores de $s$, uno podr\'{\i}a intentar encontrar los puntos
+racionales en la curva el\'{\i}ptica $v'^{2}=u^{3}+8$ tales que, si $v=v'/2$,
+entonces $s$ sea entero.
+\end{obsSerre}
+
+%Pero $P$ es $\bb{Q}$-racional, con lo que $s(P)$ es
+%uno de $0$, $-32$, $-96$, $-960$, $-5280$ o $-640320$.
+%

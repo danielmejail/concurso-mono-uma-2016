@@ -1,0 +1,151 @@
+
+\paragraph{Relaci\'{o}n con formas cuadr\'{a}ticas}
+%Describimos brevemente la relaci\'{o}n entre formas
+%cuadr\'{a}ticas. Esta relaci\'{o}n no s\'{o}lo muestra el origen
+%del problema del n\'{u}mero de clases igual a $1$, sino que,
+%tambi\'{e}n, indica d\'{o}nde radica la dificultad del teorema
+%de Stark-Heegner. En cuanto a las definiciones necesarias,
+%remitimos a \cite{cox}.
+Describimos brevemente la relaci\'{o}n entre formas
+cuadr\'{a}ticas y \'{o}rdenes en cuerpos cuadr\'{a}ticos imaginarios.
+En cuanto a las definiciones necesarias, remitimos a \cite{cox}.
+
+Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$ de
+discriminante $D<0$, y sea $d_{K}$ el discriminante del cuerpo.
+Sea $f=ax^{2}+bxy+cy^{2}$ una forma cuadr\'{a}tica (primitiva y
+definida positiva) de discriminante $D$. Como $D$ es negativo, existe
+una \'{u}nica ra\'{\i}z $\tau$ del polinomio cuadr\'{a}tico $f(x,1)$
+perteneciente al semiplano complejo superior, $\frak{h}$. Porque $f$
+es definida positiva, $\tau$, en t\'{e}rminos del discriminante y de
+los coeficientes de $f$, es igual a $(-b+\sqrt{D})/2a$.
+
+Sea $f$ el conductor del orden $I$, de manera que $D=f^{2}d_{K}$, y sea
+$w_{K}\in K$ el elemento
+
+\begin{align*}
+w_{K} & \,:=\,\frac{d_{K}+\sqrt{d_{K}}}{2}
+\text{ .}
+\end{align*}
+Por un lado, $\cal{O}_{K}$, el anillo de enteros de $K$, es igual, en tanto
+$\bb{Z}$-m\'{o}dulo, a $(1,w_{K})_{\bb{Z}}$, el m\'{o}dulo generado por $1$ y
+$w_{K}$ en $K$. Se puede ver que $(1,a\tau)_{\bb{Z}}=(1,fw_{K})_{\bb{Z}}=I$,
+con lo que $(a,a\tau)_{\bb{Z}}$ es un ideal propio de $I$ en $K$.
+
+Dadas dos formas $f$ y $g$, ellas son propiamente equivalentes,
+si, y s\'{o}lo si sus ra\'{\i}ces en $\frak{h}$, $\tau$ y $\tau'$,
+pertenecen a la misma \'{o}rbita en el semiplano por la acci\'{o}n de
+$\SL{2}(\bb{Z})$. Esto \'{u}ltimo es, a su vez, equivalente a que los
+ret\'{\i}culos $[1,\tau]$ y $[1,\tau']$ en $\bb{C}$ est\'{e}n
+relacionados por una homotecia definida sobre $K$: que exista $\lambda$
+en $K$ tal que
+
+\begin{align*}
+[1,\tau] & \,=\,\lambda [1,\tau']
+\text{ .}
+\end{align*}
+
+Todo esto muestra que, si $f$ es una forma cuadr\'{a}tica, cuya
+ra\'{\i}z asociada es $\tau$, la aplicaci\'{o}n
+$f\mapsto[a,a\tau]$ determina una aplicaci\'{o}n biyectiva
+del grupo de clases de formas de discriminante $D$ en el grupo de clases del
+orden $I$. (En principio, esta aplicaci\'{o}n es inyectiva, pero la
+sobreyectividad se sigue de que todo ideal propio de $I$ est\'{a} generado,
+en tanto $\bb{Z}$-m\'{o}dulo, por dos elementos de $K$). Esta
+aplicaci\'{o}n resulta ser un morfismo de grupos, con lo que
+ambos son isomorfos. Los n\'{u}meros de los grupos de clases, $h(D)$ y $h(I)$,
+respectivamente, son, entonces, iguales.
+
+\paragraph{El teorema de Stark-Heegner}
+Sea $K$ un cuerpo cuadr\'{a}tico imaginario y sea $d_{K}$ su
+discriminante. En ese caso, $d_{K}$ siendo un discriminante
+fundamental, $d_{K}$ es un entero libre de cuadrados congruente a
+$1$ \textit{modulo} $4$, o es igual a $-4n$, donde $n$ es un
+entero libre de cuadrados, no congruente a $3$ \textit{modulo} $4$.
+
+Si $n$ es un entero positivo, entonces el n\'{u}mero de clases de
+formas cuadr\'{a}ticas de discriminante
+$-4n$ es igual a $1$, si, y s\'{o}lo si $n$ pertenece al conjunto
+$\{ 1,2,3,4,7 \}$. Una demostraci\'{o}n elemental de esto se puede
+encontrar en el teorema 2.18 de \cite{cox}. Esto muestra que, para
+un cuerpo cuadr\'{a}tico $K$ de discriminante $d_{K}$, si
+$d_{K}=-4n$, entonces $h(K)=1$ \'{u}nicamente en los casos en que
+$n$ sea igual a $1$ o a $2$.
+%El primero de nuestros objetivos ser\'{a} describir
+%esta relaci\'{o}n. Tomamos como referencia el mencionado libro de Cox.
+
+La demostraci\'{o}n de que los cuerpos $K=\bb{Q}(\sqrt{d_{K}})$,
+con $-d_{K}$ igual a $3$, $4$, $7$, $8$, $11$, $19$, $43$, $67$ o $163$ tienen
+n\'{u}mero de clases igual a $1$ es elemental: para $d_{K}=-3$, $-4$, $-8$,
+los cuerpos correspondientes son
+$K=\bb{Q}(\sqrt{-3})$, $\bb{Q}(i)$, $\bb{Q}(\sqrt{-2})$, cuyos anillos de
+enteros son dominios eucl\'{\i}deos.
+
+%A trav\'{e}s de la ``correspondencia'' con formas
+%cuadr\'{a}ticas (secci\'{o}n 7.B de \cite{cox}), s
+Si consideramos la familia de formas cuadr\'{a}ticas de discriminante $d_{K}$,
+hay exactamente $2^{\mu-1}$ g\'{e}neros de formas, donde $\mu$ es la cantidad de
+factores primos en $d_{K}$. Pero, si el n\'{u}mero de clases es $1$, el n\'{u}mero
+de g\'{e}neros tambi\'{e}n lo es, y $\mu=1$, es decir, $d_{K}=-p$, para alg\'{u}n
+primo $p\equiv 3\,(4)$. Si $p$ es congruente a $7$ \textit{modulo} $8$, entonces,
+comparando con el orden $I$ de conductor $2$ en $\cal{O}_{K}$, la relaci\'{o}n
+entre los n\'{u}meros de clases es
+
+\begin{align*}
+ h(I) & \,=\,h(\cal{O}_{K})\frac{2}{|\cal{O}_{K}^{\times}:I^{\times}|}
+ \left(1-\left(\frac{d_{K}}{2}\right)\frac{1}{2}\right)\text{ ,}
+\end{align*}
+y el factor que multiplica a $h(\cal{O}_{K})$ es un entero
+(teorema 7.24 de \cite{cox}). Pero, entonces,
+$|\cal{O}_{K}^{\times}:I^{\times}|=1$ y $(d_{K}/2)$
+(el s\'{\i}mbolo de Kronecker en $d_{K}$) es igual a $1$, con lo cual,
+$h(-4p)=h(I)=h(\cal{O}_{K})=h(-p)=1$ y $p=7$ es la \'{u}nica opci\'{o}n.
+%
+
+La proposici\'{o}n que ahora enunciamos, y el argumento que le sigue, se pueden
+encontrar en el ap\'{e}ndice de \cite{serre}.
+
+\begin{propoEquivsNumClasUno}\label{thm:propoEquivsNumClasUno}
+Las siguientes propiedades de un primo $p>3$ congruente a $3$
+\textit{modulo} $4$ son equivalentes:
+
+\begin{itemize}
+\item[i)] $h(-p)=1$;
+\item[ii)] $\left( \frac{l}{p} \right)=-1$ para todo primo $l<p/4$;
+\item[ii)'] $\left( \frac{l}{p} \right)=-1$ para todo primo $l<\sqrt{p/3}$;
+\item[iii)] (si $p>7$) $p\equiv 3\,(8)$ y $R-N=3$, si $R$ (respectivamente, $N$)
+es el n\'{u}mero de residuos (no residuos) cuadr\'{a}ticos \textit{modulo} $p$ en
+$[1,(p-1)/2]$;
+\item[iv)] si $x\in[\![ 0,(p-7)/4 ]\!]$, $P_{p}(x)=x^{2}+x+(p+1)/4$ es primo;
+\item[iv)'] si $x\in[0,1/2(\sqrt{p/3}-1)]$, $P_{p}(x)$ es primo.
+\end{itemize}
+\end{propoEquivsNumClasUno}
+
+\begin{proof}[Demostraci\'{o}n]
+El anillo de enteros de $\bb{Q}(\sqrt{-p})$ es $\bb{Z}[w]$, donde
+$w=\frac{1+\sqrt{-p}}{2}$; un primo $l$ es inerte en $\bb{Q}(\sqrt{-p})/\bb{Q}$,
+si, y s\'{o}lo si $(l/p)=-1$ (ver \cite{cox}). Dicho de otra manera, si $h(-p)=1$,
+la condici\'{o}n $(l/p)=-1$ implica que $l$ es una norma: existe
+$\alpha\in\bb{Z}[w]$, $\alpha=x+yw$, tal que $\Nm(\alpha)=l$. Pero $\Nm(\alpha)$
+es igual a $(x+\frac{y}{2})^{2}+(\frac{y}{2})^{2}p$. As\'{\i}, $l$ es primo,
+$y\not =0$ y $\Nm(\alpha)\geq p/4$. Rec\'{\i}procamente, asumamos que $(ii)'$ se
+cumple. Entonces, si $\frak{l}\subset\bb{Z}[w]$ es un ideal primo, y vale
+$\Nm(\frak{l})<\sqrt{p/3}$, dado $l$ primo que divide a $\Nm(\frak{l})$, es
+$l<\sqrt{p/3}$. En particular, $(l/p)=-1$, por hip\'{o}tesis, y $\frak{l}=(l)$ es
+un ideal principal. Todo ideal de norma menor que $\sqrt{p/3}$ es, entonces,
+principal. Pero toda clase en $\Cl(\bb{Z}[w])$ contiene un elemento con esta
+propiedad.
+
+El resto de la demostraci\'{o}n (excepto las equivalencias con (iii)) es,
+tambi\'{e}n, elemental.
+\end{proof}
+
+Sea $p\equiv 3\,(\rm{mod}\,4)$ un primo, $3<p<75$, y sea $m=(p+1)/4$. En este caso,
+por (iv)', $h(-p)=1$ es equivalente a que $m$ y $m+2$ sean primos. Esto \'{u}ltimo
+es cierto para $m$ en el conjunto $\{3,5,11,17\}$. El primo $p$ es
+$11$, $19$, $43$ o $67$.
+
+\begin{teoStarkHeegner}\label{thm:teoStarkHeegner}
+ Sea $d_{K}<0$ el discriminante de un cuerpo cuadr\'{a}tico imaginario. Entonces
+ $h(d_{K})=1$, si, y s\'{o}lo si $d_{K}$ es igual a $-3$, $-4$, $-7$, $-8$, $-11$,
+ $-19$, $-43$, $-67$ o a $-163$.
+\end{teoStarkHeegner}

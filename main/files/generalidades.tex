@@ -1,0 +1,609 @@
+
+Sea $\Lambda=\omega_{1}\bb{Z}\oplus\omega_{2}\bb{Z}$ un ret\'{\i}culo en $\bb{C}$,
+generado por $\omega_{1}$ y $\omega_{2}$ tales que
+$\omega_{1}/\omega_{2}\in\frak{h}$. Los puntos de $N$-torsi\'{o}n de
+$\bb{C}/\Lambda$ conforman el grupo
+\begin{math}
+\langle(\omega_{1}/N)+\Lambda\rangle\times
+\langle(\omega_{2}/N)+\Lambda\rangle
+\end{math}
+isomorfo a $(\bb{Z}/N\bb{Z})^{2}$. Sea $\mu_{N}$ el grupo de ra\'{\i}ces
+$N$-\'{e}simas de la unidad en $\bb{C}$, $\mu_{N}=\langle e^{2\pi i/N}\rangle$.
+Dados $P$ y $Q$ en $\bb{C}/\Lambda$ de $N$-torsi\'{o}n, existe
+$\gamma\in\MM{2}(\bb{Z}/N\bb{Z})$ tal que
+
+\begin{align*}
+\begin{bmatrix}
+P\\Q
+\end{bmatrix} & \,=\,\gamma
+\begin{bmatrix}
+(\omega_{1}/N)+\Lambda\\(\omega_{2}/N)+\Lambda
+\end{bmatrix}\text{ .}
+\end{align*}
+Definimos $e_{N}(P,Q):=e^{2\pi i\det(\gamma)/N}$, el \textit{pairing} de Weil en
+$P$ y $Q$. Esto define, v\'{\i}a la correspondencia con curvas el\'{\i}pticas
+definidas sobre $\bb{C}$, una aplicaci\'{o}n,
+$E[N]\times E[N]\rightarrow\mu_{N}$, en pares de puntos de $N$-torsi\'{o}n de una
+curva el\'{\i}ptica $E$, tomando valores en el conjunto de ra\'{\i}ces
+$N$-\'{e}simas de la unidad.
+
+Sean $E$ y $E'$ dos curvas complejas, y sean $(P,Q)$ y $(P',Q')$ pares de puntos de
+orden $N$ en $E$ y en $E'$, respectivamente, tales que
+$e_{N}(P,Q)=e_{N}(P',Q')=e^{2\pi i/N}=\zeta_{N}$. La dupla $E$, junto con $(P,Q)$
+se dice relacionada con $E'$, con $(P',Q')$, si existe un isomorfismo
+$E\xrightarrow{\sim}E'$ (definido sobre $\bb{C}$) tal que $P\mapsto P'$ y
+$Q\mapsto Q'$. Esto determina una relaci\'{o}n de equivalencia, y denotamos
+$S'(N)$ al conjunto que resulta de tomar las clases de equivalencia correspondientes %corrige ``clses''
+en
+
+\begin{align*}
+& \left\lbrace (E,(P,Q))\,:\,E\text{ curva el\'{\i}ptica sobre }\bb{C},
+e_{N}(P,Q)=\zeta_{N}\right\rbrace\text{ ,}
+\end{align*}
+y con $[E,(P,Q)]$ a la clase de $(E,(P,Q))$.
+
+Sea, ahora, $\Gamma(N)$ el subgrupo principal de congruencia de nivel $N$, el
+n\'{u}cleo del morfismo sobreyectivo
+$\SL{2}(\bb{Z})\rightarrow\SL{2}(\bb{Z}/N\bb{Z})$ dado por reducir coordenadas
+\textit{modulo} $N$. Sean $Y'(N)$ la superficie de Riemann
+$\Gamma(N)\backs\frak{h}$, y $X'(N)=\Gamma(N)\backs\frak{h}^{*}$ su
+compactificaci\'{o}n agregando las c\'{u}spides correspondientes a $\Gamma(N)$.
+El conjunto $S'(N)$ est\'{a} dado por
+
+\begin{align*}
+& \left\lbrace [\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]\,:\,\tau\in\frak{h} \right\rbrace
+\text{ ,}
+\end{align*}
+y dos puntos $[\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]$ y $[\bb{C}/\Lambda_{\tau'},\,
+(\tau'/N+\Lambda_{\tau'},1/N+\Lambda_{\tau'})]$ son iguales, si, y s\'{o}lo si
+$\Gamma(N)\tau=\Gamma(N)\tau'$. La aplicaci\'{o}n $[\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]\mapsto\Gamma(N)\tau$ da una
+biyecci\'{o}n entre $S'(N)$ y la curva $Y'(N)$. Es decir, $X'(N)$ parametriza
+(clases de equivalencia de) curvas el\'{\i}pticas junto con un par de generadores
+de la $N$-torsi\'{o}n y con un \textit{pairing} particular. \cite{diamondShurman}
+
+Las curvas en las que fijaremos nuestra atenci\'{o}n ser\'{a}n ciertos cocientes
+de las curvas $X'(N)$. Sea $E/\bb{C}$ una curva el\'{\i}ptica, y sea $E[N]$ su
+subgrupo de $N$-torsi\'{o}n. Fijar un isomorfismo
+$\varphi:\,E[N]\xrightarrow{\sim}(\bb{Z}/N\bb{Z})^{2}$ equivale a dar una base de
+$E[N]$, es decir, dos puntos $P$ y $Q$ de $E$ que generen $E[N]$. En este sentido,
+la informaci\'{o}n relativa a la torsi\'{o}n que brinda un par $(E,\varphi)$ es
+menos espec\'{\i}fica que la contenida en los pares $(E,(P,Q))$. Dados dos pares
+$(E,\varphi)$ y $(E',\varphi')$, los mismos son equivalentes, si existe un
+isomorfismo $E\xrightarrow{\sim}E'$ tal que $\varphi\mapsto\varphi'$, es decir,
+si $\{P,Q\}$ es la base de $E[N]$ y $\{P',Q'\}$ la de $E'[N]$, $P\mapsto P'$ y
+$Q\mapsto Q'$. La relaci\'{o}n es la misma; simplemente estamos permiti\'{e}ndonos
+ver otros puntos que antes, en $X'(N)$, no consideramos. \'{E}sta es una
+relaci\'{o}n de equivalencia, y denotamos $S(N)$ al conjunto de clases de pares
+$(E,\varphi)$ (denotadas $[E,\varphi]$) por dicha relaci\'{o}n.
+
+Sea $E/\bb{C}$ una curva el\'{\i}ptica, y sea
+$\varphi:\,E[N]\rightarrow(\bb{Z}/N\bb{Z})^{2}$ una estructura de nivel. Sea
+$e_{N}:\,E[N]\times E[N]\rightarrow\mu_{N}$ una forma alternada, no degenerada,
+el \textit{pairing} de Weil, sea $\zeta_{N}:=e^{2\pi i/N}$ y $\zeta(\varphi)$ la
+ra\'{\i}z de la unidad
+
+\begin{align*}
+\zeta(\varphi) & \,:=\,e_{N}\left(
+\varphi^{-1}\left(\begin{bmatrix}1\\0\end{bmatrix}\right),\,
+\varphi^{-1}\left(\begin{bmatrix}0\\1\end{bmatrix}\right)\right)
+\text{ .}
+\end{align*}
+
+El par $(E,\varphi)$ es equivalente a uno de la forma
+$(\bb{C}/\Lambda,\,(\tau/N+\Lambda_{\tau},1/N+\Lambda))$, $\tau\in\frak{h}$, si,
+y s\'{o}lo si $\zeta(\varphi)=\zeta_{N}$.
+
+En general, la forma alternada $e_{N}$ determina una funci\'{o}n
+$S(N)\rightarrow\mu_{N}$. Haciendo de \'{e}sta una funci\'{o}n continua, vemos
+que se puede obtener una superficie de Riemann compacta $X(N)$ a partir de $S(N)$,
+y, como $e_{N}(aP+bQ,cP+dQ)=e_{N}(P,Q)^{\det(\gamma)}$, para
+\begin{math}\gamma=
+\left[\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right]\in\GL{2}(\bb{Z}/N\bb{Z})
+\end{math}, la curva $X(N)$ es disconexa.
+M\'{a}s precisamente, es la uni\'{o}n disjunta de $\phi(N)$ componentes. Cada una
+de estas componentes es una copia de $X'(N)$ y est\'{a}n en correspondencia con
+las ra\'{\i}ces primitivas $N$-\'{e}simas de $1$: si $\zeta_{N}^{k}$ es una de
+ellas, la componente correspondiente es la que contiene las clases $[E,\varphi]$
+con $\zeta(\varphi)=\zeta_{N}^{k}$ (secci\'{o}n 7 de \cite{booher} y
+\cite{deligneRapoport}).
+Para ser m\'{a}s claros, el grupo $\GL{2}(\bb{Z}/N\bb{Z})$ act\'{u}a sobre los
+puntos no cuspidales de la curva compactificada $X(N)$. Esta acci\'{o}n est\'{a}
+determinada por $(E,\phi)\mapsto(E,\gamma\circ\varphi)$.
+
+Sea $H$ un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ tal que
+$\det(H)=(\bb{Z}/N\bb{Z})^{\times}$. A trav\'{e}s del determinante,
+$\GL{2}(\bb{Z}/N\bb{Z})$ permuta las componentes de la curva $X(N)$. Como la
+imagen de $H$ por $\det(\cdot)$ es todo $(\bb{Z}/N\bb{Z})^{\times}$, el cociente
+$H\backs X(N)$ es conexo. En el caso en que $H$ es igual a todo el grupo general
+lineal, obtenemos $X(1)=\SL{2}(\bb{Z})\backs\frak{h}^{*}$.
+
+Dado un subgrupo arbitrario $H$ de $\GL{2}(\bb{Z}/N\bb{Z})$, llamamos $H'$ a la
+intersecci\'{o}n $H\cap\SL{2}(\bb{Z}/N\bb{Z})$, y $\Gamma_{H}$ a la preimagen de
+$H'$ por $\SL{2}(\bb{Z})\rightarrow\SL{2}(\bb{Z}/N\bb{Z})$. Notando que
+$\Gamma_{H}$ es un subgrupo de congruencia (de nivel $N$), definimos
+
+\begin{align*}
+X_{H} & \,:=\,\Gamma_{H}\backs\frak{h}^{*}\text{ .}
+\end{align*}
+Esta curva se identifica con el cociente $H'\backs X'(N)$, y tambi\'{e}n con
+$H\backs X(N)$, si $\det(H)=(\bb{Z}/N\bb{Z})^{\times}$. En otras palabras, $X_{H}$
+es el cociente de $X'(N)$ por la acci\'{o}n del subgrupo de automorfismos
+determinado por $H'$.
+%En particular, $H'$ act\'{u}a sobre el conjunto de c\'{u}spides de $X'(N)$,
+%de manera que las c\'{u}spides de $X_{H}$ se identifican con las \'{o}rbitas
+%de  esta acci\'{o}n.
+
+Necesitaremos saber en qu\'{e} casos estas curvas est\'{a}n definidas sobre
+$\bb{Q}$.
+
+\begin{propoDefinidasSobreQ}\label{thm:propoDefinidasSobreQ}
+Sea $H$ un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ tal que su imagen por el
+determinante cubra $(\bb{Z}/N\bb{Z})^{\times}$. Entonces $X_{H}=H\backs X(N)$ es
+una variedad algebraica conexa definida sobre $\bb{Q}$.
+\end{propoDefinidasSobreQ}
+El enunciado de esta proposici\'{o}n, como su demostraci\'{o}n se pueden encontrar
+en el teorema 43 de \cite{booher}.
+
+\begin{proof}[Demostraci\'{o}n]
+Primero se definen ciertas funciones modulares para el grupo $\Gamma(N)$
+\cite{diamondShurman}: sea $v=(c_{v},d_{v})$ un par donde $c_{v}$ y $d_{v}$ son
+enteros y sus reducciones no son ambas divisibles por $N$, es decir,
+$\overline{v}(\overline{c_{v}},\overline{d_{v}})\not =0$ en $(\bb{Z}/N\bb{Z})^{2}$.
+Dado $(\bb{C}/\Lambda,(P,Q))$ con $e_{N}(P.Q)=\zeta_{N}$, definimos
+
+\begin{align*}
+F_{0}^{\overline{v}}(\bb{C}/\Lambda,(P,Q)) & \,=\,
+\frac{g_{2}(\Lambda)}{g_{3}(\Lambda)}\wp_{\Lambda}(c_{v}P+d_{v}Q)\text{ ,}
+\end{align*}
+donde $g_{2}$ y $g_{3}$ son las funciones que se obtienen de las series de
+Eisenstein $G_{4}$ y $G_{6}$, y $\wp_{\Lambda}$ es la funci\'{o}n de
+Weierstra{\ss} del ret\'{\i}culo $\Lambda$. De manera equivalente, si
+$\tau\in\frak{h}$, podemos definir
+
+\begin{align*}
+f_{0}^{\overline{v}}(\tau) & \,=\,
+\frac{g_{2}(\tau)}{g_{3}(\tau)}\wp_{\tau}(\frac{c_{v}\tau+d_{v}}{N})
+\text{ ,}
+\end{align*}
+y
+\begin{math}
+f_{0}^{\overline{v}}(\tau)=
+F_{0}^{\overline{v}}(\bb{C}/\Lambda_{\tau},(\tau/N,1/N))
+\end{math}.
+Las funciones $F_{0}^{\overline{v}}$ no dependen del representante de la clase de
+$(\bb{C}/\Lambda,(P,Q))$, y las funciones $f_{0}^{\overline{v}}$ dependen s\'{o}lo
+de la \'{o}rbita $\Gamma(N)\tau\subset\frak{h}$. Se veifica que \'{e}stas
+son funciones invariantes por $\Gamma(N)$ y meromorfas, tanto en $\frak{h}$, como
+en las c\'{u}spides de $\Gamma(N)$. Es decir, son funciones meromorfas en $X'(N)$.
+
+Sea $\bb{C}(X'(N))$ el cuerpo de funciones meromorfas en $X'(N)$, y sea
+
+\begin{align*}
+\theta & \,:\,\SL{2}(\bb{Z})\rightarrow\rm{Aut}(\bb{C}(X'(N)))\,|\\
+ & \gamma\mapsto(
+\theta(\gamma):\,f\mapsto f^{\theta(\gamma)}=f\circ\gamma)\text{ .}
+\end{align*}
+Esta aplicaci\'{o}n es un morfismo de grupos, y $\ker(\theta)$ contiene a
+$\widetilde{\Gamma}(N):=\{\pm\}\Gamma(N)$. Notemos, por otra parte, que dos
+funciones $f_{0}^{\overline{u}}$ y $f_{0}^{\overline{v}}$ son iguales, si, y
+s\'{o}lo si $\overline{u}=\pm\overline{v}$, pues $\wp_{\tau}(z)=\wp_{\tau}(z')$,
+si, y s\'{o}lo si $z+\Lambda_{\tau}=\pm z'+\Lambda_{\tau}$. Adem\'{a}s,
+\begin{math}
+(f_{0}^{\overline{v}})^{\theta(\gamma)}=
+f_{0}^{\overline{v}}\circ\gamma=f_{0}^{\overline{v\gamma}}
+\end{math},
+con lo que, como $f_{0}^{\overline{v}}\in\bb{C}(X'(N))$, el n\'{u}cleo
+$\ker(\theta)$ est\'{a} contenido en $\widetilde{\Gamma}(N)$.
+
+Ahora, $\theta(\SL{2}(\bb{Z}))$ es un subgrupo del grupo de automorfismos del
+cuerpo $\bb{C}(X'(N))$, y su cuerpo fijo es $\bb{C}(X(1))=\bb{C}(j)$. En
+definitiva, la extensi\'{o}n $\bb{C}(X'(N))/\bb{C}(X(1))$ es galoisiana con
+grupo de Galois
+
+\begin{align*}
+\theta(\SL{2}(\bb{Z}))& \,\simeq\,\SL{2}(\bb{Z})/\widetilde{\Gamma}(N)
+\,\simeq\,\SL{2}(\bb{Z}/N\bb{Z})/\{\pm 1\}\text{ .}
+\end{align*}
+El mismo argumento que los \'{u}nicos elementos de $\SL{2}(\bb{Z})$ que act\'{u}an
+trivialmente sobre
+\begin{math}
+\bb{C}(j,\{f_{0}^{\pm\overline{v}}\,:\,
+\pm\overline{v}\in((\bb{Z}/N\bb{Z})^{2}\setmin\{(0,0)\})/\{\pm 1\}\})
+\end{math}
+son los pertenecientes a $\widetilde{\Gamma}(N)$. Lo mismo es cierto para el
+cuerpo $\bb{C}(j,f_{0}^{\pm\overline{(0,1)}},f_{0}^{\pm\overline{(1,0)}})$, que
+coincide, entonces, con $\bb{C}(X'(N))$.
+
+El siguiente paso consiste en demostrar que la extensi\'{o}n
+$\bb{Q}(\mu_{N},j,\{f_{0}^{\pm\overline{v}}\})/\bb{Q}(j)$ tambi\'{e}n es Galois y
+que su grupo se identifica con $\GL{2}(\bb{Z}/N\bb{Z})/\{\pm 1\}$. Si $\sigma$ es
+un elemento del grupo de Galois de esta extensi\'{o}n, entonces
+
+\begin{align*}
+ \begin{bmatrix}
+  (f_{0}^{\pm(1,0)})^{\sigma}\\
+  (f_{0}^{\pm(0,1)})^{\sigma}
+ \end{bmatrix} & \,=\,\rho(\sigma)
+ \begin{bmatrix} f_{0}^{\pm(1,0)}\\f_{0}^{\pm(0,1)} \end{bmatrix}
+\end{align*}
+para alguna transformaci\'{o}n lineal $\rho(\sigma)\in\GL{2}(\bb{Z}/N\bb{Z})$.
+Si $\mu=e_{N}(P,Q)$ es una ra\'{\i}z $N$-\'{e}sima primitiva de la unidad,
+
+\begin{align*}
+ \mu^{\sigma} &\,=\,\sigma(e_{N}(P,Q))\,=\,e_{N}(P^{\sigma},Q^{\sigma})\\
+ &\,=\,e_{N}(P,Q)^{\det(\rho(\sigma))}\,=\,\mu^{\det(\rho(\sigma))}\text{ .}
+\end{align*}
+
+Finalmente, si $H\subset\GL{2}(\bb{Z}/N\bb{Z})$ es un subgrupo que satisface
+$\det(H)=(\bb{Z}/N\bb{Z})^{\times}$, definimos los cuerpos
+
+\begin{align*}
+K_{1} & \,=\,\bb{Q}(\mu_{N},j,\{f_{0}^{\pm\overline{v}}\})^{\Gamma_{H}}\\
+K_{2} & \,=\,\bb{C}(j,\{f_{0}^{\pm\overline{v}}\})^{H'/\{\pm 1\}}\text{ .}
+\end{align*}
+Un poco de Teor\'{\i}a de Galois muestra que
+$K_{1}=\bb{Q}(j,\{f_{0}^{\pm\overline{v}}\})^{H'/\{\pm 1\}}$ y que
+$K_{1}\cap\overline{\bb{Q}}=\bb{Q}$, correspondi\'{e}ndose con una curva
+poryectiva, no singular, y esta curva est\'{a} definida sobre $\bb{Q}$.
+Con respecto a $K_{2}$, este cuerpo tiene que ser el cuerpo de funciones del
+cociente $H'\backs X'(N)$, ya que, para $f\in\bb{C}(X'(N))$,
+$f^{\theta(\gamma)}=f\circ\gamma$. Ahora bien, el cuerpo de funciones de la
+curva definida sobre los n\'{u}meros complejos que se obtiene a partir de las
+ecuaciones que definen la curva correspondiente al cuerpo funcional $K_{1}$,
+coincide con $K_{2}$. Es decir, $H\backs X(N)$ es isomorfa sobre $\bb{C}$ a una
+curva definida sobre $\bb{Q}$. Usaremos la misma notaci\'{o}n para referirnos
+tanto a $H\backs X(N)$ como a su modelo sobre $\bb{Q}$.
+
+\end{proof}
+
+%-----------------
+\begin{subsection}{Subgrupos de Cartan}\label{subsec:subgruposDeCartan}
+Sea $E$ una curva el\'{\i}ptica con CM. Su anillo de endomorfismos es un orden
+$I=[1,\tau]$ en un cuerpo cuadr\'{a}tico imaginario. Si $N>1$ es un entero coprimo
+con el discriminante de $I$ y $p\in\bb{Z}$ es un primo divisor de $N$, entonces
+$p$ se parte o es inerte en $I$. Sea $A:=I/NI$. Este anillo es una
+$(\bb{Z}/N\bb{Z})$-\'{a}lgebra con base $\{1,\tau\}$, y, dependiendo de $p$, si se
+parte o no en $I$, el cociente $A/pA$ es isomorfo a $\bb{F}_{p}\times\bb{F}_{p}$
+o a $\bb{F}_{p^{2}}$, respectivamente.
+
+\begin{defSubgrupoDeCartan}\label{thm:defSubgrupoDeCartan}
+Dada $A$ un \'{a}lgeba sobre $\bb{Z}/N\bb{Z}$, libre, conmutativa, de rango $2$ y
+tal que, si $p|N$, entonces $A/pA$ es isomorfo a $\bb{F}_{p}\times\bb{F}_{p}$ o a
+$\bb{F}_{p^{2}}$, el grupo de unidades, $A^{\times}$, act\'{u}a sobre $A$ por
+multiplicaci\'{o}n. Elegir una base de $A$ sobre $\bb{Z}/N\bb{Z}$, equivale a
+establecer un morfismo
+
+\begin{align*}
+\iota & \,:\,A^{\times}\hookrightarrow\GL{2}(\bb{Z}/N\bb{Z})
+\end{align*}
+--elegir otra base resulta en un subgrupo conjugado a $\iota(A^{\times})$.
+Decimos que un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ es \emph{de Cartan}, si es de
+la forma $\iota(A^{\times})$ para alg\'{u}n \'{a}lgebra $A$ que cumpla con las
+condiciones especificadas. Con respecto a la \'{u}ltima de estas condiciones,
+tambi\'{e}n se dice que $A$ es \textit{\'{e}tale}. Si $A/pA\simeq\bb{F}_{p^{2}}$,
+se dice que $A$ es \textit{non-split} en $p$, y \textit{split} en el otro caso.
+Un subgrupo de Cartan se dice \textit{non-split}, si el \'{a}lgebra correspondiente
+lo es en todo primo que divide a $N$.
+
+\end{defSubgrupoDeCartan}
+
+\begin{ejemploSubgrupoDeCartan}\label{thm:ejemploSubgrupoDeCartan}
+Si $I$ es un orden en un cuerpo cuadr\'{a}tico imaginario, $A=I/NI$ y
+$N$ es coprimo con $\rm{disc}(I)$ y todo divisor primo de $N$ es inerte en $I$, %correcci\'{o}n
+entonces si $A$ es \textit{non-split} y, %correcci\'{o}n
+fijando una base, $\iota(A^{\times})\subset\GL{2}(\bb{Z}/N\bb{Z})$ es un subgrupo
+de Cartan \textit{non-split}. Denotamos con $C_{ns}(N)$ al subgrupo
+$\iota(A^{\times})$.
+
+Si $N=p$ es  primo, $|A^{\times}|=|\bb{F}_{p^{2}}^{\times}|=p^{2}-1$.
+Si $N=p^{r}$, $r\geq 1$, todo elemento de $(I/pI)^{\times}$ se levanta a una
+unidad en $I/p^{r}I$, y cada elemento tiene $p^{2(r-1)}$ preim\'{a}genes;
+entonces
+
+\begin{align*}
+|(I/p^{r}I)^{\times}| & \,=\, p^{2(r-1)}(p^{2}-1)\text{ .}
+\end{align*}
+Para $N>1$ entero coprimo con $\rm{disc}(I)$, el orden $|A^{\times}|$ es igual a
+
+\begin{align*}
+|(I/NI)^{\times}|=N^{2}\prod_{p|N}\,(1-(1/p^{2}))\text{ .}
+\end{align*}
+Este es el orden del grupo de Cartan \textit{non-split} $C_{ns}(N)$.
+%
+%\begin{align*}
+%a+b\tau\in(I/pI)^{\times}\Rightarrow\exists c,d
+%\,|\,(a+b\tau)(-c+d\tau)\equiv 1\,(pI)
+%a,b,c,d<p
+%-ac-v=1+kp & \text{ tomar } c=c+sp\text{ para que } -ac-v\equiv 1\,(p^{r})\\
+%ad-bc+u=k'p\text{ tomar } d=d+s'p\text{ para que } ad-bc+u\equiv 0\,(p^{r})
+%\end{align*}
+%cada $a+b\tau$ se levanta a $I/p^{r}$ de $p^{2(r-1)}$ maneras.
+
+\end{ejemploSubgrupoDeCartan}
+
+\end{subsection}
+
+\begin{subsection}{El normalizador de $C_{ns}(N)$ en $\GL{2}(\bb{Z}/N\bb{Z})$ %
+		y la curva modular asociada}\label{subsec:normalizadorYCurva}
+En la descripci\'{o}n que hacemos a continuaci\'{o}n tomamos como referencia a
+\cite{baranNormalizers}.
+Sean $I=[1,\tau]$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$ tal que
+$(N,\rm{disc}(I))=1$ y todo primo que divide a $N$ es inerte en $I$, y sea %correcci\'{o}n
+$A=I/NI$. Sea $C_{ns}(N)=\iota(A^{\times})$. Si $\tau$ %correcci\'{o}n
+satisface el polinomio $X^{2}-uX+v\in\bb{Z}[X]$, definimos una involuci\'{o}n
+en $\tau$ por $\overline{\cdot}:\,\tau\mapsto(u-\tau)$, y tambi\'{e}n
+$\sigma_{p}:\,A\rightarrow A$ como el \'{u}nico automorfismo en $A=I/NI$ que
+coincide con esta involuci\'{o}n en $I/p^{r(p)}I$ y con la identidad en
+$I/\frac{N}{p^{r(p)}}I$, donde $r(p)$ es la m\'{a}xima potencia de $p$ que divide
+a $N$. La misma elecci\'{o}n de base que determina la
+inclusi\'{o}n $\iota$ determina una matriz $S_{p}\in\GL{2}(\bb{Z}/N\bb{Z})$
+que representa a $\sigma_{p}$.
+
+Sea $N=p^{r}$, $p\in\bb{Z}$ un primo y $r\geq 1$. Podemos identificar $C_{ns}(N)$
+con el grupo $A^{\times}$ de unidades de $A=I/p^{r}I$. Si $\alpha$ es un elemento
+de $A$, tiene una matriz asociada, en $\MM{2}(\bb{Z})$:
+\begin{math}
+ \gamma(\alpha):=
+ \left[\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right]
+\end{math},
+determinada por
+
+\begin{align*}
+ \alpha\cdot\begin{bmatrix} 1\\ \tau \end{bmatrix} & \,=\,
+ \begin{bmatrix} \alpha\\ \alpha\tau \end{bmatrix} \,=\,
+ \begin{bmatrix} a+b\tau\\ c+d\tau \end{bmatrix} \,=\,
+ \begin{bmatrix} a&b\\c&d \end{bmatrix}
+ \begin{bmatrix} 1\\ \tau \end{bmatrix}\text{ .}
+\end{align*}
+Si $\tau^{2}-u\tau+v=0$, con $u$ y $v$ en $\bb{Z}$, la matriz de $\tau$ es
+\begin{math}
+ \gamma(\tau):=
+ \left[\begin{smallmatrix}0&1\\-v&u\end{smallmatrix}\right]
+\end{math}.
+Como $A$ es \textit{non-split}, $A/pA\simeq\bb{F}_{p^{2}}$. Pero $\tau\not\in pA$,
+%$#\bb{F}_{p^{2}}=p^{2}$. Si $\tau\in pA$, $A/pA$ est\'{a} generado por $1$
+%y $\tau$ sobre $\bb{Z}/p\bb{Z}$ implica cardinalidad menor.
+con lo que $\tau$ es una unidad en $I/pI$, es decir que la matriz $\gamma(\tau)$
+es una unidad en $\MM{2}(\bb{Z}/p\bb{Z})$. Entonces, $v=\det(\gamma(\tau))$
+es una unidad en $\bb{Z}/p\bb{Z}$. En particular, $p$ no divide a $v$, y
+$\det(\gamma(\tau))\in(\bb{Z}/p^{r}\bb{Z})^{\times}$. En otras palabras,
+$\tau$ es una unidad en $A$.
+
+Si ahora tomamos $\kappa\in\GL{2}(\bb{Z}/p^{r}\bb{Z})$ tal que
+$\kappa C_{ns}(p^{r})=C_{ns}(p^{r})\kappa$, $\kappa$ induce un automorfismo de
+$A^{\times}$ por conugaci\'{o}n: si $\alpha\in A^{\times}$, definimos
+$t_{\kappa}(\alpha)$ como la primera coordenada de
+
+\begin{align*}
+ & \kappa\gamma(\alpha)\kappa^{-1}\cdot\begin{bmatrix}1\\ \tau\end{bmatrix}
+ \text{ .}
+\end{align*}
+Si $n\in\bb{Z}$ es coprimo con $p$, $n\cdot 1_{A}\in A^{\times}$ y
+$\gamma(n1_{A})$ es la matriz diagonal
+\begin{math}
+\left[\begin{smallmatrix} n&0\\0&n\end{smallmatrix}\right]
+\end{math}.
+As\'{\i}, $t_{\kappa}(n1_{A})=n1_{A}$. Extendemos $t_{\kappa}$ a un endomorfismo
+de la $(\bb{Z}/p^{r}\bb{Z})$-\'{a}lgebra $A$. En particular,
+$t_{\kappa}(\tau)\in A$ tiene que ser un cero de $f=X^{2}-uX+v$. Las soluciones
+$\tau$ y $u-\tau$ de $f$ son distintas en $I/pI\simeq\bb{F}_{p^{2}}$ y
+$f'(\tau)=\tau-(u-\tau)\not =0$, entonces,
+si $\alpha\in I$ es soluci\'{o}n de $f$ \textit{modulo} $p^{r'}I$ para alg\'{u}n
+$r'$, por el argumento del lema de Hensel, se levanta a \'{u}nica soluci\'{o}n
+\textit{modulo} $p^{r'+1}I$. Entonces $t_{\kappa}(\tau)=\tau$ o $u-\tau$, con lo
+que el automorfismo $t_{\kappa}$ de $A$ es, o bien, $\sigma_{p}$, o bien la
+identidad. En t\'{e}rminos de matrices, o bien $\kappa z\kappa^{-1}=z$, o bien
+$\kappa z\kappa^{-1}=S_{p}zS_{p}$ ($S_{p}$ tiene orden $2$). O bien $\kappa$,
+o bien $S_{p}\kappa$, pertenece al centralizador de $C_{ns}(p^{r})$. Pero el
+centralizador de $C_{ns}(p^{r})$ es el mismo grupo. As\'{\i}
+$\kappa$ pertenece a $C_{ns}(p^{r})$, o a $S_{p}C_{ns}(p^{r})$, es decir que el
+normalizador de $C_{ns}(p^{r})$ es el subgrupo de $\GL{2}(\bb{Z}/p^{r}\bb{Z})$
+generado por $C_{ns}(p^{r})$ y por $S_{p}$. En general, para $N>1$,
+%por el teorema chino del resto,
+el normalizador de $C_{ns}(N)$ es $\langle C_{ns}(N),\{S_{p}\,:\,p|N\} \rangle$.
+Lo denotamos $C_{ns}^{+}(N)$. Su orden es
+
+\begin{align*}
+N^{2}2^{\omega}\prod_{p|N}\,\left(1-\frac{1}{p^{2}}\right) &
+\,=\,|A^{\times}|2^{\omega}\text{ ,}
+\end{align*}
+donde $\omega$ es la cantidad de primos distintos que dividen a $N$.
+
+Los grupos $C_{ns}(N)$ y $C_{ns}^{+}(N)$ son subgrupos de $\GL{2}(\bb{Z}/N\bb{Z})$,
+y, como tales, podemos asociarles las curvas modulares
+
+\begin{align*}
+ X_{ns}(N) & \,:=\,C_{ns}(N)\backs X(N)\\
+ X_{ns}^{+}(N) &\,:=\,C_{ns}^{+}(N)\backs X(N)\text{ .}
+\end{align*}
+Llamamos $Y_{ns}(N)$ e $Y_{ns}^{+}(N)$ a los abiertos que son complementos de las
+c\'{u}spides de $X_{ns}(N)$ y $X_{ns}^{+}(N)$, respectivamente.
+
+La curva $X_{ns}^{+}(N)$ est\'{a} definida sobre $\bb{Q}$:
+$\det(C_{ns}^{+}(N))=(\bb{Z}/N\bb{Z})^{\times}$ \cite{booher}, el argumento es el
+siguiente: sean $m\in\bb{Z}$ coprimo con $N$, y $p|N$ un primo. Como $p$ se
+supone inerte en $K$ (el cuerpo cuadr\'{a}tico que contiene al orden
+$I=[1,\tau]$), $K_{p}/\bb{Q}_{p}$ es una extensi\'{o}n cuadr\'{a}tica de cuerpos
+locales. Existe, entonces, $\mu_{p}\in K_{p}^{\times}$ \'{\i}ntegro tal que
+
+\begin{align*}
+ \Nm_{K_{p}/\bb{Q}_{p}}(\mu_{p})& \,=\,\pm m\text{ .}
+\end{align*}
+Si $p^{r(p)}||N$, elegimos $\widetilde{\mu}_{p}\in I$ que aproxime $\mu_{p}$ a
+orden $p^{r(p)}$:
+
+\begin{align*}
+ \mu_{p} & \,\equiv\,\widetilde{\mu}_{p}\,(p^{r(p)})\text{ .}
+\end{align*}
+As\'{\i}, $\Nm_{K_{p}/\bb{Q}_{p}}(\widetilde{\mu}_{p})$ es congruente con
+$\pm m\,(p^{r(p)})$. Haciendo esto para cada primo que divide a $N$, se toma
+$\mu\in I$ que satisfaga $\mu\equiv\widetilde{\mu}_{p}$ \textit{modulo} $p^{r(p)}$
+para cada $p$. De esta manera, $\Nm_{K/\bb{Q}}(\mu)\equiv \pm m\,(p^{r(p)})$ para
+cada primo. Corrigiendo con las matrices $S_{p}$ (cuyo determinante es $-1$ en el
+factor correspondiente a $p$, y $1$ en el resto), vemos que
+$\det:\,C_{ns}^{+}(N)\rightarrow(\bb{Z}/N\bb{Z})^{\times}$ es sobreyectiva.
+
+\begin{obsDetSobreUnidades}\label{thm:obsDetSobreUnidades}
+ Hemos demostrado, tambi\'{e}n, que
+
+ \begin{align*}
+  \det & \,:\,C_{ns}(p^{r})\rightarrow(\bb{Z}/p^{r}\bb{Z})^{\times}/\{\pm 1\}
+ \end{align*}
+es sobre.
+
+\end{obsDetSobreUnidades}
+
+Sean $C_{ns}^{+}(N)'=C_{ns}^{+}(N)\cap\SL{2}(\bb{Z}/N\bb{Z})$ y
+$\Gamma_{C_{ns}^{+}(N)}$ el subgrupo de $\SL{2}(\bb{Z})$ conformado por las
+matrices que caen en $C_{ns}^{+}(N)'$ al reducir las coordenadas \textit{modulo}
+$N$. Como $\det:\,C_{ns}^{+}(N)\rightarrow(\bb{Z}/N\bb{Z})^{\times}$ es
+sobreyectiva y su n\'{u}cleo es $C_{ns}^{+}(N)'$, el \'{\i}ndice
+$|C_{ns}^{+}(N):C_{ns}^{+}(N)'|$ es igual a $\phi(N)$, con lo cual, 
+
+\begin{align*}
+ |\SL{2}(\bb{Z}):\Gamma_{C_{ns}^{+}(N)}| & \,=\,
+ |\SL{2}(\bb{Z}/N\bb{Z}):C_{ns}^{+}(N)'| \\
+ & \,=\,\frac{\phi(N)}{2^{\omega}N^{2}\prod_{p|N}\,(1-(1/p^{2}))}
+ N^{3}\prod_{p|N}\,(1-(1/p^{2})) \,=\,\frac{N\phi(N)}{2^{\omega}}
+ \text{ .}
+\end{align*}
+Tenemos morfismos
+
+\begin{align*}
+ & X_{ns}(N)\xrightarrow{\Phi_{1}}
+ X_{ns}^{+}(N)\xrightarrow{\Phi_{2}} X(1)\text{ ,}
+\end{align*}
+de grados $\rm{deg}(\Phi_{1})=2^{\omega}$ y
+$\rm{deg}(\Phi_{2})=N\phi(N)/2^{\omega}$.
+
+En resumen, existe una curva modular, $X_{ns}^{+}(N)$, isomorfa a
+$\Gamma_{C_{ns}^{+}(N)}\backs\frak{h}^{*}$, y definida sobre $\bb{Q}$.
+El abierto
+$Y_{ns}^{+}(N)=X_{ns}^{+}(N)\setmin\{\text{ c\'{u}spides }\}$
+parametriza clases de equivalencia de pares $(E,\varphi)$, donde
+$E/\bb{C}$ es una curva el\'{\i}ptica y
+$\varphi:\,E[N]\rightarrow(\bb{Z}/N\bb{Z})^{2}$ un isomorfismo; dos pares
+$(E,\varphi)$ y $(E',\varphi')$ son equivalentes, si existe
+$\gamma\in C_{ns}^{+}(N)$ tal que los puntos $[E,\varphi]$ y
+$[E',\gamma\circ\varphi']$ sean iguales en $X(N)$. Olvidando la estructura de
+nivel, $\varphi$ en cada par $(E,\varphi)$, resulta un morfismo de $X_{ns}^{+}(N)$
+en $X(1)$ de grado $N\phi(N)/2^{\omega}$.
+%Si llamamos $g$ al g\'{e}nero de esta curva,
+%
+%\begin{align*}
+% g & \,=\,1\,+\,\frac{\mu}{12}\,-\,\frac{\mu_{2}}{4}\,-\,\frac{\mu_{3}}{6}
+% \,-\,\frac{\mu_{\infty}}{2}\text{ ,}
+%\end{align*}
+%donde $\mu:=|\SL{2}(\bb{Z}):\Gamma_{C_{ns}^{+}(N)}|$, $\mu_{k}$ es la cantidad
+%de puntos el\'{\i}pticos de orden $k=2,3$ y $\mu_{\infty}$ es la cantidad de
+%c\'{u}spides.
+
+\end{subsection}
+
+\begin{subsection}{Puntos racionales e \'{\i}ntegros}\label{subsec:puntosRacionalesYEnteros}
+ En tanto $X_{ns}^{+}(N)$ tiene un modelo sobre $\bb{Q}$, podemos referirnos a sus
+ puntos racionales y a sus puntos enteros. Para $N=5$ o $N\geq 7$, los puntos
+ $\bb{Q}$-racionales de $X_{ns}^{+}(N)$ pertenecen a $Y_{ns}^{+}(N)$, es decir,
+ no est\'{a}n entre las c\'{u}spides \cite{baranNormalizers}. Recordemos que
+ existe un morfismo $X(N)\rightarrow X_{ns}^{+}(N)$ que nos permite ver
+ $X_{ns}^{+}(N)$ como un cociente de $X(N)$ y sus c\'{u}spides como \'{o}rbitas
+ por la acci\'{o}n de $C_{ns}^{+}(N)$ sobre las c\'{u}spides de $X(N)$. Si
+ $[E,\varphi]\in Y(N)(\overline{\bb{Q}})$ y $\sigma\in\absGal{\bb{Q}}$,
+ 
+ \begin{align*}
+  [E,\varphi]^{\sigma} & \,=\,[E^{\sigma},\varphi\circ\sigma]
+ \end{align*}
+determina una acci\'{o}n del grupo de Galois absoluto sobre los puntos
+$\overline{\bb{Q}}$-racionales en el abierto $Y(N)$. Adem\'{a}s, si $E$ es una
+curva el\'{\i}ptica definida sobre $\bb{Q}$, $\absGal{\bb{Q}}$ act\'{u}a sobre
+$E[N]$, dando lugar a una representaci\'{o}n
+
+ \begin{align*}
+  \rho_{N} & \,:\,\absGal{\bb{Q}}\rightarrow\rm{Aut}(E[N])
+  \,\simeq\,\GL{2}(\bb{Z}/N\bb{Z})\text{ ,}
+ \end{align*}
+donde $\rm{Aut}(E[N])$ se identifica con $\GL{2}(\bb{Z}/N\bb{Z})$ v\'{\i}a
+el isomorfismo $\varphi$ en el par $[E,\varphi]$.
+
+ Sea $[E,\varphi]\in Y(N)(\overline{\bb{Q}})$ y $\overline{[E,\varphi]}$ su
+ imagen en $Y_{ns}^{+}(N)(\overline{\bb{Q}})$. Este punto es la \'{o}rbita
+ de $[E,\varphi]$ por $C_{ns}^{+}(N)$:
+
+ \begin{align*}
+  \overline{[E,\varphi]} & \,=\,\left\lbrace
+  [E,\gamma\circ\varphi]\,:\,\gamma\in C_{ns}^{+}(N)\right\rbrace
+  \text{ .}
+ \end{align*}
+Y esta \'{o}rbita define un punto $\bb{Q}$-racional en $Y_{ns}^{+}(N)$, si,
+y s\'{o}lo si es estable por la acci\'{o}n de Galois: si para $\sigma$ en
+$\absGal{\bb{Q}}$ existe $\gamma_{\sigma}$ en $C_{ns}^{+}(N)$ tal que
+$[E^{\sigma},\varphi\circ\sigma]=[E,\gamma_{\sigma}\circ\varphi]$. Para $E$
+definida sobre $\bb{Q}$, esto equivale a que la imagen de Galois por la
+representaci\'{o}n $\rho_{N}$ est\'{e} contenida en el normalizador de un
+subgrupo de Cartan \textit{non-split}.
+
+ Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$, sea $\Cl(I)$ su
+ grupo de clases y sea $h(I)=\#\Cl(I)$. Sea $\rm{CM}(I)$ el conjunto de curvas
+ el\'{\i}pticas definidas sobre $\bb{C}$ con anillo de endomorfismos $I$,
+ salvo $\bb{C}$-isomorfismo, y sea $\psi:\,\Cl(I)\rightarrow\rm{CM}(I)$ la
+ biyecci\'{o}n dada por $M\mapsto\bb{C}/M$ sobre un $I$-ideal $M$ en $K$
+ \cite{cox}.
+%
+ Si $h(I)=1$, hay una \'{u}nica curva el\'{\i}ptica con CM por $I$, salvo
+ isomorfismo, y, en consecuencia, el orden $I$ determina un punto
+ $j(I)=j(E)\in X(1)$, donde $E$ es cualquier representante de $\rm{CM}(I)$.
+ Dado que $j(E^{\sigma})=j(E)^{\sigma}$ para $\sigma\in\rm{Aut}(\bb{C}/\bb{Q})$,
+ y que $E^{\sigma}$ tambi\'{e}n es CM con anillo de endomorfismos $I$,
+ $j(E)^{\sigma}=j(E)$, y $j(E)$ queda fijo por $\rm{Aut}(\bb{C}/\bb{Q})$. Al ser
+ racional, pertenece a $\bb{Z}$ (el $j$-invariante de una curva el\'{\i}ptica
+ con multiplicaci\'{o}n compleja es un entero algebraico).
+
+ Sea $K$ un cuerpo cuadr\'{a}tico imaginario con n\'{u}mero de clases $1$, y sea
+ $\cal{O}_{K}$ su anillo de enteros. Fijemos $E$ una curva el\'{\i}ptica definida
+ sobre $\bb{Q}$, con CM por $\cal{O}_{K}$ y con $j$-invariante
+ $j(E)=j(\cal{O}_{K})\in\bb{Z}$. Fijamos, tambi\'{e}n, un entero $N\geq1$ coprimo
+ con el discriminante de $\cal{O}_{K}$, y un isomorfismo
+ $\varphi:\,E[N]\rightarrow(\bb{Z}/N\bb{Z})^{2}$. Sea $\rho_{N}$ la
+ representaci\'{o}n de $\absGal{\bb{Q}}$ en $\GL{2}(\bb{Z}/N\bb{Z})$
+ correspondiente a $\varphi$, es decir, identificando $\GL{2}(\bb{Z}/N\bb{Z})$
+ con $\rm{Aut}(E[N])$ v\'{\i}a $\varphi$. Por restricci\'{o}n, contamos con un
+ morfismo de anillos
+ $f:\,\rm{End}(E)=\cal{O}_{K}\rightarrow\rm{End}(E[N])$ que se factoriza por
+ $N\cal{O}_{K}$,
+
+ \begin{align*}
+  f' & \,:\,A\,=\,\cal{O}_{K}/N\cal{O}_{K}\rightarrow\rm{End}(E[N])\text{ .}
+ \end{align*}
+V\'{\i}a $f'$ y $\varphi$, obtenemos el grupo de Cartan \textit{non-split}
+$f'(A^{\times})\subset\rm{Aut}(E[N])=\GL{2}(\bb{Z}/N\bb{Z})$. Llamemos
+$C_{ns}(N)$, $G$ y $C$ a los subgrupos de $\GL{2}(\bb{Z}/N\bb{Z})$
+$f'(A^{\times})$, $\rho_{N}(\absGal{\bb{Q}})$ y
+$\rho_{N}(\Gal(\overline{\bb{Q}}/K)$, respectivamente. Si $\tau\in\cal{O}_{K}$,
+$\sigma\in\absGal{\bb{Q}}$ y $w\in E[N]$, o bien $\tau=\tau^{\sigma}$, o bien
+$\tau\not =\tau^{\sigma}$. En el primer caso,
+$\tau\cdot w^{\sigma}=(\tau w)^{\sigma}$ y $\rho_{N}(\sigma)$ conmuta con
+$f'(\tau)$. En el segundo, $(\tau w^{\sigma})^{\sigma{-1}}=\tau^{\sigma^{-1}}w$
+y, como $\tau^{\sigma^{-1}}$ pertenece a $\cal{O}_{K}$ (la extensi\'{o}n
+$K/\bb{Q}$ es normal), $\rho_{N}(\sigma)$ pertenece al normalizador de
+$f'(A^{\times})$. En definitiva, $C\subset C_{ns}(N)$ y
+$G\subset C_{ns}^{+}(N)$.
+
+\begin{propoPuntosEnterosCuerpoQuad}\label{thm:propoPuntosEnterosCuerpoQuad}
+ Sea $K$ un cuerpo cuadr\'{a}tico imaginario y sea $N\geq 1$ un entero tal que
+ todo primo $p|N$ es inerte en $K$. Si el n\'{u}mero de clases de $K$ es igual 
+ a $1$, cualquier curva el\'{\i}ptica con CM por $K$ da lugar a un punto
+ $\overline{[E,\varphi]}\in Y_{ns}^{+}(N)(\overline{\bb{Q}})$, donde $E$ est\'{a}
+ definida sobre $\bb{Q}$ y la imagen de la representaci\'{o}n de Galois
+ asociada, $\rho_{N}$, est\'{a} contenida en $C_{ns}^{+}(N)$. En particular,
+ $\overline{[E,\varphi]}$ es un punto $\bb{Q}$-racional y $j(E)$ es \'{\i}ntegro.
+% Este punto es \'{u}nico.
+\end{propoPuntosEnterosCuerpoQuad}
+De un punto $\overline{[E,\varphi]}$ en $Y_{ns}^{+}(N)(\overline{\bb{Q}})$ tal que
+$\rho_{N}(\absGal{\bb{Q}})\subset C_{ns}^{+}(N)$ y $E$ definida sobre $\bb{Q}$
+(equivalentemente, $\bb{Q}$-racional), y tal que $j(E)\in\bb{Z}$, se dice que es
+un punto \'{\i}ntegro de $Y_{ns}^{+}(N)$ \cite{serre}.
+
+\end{subsection}

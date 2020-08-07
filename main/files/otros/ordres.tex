@@ -1,0 +1,313 @@
+
+Sea $K$ una extensi\'{o}n cuadr\'{a}tica de $\bb{Q}$. Llamamos
+\emph{ideales} de $K$ a los sub-$\bb{Z}$-m\'{o}dulos de $K$ finitamente
+generados $M\subset K$ tales que $M\otimes_{\bb{Z}}\bb{Q}=K$, es decir,
+que contienen una base de $K$ en tanto $\bb{Q}$-espacio vectorial.
+Esto es equivalente a definir los ideales de $K$ como los
+sub-$\bb{Z}$-m\'{o}dulos libres de rango $[K:\bb{Q}]=2$. Un
+\emph{orden} en $K$ es un ideal $I$ que es, adem\'{a}s, subanillo de
+$K$.
+Esta es la noci\'{o}n usual de orden en un cuerpo de n\'{u}meros.
+
+El concepto de ideal seg\'{u}n la definic\'{o}n anterior es, sin
+embargo, un poco distinta. Para ser precisos, llamaremos, dado un
+ideal $M\subset K$, de $K$, \emph{orden asociado a} $M$ u
+\emph{orden de} $M$ al orden $I$ del cuerpo que satisface
+
+\begin{align*}
+I & \,=\,\left\lbrace \beta\in K\,:\,\beta M\subset M \right\rbrace
+\text{ .}
+\end{align*}
+El conjunto del lado derecho es, efectivamente, un orden en $K$ al cual
+denotaremos por $I(M)$. Un ideal de $K$, $M$, se dice $I$-ideal, si
+$I(M)=I$ (esto no es lo mismo que un ideal de $I$, es decir, un
+sub-$I$-m\'{o}dulo de $I$).
+
+Existen \'{o}rdenes de un cuerpo cuadr\'{a}tico $K$, y todo orden
+est\'{a} contenido en un orden maximal (respecto de la inclusi\'{o}n).
+De hecho, puesto que $K$ es un cuerpo de n\'{u}meros, existe un
+\'{u}nico orden maximal, su anillo de enteros.
+Si $I=\cal{O}_{K}$ es el anillo de enteros de $K$, se tiene, en particular, que, si $M$ es un ideal de $I$
+(un sub-$I$-m\'{o}dulo de $I$), entonces $M$ es un $I$-ideal.
+Si $M$ es un $I$-ideal, entonces resulta un ideal fraccionario de $K$.
+Dado un orden en $K$, $I$, un sub-$I$-m\'{o}dulo de $K$ finitamente
+generado se llama \emph{ideal fraccionario} de $I$ en $K$.
+Diremos que un ideal fraccionario de $I$ (en este sentido) es
+\emph{propio}, si su orden coincide con $I$. Siempre se tiene
+la inclusi\'{o}n $I\subset I(\frak{a})$ para todo ideal
+(fraccionario) $\frak{a}$ de $I$. Para todo orden maximal, $I$, la
+noci\'{o}n de $I$-ideal y la de ideal fraccionario coinciden.
+En general, un $I$-ideal es un ideal fraccionario \emph{propio}.
+
+Sea $\alpha\in K$ un elemento no nulo de esta extensi\'{o}n
+cuadr\'{a}tica, y sea $I\subset K$ un orden arbitrario. El
+subconjunto $\alpha I$ de $K$ es un $I$-ideal. Y, si $\alpha^{-1}$ es
+su inverso, $(I\alpha^{-1})(\alpha I)=II=I$. En general, si $M$ es
+un ideal fraccionario de $I$, diremos que es \emph{invertible}, si
+existe alg\'{u}n ideal fraccionario de $I$, $M'$, tal que
+$MM'=I$. Se puede ver que, en una extensi\'{o}n cuadr\'{a}tica de
+$\bb{Q}$, un ideal fraccionario de un orden es propio, si, y s\'{o}lo
+si es invertible. Esto permite definir el an\'{a}logo al grupo de
+clases de un cuerpo de n\'{u}meros --el grupo de clases de ideales
+asociado a su anillo de enteros-- para otros \'{o}rdenes en $K$ no
+necesariamente maximales: el conjunto de ideales propios de un orden
+$I$ conforma un grupo, y el subconjunto de ideales principales
+(que son propios) es, en realidad, un subgrupo. El cociente entre
+ellos es lo que llamaremos grupo de clases de ideales de $I$. Lo
+denotaremos por $\Cl(I)$. Sea $\id(I)$ el \emph{grupo} de ideales
+fraccionarios propios de $I$ en $K$ (el producto de ideales determina
+una estructura de grupo gracias a la equivalencia entre las nociones
+de ideal propio y de ideal invertible), y sea $\rm{P}(I)$ el subgrupo
+de $I$-ideales principales. El grupo de clases de $I$ es
+$\Cl(I):=\id(I)/\rm{P}(I)$. En particular $\Cl(\cal{O}_{K})=\Cl(K)$.
+
+Fijemos un cuerpo cuadr\'{a}tico $K$ y un orden $I$ en $K$.
+Si $M$ es un ideal \'{\i}ntegro de $I$ (un ideal fraccionario
+contenido en $I$), entonces podemos considerar el cociente
+$I/M$. Al igual que en el caso particular en que $I$ es el
+anillo de enteros de $K$, este cociente es finito, y su cardinal
+es lo que llamaremos la \emph{norma} de $M$, y denotaremos $\nm(M)$.
+%Notemos que
+%toda clase en $\Cl(I)$ contiene un representante \'{\i}ntegro.
+
+Sea $d_{K}$ el discriminante de $K$, es decir, del orden $\cal{O}_{K}$.
+Como tanto $I$, como $\cal{O}_{K}$ son $\bb{Z}$-m\'{o}dulos libres
+de rango $2$, el \'{\i}ndice del primero en el segundo es finito, $f$,
+digamos. En particular, $f\cal{O}_{K}$ est\'{a} contenido en $I$.
+Sea $\{1,w\}$ una $\bb{Z}$-base de $\cal{O}_{K}$. El orden
+$\bb{Z}+f\cal{O}_{K}$, que tiene por base a $\{1,fw\}$,
+tambi\'{e}n est\'{a} contenido en $I$, y es $\bb{Z}$-libre de rango
+$2$. El \'{\i}ndice de $(1,fw)_{\bb{Z}}$
+(el $\bb{Z}$-m\'{o}dulo generado por $1$ y $fw$) en
+$\cal{O}_{K}=(1,w)_{\bb{Z}}$ es $f$, al igual que el de $I$ en
+$\cal{O}_{K}$, con lo cual $I=(1,fw)_{\bb{Z}}$.
+
+De esto se deduce, en particular, que el discriminante de $I$ es
+$f^{2}d_{K}$, manteniendo la notaci\'{o}n anterior. Y, adem\'{a}s,
+si $K=\bb{Q}[\sqrt{d_{K}}]$, entonces tambi\'{e}n
+$K=\bb{Q}[\sqrt{D}]$, donde $D=f^{2}d_{K}$. De hecho, el discriminante
+de $I$ lo determina (a $I$) un\'{\i}vocamente, y todo entero
+no cuadrado congruente a $1$ o $0$ \textit{modulo} $4$ aparece de esta
+manera.
+
+Veamos algunas propiedades de la norma de ideales:
+
+\begin{normaIdealesPropis}
+Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario. Es cierto
+entonces
+
+\begin{itemize}
+\item[(i)] que la norma del ideal principal $\alpha I$ coincide con la
+norma de $\alpha$, si $0\not =\alpha\in I$;
+\item[(ii)] que $\nm(MM')=\nm(M)\nm(M')$ para
+todo par de ideales $M,M'\subset I$ propios;
+\item[(iii)] que, si $M\subset I$ es un ideal propio, entonces
+$M\overline{M}=\nm(M)I$, donde $\overline{M}$
+es el ideal de $K$ generado por los conjugados de los elementos
+de $M$.
+\end{itemize}
+\end{normaIdealesPropis}
+
+\paragraph{Relaci\'{o}n con formas cuadr\'{a}ticas}
+Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$ de
+discriminante $D<0$, y sea $d_{K}$ el discriminante del cuerpo.
+Sea $f=ax^{2}+bxy+cy^{2}$ una forma cuadr\'{a}tica (primitiva y
+definida positiva) de discriminante $D$. Como $D$ es negativo, existe
+una \'{u}nica ra\'{\i}z $\tau$ del polinomio cuadr\'{a}tico $f(x,1)$
+perteneciente al semiplano complejo superior, $\frak{h}$. Porque $f$
+es definida positiva, $\tau$, en t\'{e}rminos del discriminante y de
+los coeficientes de $f$, es igual a $(-b+\sqrt{D})/2a$.
+
+Sea $f$ el conductor del orden $I$, de manera que $D=f^{2}d_{K}$, y sea
+$w_{K}\in K$ el elemento
+
+\begin{align*}
+w_{K} & \,:=\,\frac{d_{K}+\sqrt{d_{K}}}{2}
+\text{ .}
+\end{align*}
+Por un lado, $\cal{O}_{K}=(1,w_{K})_{\bb{Z}}$. Se puede ver que
+$(1,a\tau)_{\bb{Z}}=(1,fw_{K})_{\bb{Z}}=I$, con lo que
+$(a,a\tau)_{\bb{Z}}$ es un ideal propio de $I$ en $K$.
+
+Dadas dos formas $f$ y $g$, ellas son propiamente equivalentes,
+si, y s\'{o}lo si sus ra\'{\i}ces en $\frak{h}$, $\tau$ y $\tau'$,
+pertenecen a la misma \'{o}rbita en el semiplano por la acci\'{o}n de
+$\SL{2}(\bb{Z})$. Esto \'{u}ltimo es, a su vez, equivalente a que los
+ret\'{\i}culos $[1,\tau]$ y $[1,\tau']$ en $\bb{C}$ est\'{e}n
+relacionados por una homotecia definida sobre $K$: que exista $\lambda$
+en $K$ tal que
+
+\begin{align*}
+[1,\tau] & \,=\,\lambda [1,\tau']
+\text{ .}
+\end{align*}
+
+Todo esto muestra que, si $f$ es una forma cuadr\'{a}tica, cuya
+ra\'{\i}z asociada es $\tau$, la aplicaci\'{o}n
+$f\mapsto[a,a\tau]$ determina una aplicaci\'{o}n biyectiva
+del grupo de clases de formas de discriminante $D$ en el grupo de
+clases del orden $I$. (En principio, esta aplicaci\'{o}n es inyectiva,
+pero la sobreyectividad se sigue de que todo $I$-ideal est\'{a}
+generado, en tanto $\bb{Z}$-m\'{o}dulo, por dos elementos de $K$).
+Esta aplicaci\'{o}n resulta ser un morfismo de grupos, con lo que
+ambos son isomorfos.
+
+Usando las propiedades de la norma de ideales de un orden en un cuerpo
+cuadr\'{a}tico imaginario, podemos demostrar lo siguiente:
+
+\begin{propoRepEnterosNormaIdeal}
+Sea $f$ una forma cuadr\'{a}tica de discriminante $D$,
+y sea $I$ el orden de discriminante $D$.
+Sea $M$ un ideal en la clase correspondiente a la clase de $f$
+en el grupo $\Cl(I)$. Dado un entero $m>0$, el mismo est\'{a}
+representado por $f$, si, y s\'{o}lo si $m=\nm(M')$, para alg\'{u}n
+ideal $M'$ en la misma clase que $M$.
+\end{propoRepEnterosNormaIdeal}
+
+Si $f$ es una forma primitiva, entonces $f$ representa n\'{u}meros
+coprimos con $m$. Esto tiene como consecuencia el corolario
+siguiente:
+
+\begin{coroRepEnterosNormaIdeal}
+Sea $I$ un \'{o}rden en un cuerpo cuadr\'{a}tico imaginaro, y sea $m$
+un entero no nulo. Entonces toda clase en $\Cl(I)$ contiene un
+ideal propio de $I$ cuya norma es coprima con $m$.
+\end{coroRepEnterosNormaIdeal}
+
+En lo que resta de la secci\'{o}n mostramos la relaci\'{o}n entre los
+ideales de un orden en un cuerpo cuadr\'{a}tico imaginario, y los
+ideles del anillo de enteros del cuerpo correspondiente. Como
+consecuencia de esta relaci\'{o}n, se obtiene una f\'{o}rmula para
+el n\'{u}mero de clases del orden en t\'{e}rminos del conductor y del
+n\'{u}mero de clases del anillo de enteros.
+
+\paragraph{Los ideales de un orden}
+
+Sea $I$ un orden en un cuerpo cuadr\'{a}tico $K$, cuyo anillo de
+enteros denotamos por $\cal{O}_{K}$. Sea $f$ el conductor del orden
+$I$, es decir, el \'{\i}ndice de $I$ en $\cal{O}_{K}$. Si
+$M\subset I$ es un ideal, decimos que $M$ es coprimo
+con un entero $m$, si el $\bb{Z}$-m\'{o}dulo $M+mI$ es igual a
+$I$. La norma de un ideal como $M$ la definimos como el orden
+$\nm(M)$ del cociente $I/M$. En este $\bb{Z}$-m\'{o}dulo
+cociente consideramos la multiplicaci\'{o}n por el conductor de $I$.
+Como $I/M$ es finito, este endomorfismo es un iso, si, y
+s\'{o}lo es sobreyectivo, y esto es equivalente a que el ideal
+$M$ sea coprimo con el conductor de $I$. Por otro lado, por ser
+un grupo abeliano finito, multiplicar por $f$ es isomorfismo, si y
+s\'{o}lo si $f$ es coprimo con el orden de $I/M$. Por otra
+parte, si $b$ es un elemento del cuerpo $K$ tal que
+$bM\subsetM$, como el ideal es finitamente generado,
+en tanto $\bb{Z}$-m\'{o}dulo, $b$ satisface un polinomio m\'{o}nico
+con coeficientes enteros, es un entero en $K$. De esto y de que
+$f\cal{O}_{K}\subset I$, se deduce que $b$ pertenece a $I$. Esto
+implica que $M$ es un ideal propio de $I$, su orden asociado
+es igual a $I$, si $M$ es coprimo con el conductor $f$.
+
+Dado que la norma de ideales de $I$ es multiplicativa,
+$\nm(MM')=\nm(M)\nm(M')$, los ideales
+de $I$, coprimos con el conductor del orden forman un subconjunto
+del grupo de $I$-ideales de $K$ cerrado por multiplicaci\'{o}n.
+Generan un subgrupo $\id(I,f)$ de $\id(I)$ que contiene a
+$\rm{P}(I,f)$, el subgrupo de ideales principales de norma
+coprima con $f$. Se puede ver que existe un isomorfismo
+
+\begin{align*}
+\id(I,f)/\rm{P}(I,f) & \,\simeq\,\Cl(I)
+\text{ .}
+\end{align*}
+
+Esto se aplica, en particular, al caso en que $I=\cal{O}_{K}$.
+
+\begin{propoMaxOrd}
+Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$,
+de conductor $f$. Entonces, si $\frak{a}$ es un ideal de
+$\cal{O}_{K}$ coprimo con $f$, el conjunto $\frak{a}\cap I$ es un
+ideal en $I$ coprimo con $f$ y cuya norma coincide con la de
+$\frak{a}$. En la otra direcci\'{o}n, si $M$ es un ideal en
+$I$, entonces el ideal que $M$ genera en $\cal{O}_{K}$,
+$M\cal{O}_{K}$, es coprimo con $f$ y su norma es igual a la de
+$M$. Finalmente, $\frak{a}\mapsto\frak{a}\cap I$ da un
+isomorfismo
+
+\begin{align*}
+& \id(\cal{O}_{K},f)\xrightarrow{\sim}\id(I,f)
+\text{ ,}
+\end{align*}
+cuya inversa es $M\mapsto M\cal{O}_{K}$.
+\end{propoMaxOrd}
+
+Este resultado muestra, por un lado, que, si bien $I$ puede no
+ser dominio de Dedekind, sigue existiendo descomposici\'{o}n
+\'{u}nica en ideales primos (maximales) coprimos con $f$,
+para todo ideal de $I$ coprimo con $f$. Por otro lado, es posible
+describir el grupo de clases de $I$ en t\'{e}rminos del orden
+maximal $\cal{O}_{K}$: existe un isomorfismo
+
+\begin{align*}
+\Cl(I) & \,\simeq\,\id_{K}(f)/\rm{P}_{K,\bb{Z}}(f)
+\text{ ,}
+\end{align*}
+donde $\rm{P}_{K,\bb{Z}}(f)$ es el subgrupo de
+$\id_{K}(f):=\id(\cal{O}_{K},f)$ generado por los ideales principales
+$\alpha\cal{O}_{K}$, con $\alpha\in I$ y de norma coprima con $f$
+(equivalentemente, $\alpha\in\cal{O}_{K}$,
+
+\begin{align*}
+\alpha & \,\equiv\, a\,\rm{mod}f\cal{O}_{K}
+\text{ ,}
+\end{align*}
+para alg\'{u}n entero $a$ coprimo con $f$).
+
+\paragraph{El n\'{u}mero de clases de un orden}
+
+El n\'{u}mero de clases de orden en un cuerpo cuadr\'{a}tico imaginario
+se puede expresar en t\'{e}rminos del n\'{u}mero de clases del
+anillo de enteros del cuerpo y del conductor del orden.
+
+Sea $K$ un cuerpo cuadr\'{a}tico imaginario, y sea $d_{K}$ su discriminante.
+Definimos el s\'{\i}mbolo de Kronecker en $d_{K}$:
+
+\begin{align*}
+ \left(\frac{d_{K}}{2}\right) & \,:=\,
+ \begin{cases}
+  0 & \text{ si } 2|d_{K}\text{ ,}\\
+  1 & \text{ si } d_{K}\equiv 1\,(\mod\,8)\text{ ,}\\
+  -1 & \text{ si } d_{K}\equiv 5\,(\mod\,8)\text{ .}
+ \end{cases}
+\end{align*}
+Con $(d_{K}/p)$ indicamos el s\'{\i}mbolo de Legendre, si $p\not = 2$ es
+un primo, o el s\'{\i}mbolo de Kronecker, si $p$ es $2$.
+
+\begin{teoNumDeClassRel}
+ Sea $I$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$, y sean
+ $\cal{O}_{K}$ el anillo de enteros y $d_{K}$ el discriminante de $K$.
+ Sean $h(I)$ el cardinal de $\Cl(I)$ y $h(\cal{O}_{K})$ el de $\Cl(K)$.
+ Entonces, si $f=|\cal{O}_{K}:I|$,
+
+ \begin{align*}
+  h(I) & \,=\,h(\cal{O}_{K})\frac{f}{|\cal{O}_{K}^{\times}:I^{\times}|}
+  \prod_{p|f}\,\left( 1\,-\,\left( \frac{d_{K}}{p} \right)\frac{1}{p} \right)
+  \text{ ,}
+ \end{align*}
+donde $I^{\times}$ y $\cal{O}_{K}^{\times}$ son los grupos de unidades de los
+\'{o}rdenes $I$ y $\cal{O}_{K}$, y el n\'{u}mero que aparece multiplicando a
+$h(\cal{O}_{K})$ es un entero.
+\end{teoNumDeClassRel}
+
+Adem\'{a}s de esta f\'{o}rmula, contamos con una expresi\'{o}n para $h(\cal{O}_{K})$;
+
+\begin{align*}
+ h(\cal{O}_{K}) & \,=\,\sum_{n=1}^{|d_{K}|-1}\,\left(\frac{d_{K}}{n}\right)n
+ \text{ ,}
+\end{align*}
+donde, si $n$ se decompone como $\prod_{i}\,p_{i}$ en producto de primos,
+$(d_{K}/n)=\prod_{i}\,(d_{K}/p_{i})$.
+
+%\paragraph{Un poco de Teor\'{\i}a de cuerpos de clases}
+%
+%\input{classFieldsCox}
+%
+%\input{complexMultiplicationCox}
+
+

@@ -1,0 +1,208 @@
+
+Para poder sacar provecho de las curvas $X_{H}$ ser\'{a} \'{u}til obtener una
+parametrizaci\'{o}n de las mismas. Para conseguirlo es necesario considerar los
+morfismos $X_{H}\rightarrow X(1)$, y la informaci\'{o}n relativa a la
+ramificaci\'{o}n del cubrimiento, en tanto superficies de Riemann. Para los
+normalizadores de subgrupos de Cartan \textit{non-split} de nivel $N$, sabemos que
+el grado del morfismo es $N\phi(N)/2^{\omega}$, donde $\omega$ es la cantidad de
+primos distintos que dividen a $N$. Excepto sobre los puntos el\'{\i}pticos y las
+c\'{u}spides de $X(1)$, la fibra contiene dicha cantidad de puntos. En general, la
+suma de los \'{\i}ndices de ramificaci\'{o}n en cada una de las preim\'{a}genes de
+un punto es igual al grado del morfismo.
+
+Sea $\Gamma$ un subgrupo de $\SL{2}(\bb{Z})$ que contiene la matriz $-1$.
+Sea $\pi$ la proyecci\'{o}n
+$\Gamma\backs\frak{h}^{*}\rightarrow \SL{2}(\bb{Z})\backs\frak{h}^{*}$. Si
+$z\in\frak{h}^{*}$, denotamos con $\Gamma_{z}$ su estabilizador en $\Gamma$.
+Si $z$ es un punto el\'{\i}ptico para $\Gamma$, es decir, si $\Gamma_{z}$
+contiene propiamente a $\{\pm 1\}$, entonces $\Gamma_{z}$ es un grupo
+c\'{\i}clico finito (proposici\'{o}n 2.2.2 de \cite{diamondShurman}). Si
+$a$ pertenece a $\SL{2}(\bb{Z})\backs\frak{h}^{*}$, si $z\in\frak{h}^{*}$ es un
+punto arriba $a$ y $b\in\Gamma\backs\frak{h}^{*}$ es tal que $\pi(b)=a$, entonces
+el \'{\i}ndice de ramificaci\'{o}n $e_{b}$ de $\pi$ en $b$ es igual al
+\'{\i}ndice $|\SL{2}(\bb{Z})_{z}:\Gamma_{w}|$, donde $w\in\frak{h}^{*}$ es un
+punto arriba de $b$. Si, adem\'{a}s, $w=\sigma z$ para alg\'{u}n elemento
+$\sigma$ en $\SL{2}(\bb{Z})$, entonces $e_{b}$ tambi\'{e}n es igual a
+$|\SL{2}(\bb{Z})_{z}:\sigma^{-1}\Gamma\sigma\cap\Gamma_{z}|$.
+
+El estabilizador de un punto el\'{\i}ptico para $\SL{2}(\bb{Z})$ es de orden
+$4$ o $6$ (el orden del punto es, respectivamente, $2$ o $3$). \textit{Modulo}
+$\SL{2}(\bb{Z})$, el \'{u}nico punto el\'{\i}ptico de orden $2$ es $i$, y el
+\'{u}nico de orden $3$ es $\rho$. Si $\Gamma\subset\SL{2}(\bb{Z})$ y
+$\{\gamma_{j}\}_{j}$ es un conjunto (finito) de representantes de las coclases
+de $\Gamma$ en $\SL{2}(\bb{Z})$, entonces un punto el\'{\i}ptico para $\Gamma$
+tiene que ser de la forma $\Gamma\gamma_{j}\cdot i$ o $\Gamma\gamma_{j}\cdot\rho$
+para alg\'{u}n $j$. En definitiva, $e_{b}$ es igual a $2$ o a $1$, si $z$
+es el\'{\i}ptico de orden $2$, o bien igual a $3$ o a $1$, si $z$ es el\'{\i}ptico
+de orden $3$. Adem\'{a}s, si $b$ es un punto el\'{\i}ptico de
+$\Gamma\backs\frak{h}^{*}$ (si $w$ es un punto el\'{\i}ptico para $\Gamma$),
+$\Gamma_{w}\not =\{\pm 1\}$ implica $e_{b}=1$, es decir, si el orden del punto
+el\'{\i}ptico es mayor a $1$, entonces el \'{\i}ndice de ramificaci\'{o}n tiene
+que ser $1$.
+
+Describiremos, ahora, un sistema de representantes de las coclases de $\Gamma$ en
+$\SL{2}(\bb{Z})$ para grupos $\Gamma$ particulares. Sea $H=C_{ns}(N)$ o
+$H=C_{ns}^{+}(N)$ un grupo de Cartan \textit{non-split} de nivel $N$, o el
+normalizador de un grupo tal. Sea $H'=H\cap\SL{2}(\bb{Z}/N\bb{Z})$ y sea
+$\Gamma_{H}$ el subgrupo de $\SL{2}(\bb{Z})$ de matrices pertenecientes a $H'$
+al reducir coordenadas \textit{modulo} $N$. Esta reducci\'{o}n establece,
+adem\'{a}s, una biyecci\'{o}n entre las coclases de $\Gamma_{H}$ en
+$\SL{2}(\bb{Z})$ y las de $H'$ en $\SL{2}(\bb{Z}/N\bb{Z})$.
+
+Sea $I$ el orden en un cuerpo cuadr\'{a}tico imaginario con $\bb{Z}$-base
+$\{1,\tau\}$, donde $\tau$ es ra\'{\i}z de un polinomio de la forma
+$X^{2}-uX+v$, $u,v\in\bb{Z}$. Sea $A=I/NI$. Definimos una involuci\'{o}n en $A$
+por $1\mapsto 1$ y $\tau\mapsto u-\tau$, y denotamos por $\overline{y}$ el
+conjugado de un elemento $y\in A$. Definimos la \emph{norma} de un elemento $y$
+en $A$ como $\nu(y):=y\overline{y}$.
+
+Supongamos que $N=p^{r}$. El subgrupo $\nu(A^{\times})$ puede no ser
+todo $(\bb{Z}/p^{r}\bb{Z})^{\times}$, pero, para una unidad, $a$, en
+$\bb{Z}/p^{r}\bb{Z}$, existe $y_{a}\in A^{\times}$ tal que $\nu(y_{a})=\pm a$
+(c.f. la demostraci\'{o}n de que
+$\det:\,C_{ns}^{+}(N)\rightarrow(\bb{Z}/N\bb{Z})^{\times}$ es sobreyectivo).
+Para cada $\pm a\in(\bb{Z}/p^{r}\bb{Z})^{\times}/\{\pm 1\}$, elegimos $y_{\pm a}$
+de norma $a$ o $-a$, y definimos
+
+\begin{align*}
+ \cal{Y} & \,:=\,\left\lbrace y_{\pm a}
+ \,:\,\pm a\in(\bb{Z}/p^{r}\bb{Z})^{\times}/\{\pm 1\}\right\rbrace
+ \text{ .}
+\end{align*}
+
+\begin{lemaRepsCoclasesDelNormalizador}\label{thm:lemaRepsCoclasesDelNormalizador}
+ Sean $x\in\bb{Z}/p^{r}\bb{Z}$ e $y\in \cal{Y}$. Sea $\gamma_{x,y}$ la matriz que
+ representa la transformaci\'{o}n lineal determinada por $1\mapsto y^{-1}$ y
+ $\tau\mapsto\overline{y}(\tau+x)$. Entonces las matrices $\gamma_{x,y}$
+ constituyen un sistema de representantes de las coclases de
+ $C_{ns}^{+}(p^{r})'=C_{ns}^{+}(p^{r})\cap\SL{2}(\bb{Z}/p^{r}\bb{Z})$.
+\end{lemaRepsCoclasesDelNormalizador}
+
+\begin{proof}[Demostraci\'{o}n]
+ Ya hemos visto que el \'{\i}ndice de $C_{ns}^{+}(p^{r})'$ en
+ $\SL{2}(\bb{Z}/p^{r}\bb{Z})$ es igual al de $C_{ns}^{+}(p^{r})$ en
+ $\GL{2}(\bb{Z}/p^{r}\bb{Z})$, y que \'{e}ste es igual a $p^{r}\phi(p^{r})/2$.
+ Por otra parte, si llamamos $M_{y}$ al morfismo dado por multiplicaci\'{o}n por
+ un elemento $y\in A^{\times}$, los elementos de $C_{ns}^{+}(p^{r})$ son de la
+ forma $M_{y}$ para $y$ de norma $1$, o $\sigma_{p}\circ M_{y}$ --$\sigma_{p}$ es,
+ esencialmente, conjugaci\'{o}n compleja ($N$, en este caso, es divisible por un
+ \'{u}nico primo)-- para $y$ de norma $-1$. Ahora, si $\gamma_{x,y}$ y
+ $\gamma_{x',y'}$ son dos elementos de aquellos considerados en el enunciado, y
+ si los mismos pertenecen a la misma coclase de $C_{ns}^{+}(p^{r})'$ en
+ $\SL{2}(\bb{Z}/p^{r}\bb{Z})$, entonces existe $z$ tal que
+
+ \begin{align*}
+  \nu(z)=1 & \text{ y }\gamma_{x,y}=M_{z}\gamma_{x',y'}\text{ , o}\\
+  \nu(z)=-1 & \text{ y }\gamma_{x,y}=\sigma_{p}M_{z}\gamma_{x',y'}\text{ .}
+ \end{align*}
+Evaluando en $1\in A$, se deduce que $\nu(y)=\pm\nu(y')$ y que $y=y'$ por la
+definici\'{o}n del conjunto $\cal{Y}$. Evaluando en $\tau$, deducimos que $x$ y
+$x'$ han de ser iguales en $\bb{Z}/p^{r}\bb{Z}$. Los pares $(x,y)$ dan lugar a
+representantes de coclases distintas, pero, por cardinalidad, las coclases
+representadas han de ser todas.
+\end{proof}
+%
+%Si para cada $\pm a\in (\bb{Z}/p^{r})^{\times}/\{\pm 1\}$ tomamos
+%$y_{\pm a}\in A^{\times}$ de norma igual a $\pm a$, y consideramos el conjunto
+%$\cal{Y}=\{\sigma_{p}^{\epsilon}y_{\pm a}\,:\,
+%\pm a\in(\bb{Z}/p^{r})^{\times}/\{\pm 1\},\,\epsilon=0,1\}$, el mismo argumento
+%muestra que dos elementos de este conjunto no pueden pertenecer a la misma
+%coclase de $C_{ns}(p^{r})'$ en $\SL{2}(\bb{Z}/p^{r})$, a menos que sean iguales.
+%Dada la cardinalidad del conjunto, esta asociaci\'{o}n con transformaciones lineales
+%da como resultado un sistema de representantes de dichas coclases, pues sabemos
+%que las mismas son $p^{r}\phi(p^{r})$ en cantidad.
+
+El g\'{e}nero $g$ de una curva como $X_{ns}(N)$ o $X_{ns}^{+}(N)$, al igual que el
+g\'{e}nero de cualquier curva asociada a un subgrupo de congruencia, est\'{a}
+dado por
+
+\begin{align*}
+ g & \,=\, 1\,+\,\frac{\mu}{12}\,-\,\frac{\mu_{2}}{4}
+ \,-\,\frac{\mu_{3}}{3}\,-\,\frac{\mu_{\infty}}{2}\text{ .}
+\end{align*}
+El entero $\mu$ es el \'{\i}ndice del grupo en $\SL{2}(\bb{Z})$, los n\'{u}meros
+$\mu_{k}$ denotan la cantidad de puntos el\'{\i}pticos de orden $k$ en la curva y
+$\mu_{\infty}$ denota la cantidad de c\'{u}spides. Las cantidades $\mu_{2}$,
+$\mu_{3}$ y $\mu_{\infty}$ son multiplicativas en $N$ para las curvas
+$X_{ns}(N)$ y $X_{ns}^{+}(N)$, por lo que es suficiente considerar niveles
+$N=p^{r}$.
+
+Lo demostrado hasta ahora es suficiente para calcular la cantidad de c\'{u}spides
+en $X_{ns}^{+}(p^{r})$: el estabilizador de $\infty$ en $\SL{2}(\bb{Z})$ est\'{a}
+generado por la matriz
+\begin{math}\left[
+ \begin{smallmatrix}
+  1&1\\0&1
+ \end{smallmatrix}
+\right]
+\end{math}.
+Si $a\in\bb{Z}$ es tal que
+
+\begin{align*}
+ &
+ \begin{bmatrix}
+  1&a\\0&1
+ \end{bmatrix}
+ \,\in\,\gamma C_{ns}^{+}(p^{r})\gamma^{-1}
+\end{align*}
+donde $\gamma$ es alguno de los representantes del lema anterior, existe
+$\zeta\in C_{ns}^{+}(p^{r})$ tal que, en tanto endomorfismos de $A$,
+\begin{math}\gamma^{-1}\left[
+ \begin{smallmatrix}
+  1&1\\0&1
+ \end{smallmatrix}
+\right]=\zeta\gamma^{-1}
+\end{math}. Evaluando en la $(\bb{Z}/p^{r}\bb{Z})$-base de $A$, se deduce que
+$a$ tiene que ser divisible por $p^{r}$. En particular, el \'{\i}ndice de
+ramificaci\'{o}n de cualquier c\'{u}spide de $X_{ns}^{+}(p^{r})$ es igual a
+$p^{r}$. Como el grado de $X_{ns}^{+}(p^{r})\rightarrow X(1)$ es
+$p^{r}\phi(p^{r})/2$, la curva asociada al normalizador de un subgrupo de Cartan
+\textit{non-split} de $\GL{2}(\bb{Z}/p^{r}\bb{Z})$ tiene, precisamente,
+$\phi(p^{r})/2$ c\'{u}spides.
+
+En \cite{baranNormalizers} se encuentran resultados m\'{a}s completos. Por ejemplo,
+para terminar la descripci\'{o}n de $X_{ns}^{+}(p^{r})$ ($p\not =2$),
+la cantidad de puntos el\'{\i}pticos de orden $3$ es
+
+\begin{align*}
+ \mu_{3} & \,=\,\begin{cases}
+                 1  & \text{ si } p\equiv 2\,(\rm{mod}\,3)\text{,}\\
+                 0  & \text{ si no.}
+                \end{cases}
+\end{align*}
+La cantidad de puntos el\'{\i}pticos de orden $2$ es
+
+\begin{align*}
+ \mu_{2} & \,=\,\begin{cases}
+                 \frac{1}{2}p^{r}\left(1-\frac{1}{p}\right) &  \text{ si }
+                 p\equiv 1\,(\rm{mod}\,4)\text{ ,}\\
+                 1+\frac{1}{2}p^{r}\left(1+\frac{1}{p}\right) & \text{ si }
+                 p\equiv 3\,(\rm{mod}\,4)\text{ ,}\\
+                 2^{r-1} & \text{ si } p=2\text{ .}
+                \end{cases}
+\end{align*}
+
+%\begin{lemaCongruenciaDelNormalizador}
+% La cantidad $f(p^{r})$ de pares $x\in\bb{Z}/p^{r}\bb{Z}$ e $y\in \cal{Y}$ tales
+% que la ecuaci\'{o}n
+%
+% \begin{align*}
+%  \overline{y}(\tau+x) & \,=\,\overline{y}^{-1}k
+% \end{align*}
+%admite soluci\'{o}n con $k$ en $A^{\times}$ de norma $\nu(k)=-1$ es igual a
+%$p^{r-1}(p-1)/2$, a $p^{r-1}(p+1)/2$ o a $2^{r-1}$, si $p$ es, respectivamente,
+%congruente a $1$ o a $3$ \textit{modulo} $4$, o igual a $2$.
+%\end{lemaCongruenciaDelNormalizador}
+%
+%\begin{proof}[Demostraci\'{o}]
+% Si $x$, $y$ y $k$ son como en el enunciado y est\'{a}n relacionados por la
+% ecuaci\'{o}n $\overline{y}(\tau+x)=\overline{y}^{-1}k$, tomando norma,
+% $\nu(\tau+x)\equiv -\nu(\overline{y})^{-2}\,(\rm{mod}\,p^{r})$. Como
+% $\nu$ establece una biyecci\'{o}n entre los conjuntos $\cal{Y}$ y
+% $(\bb{Z}/p^{r}\bb{Z})^{\times}/\{\pm 1\}$, buscamos conocer la cantidad de
+% elementos $x$ pertenecientes a $\bb{Z}/p^{r}\bb{Z}$ y $a^{-1}$ en
+% $(\bb{Z}/p^{r}\bb{Z})^{\times}/\{\pm 1\}$ tales que
+% $\nu(\tau+x)=-a^{2}$. Si $h=(\tau+x)/a$, entonces $h$ es un elemento bien
+% definido en $A^{\times}/\{\pm 1\}$ y, adem\'{a}s, $\nu(h)\equiv -1\,(p^{r})$.
+%\end{proof}
+

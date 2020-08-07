@@ -1,0 +1,145 @@
+\begin{subsection}{Subgrupos de Cartan}
+Sea $E$ una curva el\'{\i}ptica con CM. Su anillo de endomorfismos es un orden
+$I=[1,\tau]$ en un cuerpo cuadr\'{a}tico imaginario. Si $N>1$ es un entero coprimo
+con el discriminante de $I$ y $p\in\bb{Z}$ es un primo divisor de $N$, entonces
+$p$ se parte o es inerte en $I$. Sea $A:=I/NI$. Este anillo es una
+$(\bb{Z}/N\bb{Z})$-\'{a}lgebra con base $\{1,\tau\}$, y, dependiendo de $p$, si se
+parte o no en $I$, el cociente $A/pA$ es isomorfo a $\bb{F}_{p}\times\bb{F}_{p}$
+o a $\bb{F}_{p^{2}}$, respectivamente.
+
+\begin{defSubgrupoDeCartan}
+Dada $A$ un \'{a}lgeba sobre $\bb{Z}/N\bb{Z}$, libre, conmutativa, de rango $2$ y
+tal que, si $p|N$, entonces $A/pA$ es isomorfo a $bb{F}_{p}\times\bb{F}_{p}$ o a
+$\bb{F}_{p^{2}}$, el grupo de unidades, $A^{\times}$, act\'{u}a sobre $A$ por
+multiplicaci\'{o}n. Elegir una base de $A$ sobre $\bb{Z}/N\bb{Z}$, equivale a
+establecer un morfismo
+
+\begin{align*}
+\iota & \,:\,A^{\times}\hookrightarrow\GL{2}(\bb{Z}/N\bb{Z})
+\end{align*}
+--elegir otra base resulta en un subgrupo conjugado a $\iota(A^{\times})$.
+Decimos que un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ es \emph{de Cartan}, si es de
+la forma $\iota(A^{\times})$ para alg\'{u}n \'{a}lgebra $A$ que cumpla con las
+condiciones especificadas. Con respecto a la \'{u}ltima de estas condiciones,
+tambi\'{e}n se dice que $A$ es \textit{\'{e}tale}. Si $A/pA\simeq\bb{F}_{p^{2}}$,
+se dice que $A$ es \textit{non-split} en $p$, y \textit{split} en el otro caso.
+Un subgrupo de Cartan se dice \textit{non-split}, si el \'{a}lgebra correspondiente
+lo es en todo primo que divide a $N$.
+
+\end{defSubgrupoDeCartan}
+
+\begin{ejemploSubgrupoDeCartan}
+Si $I$ es un orden en un cuerpo cuadr\'{a}tico imaginario, $A=I/NI$ y
+$(N,\rm{disc}(I))=1$, entonces $A$ es \textit{non-split} y, fijando una base,
+$\iota(A^{\times})\subset\GL{2}(\bb{Z}/N\bb{Z})$ es un subgrupo de Cartan
+\textit{non-split}. Denotamos con $C_{ns}(N)$ al subgrupo $\iota(A^{\times})$.
+
+Si $N=p$ es  primo, $|A^{\times}|=|\bb{F}_{p^{2}}^{\times}|=p^{2}-1$.
+Si $N=p^{r}$, $r\geq 1$, todo elemento de $(I/pI)^{\times}$ se levanta a una
+unidad en $I/p^{r}I$, y cada elemento tiene $p^{2(r-1)}$ preim\'{a}genes;
+entonces
+
+\begin{align*}
+|(I/p^{r}I)^{\times}| & \,=\, p^{2(r-1)}(p^{2}-1)\text{ .}
+\end{align*}
+Para $N>1$ entero coprimo con $\rm{disc}(I)$, el orden $|A^{\times}|$ es igual a
+$|(I/NI)^{\times}|=N^{2}\prod_{p|N}\,(1-(1/p^{2}))$. Este es el orden del grupo de
+Cartan \textit{non-split} $C_{ns}(N)$.
+%
+%\begin{align*}
+%a+b\tau\in(I/pI)^{\times}\Rightarrow\exists c,d
+%\,|\,(a+b\tau)(-c+d\tau)\equiv 1\,(pI)
+%a,b,c,d<p
+%-ac-v=1+kp & \text{ tomar } c=c+sp\text{ para que } -ac-v\equiv 1\,(p^{r})\\
+%ad-bc+u=k'p\text{ tomar } d=d+s'p\text{ para que } ad-bc+u\equiv 0\,(p^{r})
+%\end{align*}
+%cada $a+b\tau$ se levanta a $I/p^{r}$ de $p^{2(r-1)}$ maneras.
+
+\end{ejemploSubgrupoDeCartan}
+
+\end{subsection}
+
+\begin{subsection}{El normalizador de $C_{ns}(N)$ en $\GL{2}(\bb{Z}/N\bb{Z})$%
+			y la curva modular asociada}
+Sean $I=[1,\tau]$ un orden en un cuerpo cuadr\'{a}tico imaginario $K$ tal que
+$(N,\rm{disc}(I))=1$ y $A=I/NI$. Sea $C_{ns}(N)=\iota(A^{\times})$. Si $\tau$
+satisface el polinomio $X^{2}-uX+v\in\bb{Z}[X]$, definimos una involuci\'{o}n
+en $\tau$ por $\overline{\cdot}:\,\tau\mapsto(u-\tau)$, y
+$\sigma_{p}:\,A\rightarrow A$ como el \'{u}nico automorfismo en $A=I/NI$ que
+coincide con esta involuci\'{o}n en $I/p^{r(p)}I$ y con la identidad en
+$I/\frac{N}{p^{r}}I$. La misma elecci\'{o}n de base que determina la
+inclusi\'{o}n $\iota$ determina una matriz $S_{p}\in\GL{2}(\bb{Z}/N\bb{Z})$
+que representa a $\sigma_{p}$.
+
+Sea $N=p^{r}$, $p\in\bb{Z}$ un primo y $r\geq 1$. Podemos identificar $C_{ns}(N)$
+con el grupo $A^{\times}$ de unidades de $A=I/p^{r}I$. Si $\alpha$ es un elemento
+de $A$, tiene una matriz asociada, en $\MM{2}(\bb{Z})$:
+\begin{math}
+ \gamma(\alpha):=
+ \left[\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right]
+\end{math},
+determinada por
+
+\begin{align*}
+ \alpha\cdot\begin{bmatrix} 1\\ \tau \end{bmatrix} & \,=\,
+ \begin{bmatrix} \alpha\\ \alpha\tau \end{bmatrix} \,=\,
+ \begin{bmatrix} a+b\tau\\ c+d\tau \end{bmatrix} \,=\,
+ \begin{bmatrix} a&b\\c&d \end{bmatrix}
+ \begin{bmatrix} 1\\ \tau \end{bmatrix}\text{ .}
+\end{align*}
+Si $\tau^{2}-u\tau+v=0$, con $u$ y $v$ en $\bb{Z}$, la matriz de $\tau$ es
+\begin{math}
+ \gamma(\tau):=
+ \left[\begin{smallmatrix}0&1\\-v&u\end{smallmatrix}\right]
+\end{math}.
+Como $A$ es \textit{non-split}, $A/pA\simeq\bb{F}_{p^{2}}$. Pero $\tau\not\in pA$,
+%$#\bb{F}_{p^{2}}=p^{2}$. Si $\tau\in pA$, $A/pA$ est\'{a} generado por $1$
+%y $\tau$ sobre $\bb{Z}/p\bb{Z}$ implica cardinalidad menor.
+con lo que $\tau$ es una unidad en $I/pI$, es decir que la matriz $\gamma(\tau)$
+es una unidad en $\MM{2}(\bb{Z}/p\bb{Z})$. Entonces, $v=\det(\gamma(\tau))$
+es una unidad en $\bb{Z}/p\bb{Z}$. En particular, $p$ no divide a $v$, y
+$\det(\gamma(\tau))\in(\bb{Z}/p^{r}\bb{Z})^{\times}$. En otras palabras,
+$\tau$ es una unidad en $A$.
+
+Si ahora tomamos $\kappa\in\GL{2}(\bb{Z}/p^{r}\bb{Z})$ tal que
+$\kappa C_{ns}(p^{r})=C_{ns}(p^{r})\kappa$, $\kappa$ induce un automorfismo de
+$A^{\times}$ por conugaci\'{o}n: si $\alpha\in A^{\times}$, definimos
+$t_{\kappa}(\alpha)$ como la primera coordenada de
+
+\begin{align*}
+ & \kappa\gamma(\alpha)\kappa^{-1}\cdot\begin{bmatrix}1\\ \tau\end{bmatrix}
+ \text{ .}
+\end{align*}
+Si $n\in\bb{Z}$ es coprimo con $p$, $n\cdot 1_{A}\in A^{\times}$ y
+$\gamma(n1_{A})$ es la matriz diagonal
+\begin{math}
+\left[\begin{smallmatrix} n&0\\0&n\end{smallmatrix}\right]
+\end{math}.
+As\'{\i}, $t_{\kappa}(n1_{A})=n1_{A}$. Extendemos $t_{\kappa}$ a un endomorfismo
+de la $(\bb{Z}/p^{r}\bb{Z})$-\'{a}lgebra $A$. En particular,
+$t_{\kappa}(\tau)\in A$ tiene que ser un cero de $f=X^{2}-uX+v$. Las soluciones
+$\tau$ y $u-\tau$ de $f$ son distintas en $I/pI\simeq\bb{F}_{p^{2}}$ y
+$f'(\tau)=\tau-(u-\tau)\not =0$, entonces,
+si $\alpha\in I$ es soluci\'{o}n de $f$ \textit{modulo} $p^{r'}I$ para alg\'{u}n
+$r'$, por el argumento del lema de Hensel, se levanta a \'{u}nica soluci\'{o}n
+\textit{modulo} $p^{r'+1}I$. Entonces $t_{\kappa}(\tau)=\tau$ o $u-\tau$, con lo
+que el automorfismo $t_{\kappa}$ de $A$ es, o bien, $\sigma_{p}$, o bien la
+identidad. En t\'{e}rminos de matrices, o bien $\kappa z\kappa^{-1}=z$, o bien
+$\kappa z\kappa^{-1}=S_{p}zS_{p}$ ($S_{p}$ tiene orden $2$). O bien $\kappa$,
+o bien $S_{p}\kappa$, pertenece al centralizador de $C_{ns}(p^{r})$. Pero el
+centralizador de $C_{ns}(p^{r})$ es el mismo grupo. As\'{\i}
+$\kappa$ pertenece a $C_{ns}(p^{r})$, o a $S_{p}C_{ns}(p^{r})$, es decir que el
+normalizador de $C_{ns}(p^{r})$ es el subgrupo de $\GL{2}(\bb{Z}/p^{r}\bb{Z})$
+generado por $C_{ns}(p^{r})$ y por $S_{p}$. En general, para $N>1$,
+%por el teorema chino del resto,
+el normalizador de $C_{ns}(N)$ es $\langle C_{ns}(N),\{S_{p}\,:\,p|N\} \rangle$.
+Lo denotamos $C_{ns}^{+}(N)$. Su orden es
+
+\begin{align*}
+N^{2}2^{\omega}\prod_{p|N}\,\left(1-\frac{1}{p^{2}}\right) &
+\,=\,|A^{\times}|2^{\omega}\text{ ,}
+\end{align*}
+donde $\omega$ es la cantidad de primos distintos que dividen a $N$.
+
+
+\end{subsection}

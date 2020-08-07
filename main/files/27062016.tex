@@ -1,0 +1,128 @@
+\begin{subsection}{Nivel $7$}
+Sea $F/\bb{Q}$ la extensi\'{o}n c\'{u}bica totalmente real generada por
+$\zeta_{7}+\zeta_{7}^{-1}$, donde $\zeta_{7}=e^{2\pi i/7}$ es una ra\'{\i}z
+s\'{e}ptima primitiva de la unidad en $\bb{C}$. Una unidad $\varepsilon$ de
+$F$ se dir\'{a} \emph{excepcional}, si existe otra unidad $\varepsilon_{1}$
+tal que $\varepsilon+\varepsilon_{1}=1$. Kenku [[kenku]] muestra la
+existencia de una correspondencia entre los puntos de $X_{ns}^{+}(7)$,
+\'{\i}ntegros sobre $\bb{Z}[1/7]$ y cierto subconjunto de las unidades
+excepcionales de la extensi\'{o}n totalmente real $F/\bb{Q}$. Un punto es
+\'{\i}ntegro sobre $\bb{Z}[1/7]$, si es $\bb{Q}$-racional y su
+$j$-invariante
+%(el de la curva el\'{\i}ptica asociada a cualquier
+%representante de la clase del punto)
+pertenece a $\bb{Z}[1/7]$.
+
+La curva $X_{ns}^{+}(7)$ tiene $\phi(7)/2=3$ c\'{u}spides que, en el peor de
+los casos, son $\bb{Q}(\zeta_{7})$-racionales%
+%(Basta con considerar $X(7)$ o $X'(7)$)%
+. Pero $\absGal{\bb{Q}}$ permuta las c\'{u}spides, con lo que quedan
+definidas sobre $F=\bb{Q}(\zeta_{7}+\zeta_{7}^{-1})$.
+Sea $\sigma(z)=1-\frac{1}{z}$ el automorfismo de $\bb{P}^{1}$ que permuta
+c\'{\i}clicamente los puntos $\infty$, $1$ y $0$. Este automorfismo es de
+orden tres. La curva $X_{ns}^{+}(7)$ est\'{a} definida sobre $\bb{Q}$,
+tiene g\'{e}nero cero y cuenta con tres puntos $F$-racionales$ que
+corresponden a las c\'{u}spides. Si $s\in\Gal(F,\bb{Q})$ es el automorfismo
+de $F$ que act'\'{u}a como $\sigma$ sobre las c\'{u}spides, existe un
+uniformizador ($K$-isomorfismo, en este caso)
+
+\begin{align*}
+ f & \,:\,X_{ns}^{+}(7)\rightarrow\bb{P}^{1}
+\end{align*}
+que hace corresponder las c\'{u}spides con $\infty$, $1$ y $0$, y tal que
+$f^{s}=1-\frac{1}{f}$.
+
+Sea $m\in\bb{Z}$ un entero, y sea $Q_{m}$ el polinomio
+
+\begin{align*}
+Q_{m}(X) & \,=\,X^{3}\,-\,mX^{2}\,+\,(m-3)X\,+\,1
+\text{ .}
+\end{align*}
+Existen exactamente $24$ unidades excepcionales en $F$ que son ceros de
+$Q_{m}$ para alg\'{u}n entero $m$%
+%(ver [[kenku]] para las referencias y los detalles)%
+. La relaci\'{o}n con los puntos $\bb{Q}$-racionales con $j$-invariante
+en $\bb{Z}[1/7]$ est\'{a} dada por el siguiente lema. La demostraci\'{o}n
+se puede hallar en [[kenku]].
+
+\begin{lemaUnoKenku}
+Sea $\overline{[E,\varphi]}\in X_{ns}^{+}(7)$ un punto $\bb{Q}$-racional
+tal que $j(E)\in\bb{Z}[1/7]$. Si $\varepsilon:=f(\overline{[E,\varphi]})$,
+entonces $\varepsilon$ es una unidad de $F$ y
+$s(\varepsilon)=1-\varepsilon^{-1}$. Adem\'{a}s, resulta ser una
+unidad excepcional que es cero de alg\'{u}n polinomio $Q_{m}$.
+
+Rec\'{\i}procamente, si $\varepsilon\in F$ satisface
+$s(\varepsilon)=1-\varepsilon^{-1}$, cumple con ser una unidad excepcional
+y cero de $Q_{m}$ para alg\'{u}n entero $m$, entonces corresponde v\'{\i}a
+$f:\,X_{ns}^{+}(7)\rightarrow\bb{P}^{1}$ a un punto $\bb{Q}$-racional con
+$j$-invariante en $\bb{Z}[1/7]$.
+
+\end{lemaUnoKenku}
+
+Resta encontrar una parametrizaci\'{o}n para $X_{ns}^{+}(7)$.
+Recordemos que existe un morfismo $\pi:\,X_{ns}^{+}(7)\rightarrow X(1)$
+de grado $7\phi(7)/2=21$. Supongamos que existe una curva $Z$ y una
+factorizaci\'{o}n de $\pi$ como en el diagrama siguiente
+
+\begin{align*}
+& X_{ns}^{+}(7)\xrightarrow{\Phi_{3}}
+Z\xrightarrow{\Phi_{7}} X(1)\text{ ,}
+\end{align*}
+con $\Phi_{3}$ de grado $3$ y $\Phi_{7}$ de grado $7$. Supongamos,
+adem\'{a}s, que contamos con un uniformizador $z:\,Z\rightarrow\bb{P}^{1}$
+tal que los \'{u}nicos puntos de $X_{ns}^{+}(7)$ en los cuales $z$ toma el
+valor $\infty$ son aquellos en los que $f$ toma los valores $\infty$, $1$
+y $0$ (es decir, las c\'{u}spides), y supongamos que hay un \'{u}nico
+punto, en $X_{ns}^{+}(7)$, arriba de $z=0$ (y que, por ende, ramifica con
+orden $3$). La relaci\'{o}n entre los uniformizadores $z$ y $f$ es
+
+\begin{align*}
+z &\,=\,\frac{a(f-b)^{3}}{f(f-1)}\text{ ,}
+\end{align*}
+para ciertas constantes $a$ y $b$ en $\bb{Q}(\zeta_{7})$.
+
+La curva $X_{ns}^{+}(7)$ se obtiene como cociente de $X'(7)$ a partir del
+subgrupo de automorfismos determinado por el subgrupo
+
+\begin{align*}
+C_{ns}^{+}(7)'/\{\pm 1\} & \,\subset\,\rm{PSL}_{2}(\bb{Z}/7\bb{Z})
+\,=\,\SL{2}(\bb{Z}/7\bb{Z})/\{\pm 1\}
+\text{ ,}
+\end{align*}
+donde $C_{ns}^{+}(7)'$ es $C_{ns}^{+}(7)\cap\SL{2}(\bb{Z}/7\bb{Z})$.
+Sea $S\subset\rm{PSL}_{2}(\bb{Z}/7\bb{Z})$ un subgrupo isomorfo al
+grupo de permutaciones de curatro elementos, $\bb{S}_{4}$.
+Conjugando, podemos asumir que $S$ contiene a $C_{ns}^{+}(7)'/\{\pm 1\}$.
+Sea $\widetilde{S}$ su preimagen por la proyecci\'{o}n
+$\GL{2}(\bb{Z}/7\bb{Z})\rightarrow\rm{PGL}_{2}(\bb{Z}/7\bb{Z})$.
+La acci\'{o}n de $\GL{2}(\bb{Z}/7\bb{Z})$ sobre las ra\'{\i}ces de la unidad
+estaba dada por el determinante (ver [[ARRIBA, REFERENCIA, UNA DEMO]]).
+Como $S$ est\'{a} contenido en $\rm{PSL}_{2}(\bb{Z}/7\bb{Z})$, si
+$\kappa\in\widetilde{S}$, su determinante es un cuadrado \textit{modulo}
+$7$, es decir, $1$, $2$ o $4$. Por otra parte, si
+
+\begin{align*}
+w & \,=\,2\zeta_{7}^{4}\,+\,2\zeta_{7}^{2}\,+\,2\zeta_{7}\,+\,1\text{ ,}
+\end{align*}
+entonces $w^{2}=-7$. En particular, $w$ queda fijo por $\widetilde{S}$,
+mientras que $\zeta_{7}$ no. De esto se deduce que
+$\bb{Q}(j,\{f_{0}^{\pm\overline{v}}\})\^{S}\cap\bb{Q}(\zeta_{7})$
+es igual a $\bb{Q}(\sqrt{-7})$, y que existe una curva correspondiente al
+grupo $S$ que da una factorizaci\'{o}n de $X_{ns}^{+}(7)\rightarrow X(1)$
+y que cuenta con las propiedades de la curva $Z$ de antes. [[kenku]]
+[[ligozat]]
+
+Sea $Z$ esta curva, y sea $z:\,Z\rightarrow\bb{P}^{1}$
+un uniformizador tal que su relaci\'{o}n con $j$ sea
+
+\begin{align*}
+j & \,=\,z(z^{2}+7\lambda z+7\lambda -21)^{3}\text{ .}
+\end{align*}
+Usando el m\'{e}todo expuesto en [[ligozat, ch. 2]], se pueden hallar los
+valores de $a$ y de $b$, y obtener la siguiente tabla:
+
+
+
+
+\end{subsection}

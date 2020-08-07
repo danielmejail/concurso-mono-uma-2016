@@ -1,0 +1,63 @@
+Sea $P=(x,y)$ un punto de $C$, y sea $k\in\bb{Z}$ tal que
+$k=x/(xy-11)$. Entonces $t(P)=y-(11/x)$ es igual a $1/k$. Si $k$ es
+mayor que $20$, exite un \'{u}nico punto $Q\in C$, correspondiente a
+una de las c\'{u}spides de $X_{ns}^{+}(11)$ y un intervalo $I$ contenido
+en $U:=\{\widetilde{P}\in C(\bb{R})\,:\,t(\widetilde{P})<1/20\}$
+tal que $P,Q\in I$ [[schoof, tzanakis, lema 2.1]]. Si $\omega$ es el
+diferencial invariante de $C$, entonces $\omega=dx/F_{y}=-dy/F_{x}$.
+Si $f$ es una funci\'{o}n en la curva, su diferencial, $df$, es igual a
+
+\begin{align*}
+df & \,=\,f_{x}dx\,+\,f_{y}dy\,=\,
+\left(f_{x}F_{y}\,-\,f_{y}F_{x}\right)\,\omega\text{ .}
+\end{align*}
+Denotaremos con $g$ al t\'{e}rmino entre par\'{e}ntesis.
+Como $P$ y $Q$ pertenecen al intervalo $I$, podemos considerar
+que $\int_{Q}^{P}\,\omega$ es la integral de $Q$ a $P$ por
+un camino contenido en $I$. En $I$, el valor de $|g|$ se puede
+acotar por $1$, y as\'{\i}
+
+\begin{align*}
+\left|\int_{Q}^{P}\,\omega\right| & \,=\,
+\left|\int_{0}^{t(P)}\,\frac{dt}{g}\right|\,\leq|t(P)|
+\text{ .}
+\end{align*}
+Entonces, para alg\'{u}n entero $m$, tenemos la cota
+$|\lambda(P)-\lambda(Q)+m\Omega|\leq|t(P)|$. Por otra parte, como
+$Q$ corresponde a una c\'{u}spide, $\lambda(Q)=(m'/11)\Omega$
+para alg\'{u}n entero $m'$ (ver [[schoof, tzanakis, lema 3.1]]), y,
+al ser $1/t(P)$ un entero, la altura logar\'{\i}tmica $h_{t}(P)$ del
+punto $P$ es igual a $-\rm{log}|t(P)|$. En definitiva, la siguiente cota
+es v\'{a}lida para cualquier punto $P$ tal que $1/t(P)$ sea un entero
+mayor que $20$.
+
+\begin{align*}
+\left| n\frac{\Omega}{11}\,-\,\lambda(P) \right| &
+\,<\,\rm{exp}(13,56-3\widehat{h}(P))\text{ .}
+\end{align*}
+
+El grupo $C(\bb{Q})$ es c\'{\i}clico infinito, generado por
+$P_{0}=(0,0)$. Si $P$ es un punto como los considerados en el
+p\'{a}rrafo anterior, $P=[m]P_{0}$. De esta igualdad se obtiene una
+cota superior sobre la forma lineal $n\Omega-m\lambda(11P_{0})$. Por
+otro lado, por el hecho de que $P_{0}$ no es un punto de torsi\'{o}n
+de la curva, se puede obtener una cota inferior.
+Si $|m|\geq 12$, se deduce que $|m|$ debe estar acotado por una
+constante $A$. En principio, la cota dada por $A$ no es suficiente,
+pero, se puede deducir que
+$|n\Omega-m\lambda(11P_{0})|\leq 0,4\Omega/|m|$. En particular,
+
+\begin{align*}
+\left| \frac{n}{m}\,-\,\frac{\lambda(11P_{0})}{\Omega} \right|
+&\,<\,\frac{1}{2m^{2}}\text{ .}
+\end{align*}
+Calculando los valores de $\lambda(11P_{0})$ y de $\Omega$ con
+precisi\'{o}n suficiente, se verifica que cualquier aproximaici\'{o}n
+$p_{k}/q_{k}$ por fracciones continuas del cociente
+$\lambda(11P_{0})/\Omega$, o bien no satisface $q_{k}<A$, o bien no
+satisface la cota superior sobre
+$|p_{k}\Omega-q_{k}\lambda(11P_{0})|$.
+Se deduce que el entero $|m|$ tiene que ser menor a $12$. Luego
+se verifica que los \'{u}nicos puntos $P=(x,y)=mP_{0}$ tales que
+$x/(xy-11)$ es un n\'{u}mero entero son aquellos para los que
+$m$ es igual a $-2$, $-1$, $0$, $1$, $2$, $3$ o $4$.

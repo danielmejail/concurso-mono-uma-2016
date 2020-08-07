@@ -1,0 +1,159 @@
+%\documentclass[a4paper,12pt,notitlepage]{report}
+\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+%\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{fullpage}
+\usepackage{mathrsfs}
+
+%\usepackage{makeidx}
+\usepackage{import}
+%\usepackage{theoremref}
+%\usepackage{hyperref}
+%\usepackage{fancyref}
+
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{verbatim}
+\usetikzlibrary{%
+  matrix,%
+  calc%
+}
+
+\title{El teorema de Stark-Heegner v\'{\i}a curvas modulares %
+	asociadas a subgrupos de Cartan \textit{non-split} %
+	de $\GL{2}(\bb{Z}/N\bb{Z})$}
+\author{Daniel Mejail}
+\date{26/09/2016}
+
+\pdfinfo{%
+  /Title    ()
+  /Author   ()
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+%elements of style
+\usepackage{sectsty}
+%\usepackage{titlesec}
+%
+\pagestyle{plain}
+\allsectionsfont{\rmfamily \mdseries \scshape \centering}
+%changing names
+\renewcommand{\refname}{Bibliograf\'{\i}a}
+%{\rmfamily \mdseries \scshape \centering Bibliograf\'{\i}a}
+%this is not needed since we're using the ``\allsectionsfont''
+%command
+
+%commands and theorems
+\input{./comms/comms.tex}
+\input{./thms/thms.tex}
+
+\begin{document}
+\maketitle
+\begin{section}{Introducci\'{o}n}\label{sec:intro}
+ \input{./files/intro.tex}
+
+ \begin{subsection}{El teorema de Stark-Heegner %
+			y su relaci\'{o}n con formas %
+			cuadr\'{a}ticas}\label{subsec:losNueve}
+ \input{./files/losNueveCuerpos.tex}%introducci\'{o}n, algo de [[serre]]
+ \end{subsection}
+\end{section}
+
+\begin{section}{Generalidades}%{\mdseries \scshape Generalidades}
+ \label{sec:generalidades}
+ \input{./files/generalidades.tex}
+
+ \begin{subsection}{Parametrizaciones}\label{subsec:params}
+  \input{./files/paramsChen.tex}
+ \end{subsection}
+
+ \begin{subsection}{Ramificaci\'{o}n}\label{subsec:ram}
+  \input{./files/ramBaran.tex}
+ \end{subsection}
+\end{section}
+ 
+\begin{section}{Soluciones al problema del n\'{u}mero de %
+		clases igual a $1$}\label{sec:soluciones}
+ \begin{subsection}{Nivel $24$}\label{subsec:nivelVeinticuatro}
+  \input{./files/nivel24.tex}
+ \end{subsection}
+
+ \begin{subsection}{Nivel $7$}\label{subsec:nivelSiete}
+  \input{./files/nivel7.tex}
+ \end{subsection}
+
+ \begin{subsection}{Nivel $5$ (o $15$)}\label{subsec:nivelCinco}
+  \input{./files/nivel5.tex}
+ \end{subsection}
+
+ \begin{subsection}{Nivel $9$}\label{subsec:nivelNueve}
+  \input{./files/nivel9.tex}
+ \end{subsection}
+
+ \begin{subsection}{Nivel $11$}\label{subsec:nivelOnce}
+  \input{./files/nivel11.tex}
+ \end{subsection}
+\end{section}
+
+\begin{thebibliography}{99}
+
+ \bibitem{baranLevelNine} B. Baran. \emph{A Modular Curve of Level
+ $9$ and the Class Number One Problem}. Journal of Number Theory,
+ 129 (2009), 715-728.
+
+ \bibitem{baranNormalizers} B. Baran. \emph{Normalizers of
+ Non-split Cartan Subgroups, Modular Curves, and the Class Number
+ One Problem}. Journal of Number Theory, 130 (2010), 2753-2772.
+
+ \bibitem{baranAnExceptionalIso} B. Baran. \emph{An Exceptional
+ Isomorphism Between Modular Curves of Level $13$}. Journal of Number
+ Theory, 145 (2014), 273-300.
+
+ \bibitem{booher} J. Booher. \emph{Modular Curves and the Class
+ Number One Problem}.
+
+ \bibitem{chenLevelFive} I. Chen. \emph{On Siegel's Modular Curve
+ of Level $5$ and the Class Number One Problem}. Journal of
+ Number Theory, 74 (1999), 278-297.
+
+ \bibitem{cox} D. A. Cox. \emph{Primes of the Form $x^{2}+ny^{2}$:
+ Fermat, Class Field Theory, and Complex Multiplication}. Wiley, 1989.
+
+ \bibitem{deligneRapoport} P. Deligne, M. Rapoport. \emph{Les sch\'{e}mas
+ de modules de courbes elliptiques}. Antwerp, 1972.
+
+ \bibitem{diamondShurman} F. Diamond, J. Shurman. \emph{A
+ First Course in Modular Forms}. Springer-Verlag New York, 2005.
+
+ \bibitem{kenkuLevelSeven} M. A. Kenku. \emph{A Note on the Integral
+ Points of a Modular Curve of Level $7$}. Mathematika, 32 (1985),
+ 45-48.
+
+ \bibitem{ligozat} G. Ligozat. \emph{Courbes modulaires de niveau $11$}.
+ En J.-P. Serre, D. Zagier, eds. \emph{Modular Functions of One Variable},
+ vol. V. Springer-Verlag New York, 1977.
+
+ \bibitem{schoofTzanakisLevelEleven} R. Schoof, N. Tzanakis.
+ \emph{Integral Points of a Modular Curve of Level $11$}. Acta
+ Arithmetica, 152 (2012), 39-49.
+
+ \bibitem{stroekerTzanakis} R. J. Stroeker, N. Tzanakis.
+ \emph{Solving Elliptic Diophantine Equations by Estimating Linear Forms
+ in Elliptic Logarithms}. Acta Arithmetica, 67 (1994), 177-196.
+
+ \bibitem{serre} J.-P. Serre. \emph{Lectures on the
+ Mordell-Weil Theorem}. $3^{a}$ ed. Vieweg+Teubner Verlag, 1997.
+
+\end{thebibliography}
+\end{document}

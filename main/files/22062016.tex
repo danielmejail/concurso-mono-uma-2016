@@ -1,0 +1,285 @@
+
+
+La proposici\'{o}n que ahora enunciamos, y el argumento que le sigue, se pueden
+encontrar en [[Serre, appendix]].
+
+\begin{propoEquivsNumClasUno}
+Sea $p>3$ un primo congruente a $3$ \textit{modulo} $4$. Las siguientes propiedades
+son equivalentes:
+
+\begin{itemize}
+\item[i)] $h(-p)=1$;
+\item[ii)] $\left( \frac{l}{p} \right)=-1$ para todo primo $l<p/4$;
+\item[ii)'] $\left( \frac{l}{p} \right)=-1$ para todo primo $l<\sqrt{p/3}$;
+\item[iii)] (si $p>7$) $p\equiv 3\,(8)$ y $R-N=3$, si $R$ (respectivamente, $N$)
+es el n\'{u}mero de residuos (no residuos) cuadr\'{a}ticos \textit{modulo} $p$ en
+$[1,(p-1)/2]$;
+\item[iv)] si $x\in[\![ 0,(p-7)/4 ]\!]$, $P_{p}(x)=x^{2}+x+(p+1)/4$ es primo;
+\item[iv)'] si $x\in[0,1/2(\sqrt{p/3}-1)]$, $P_{p}(x)$ es primo.
+\end{itemize}
+\end{propoEquivsNumClasUno}
+
+\begin{proof}
+El anillo de enteros de $\bb{Q}(\sqrt{-p})$ es $\bb{Z}[w]$, donde
+$w=\frac{1+\sqrt{-p}}{2}$; un primo $l$ es inerte en $\bb{Q}(\sqrt{-p})/\bb{Q}$,
+si, y s\'{o}lo si $(l/p)=-1$ (ver [[Cox]]). Dicho de otra manera, si $h(-p)=1$,
+la condici\'{o}n $(l/p)=-1$ implica que $l$ es una norma: existe
+$\alpha\in\bb{Z}[w]$, $\alpha=x+yw$, tal que $\Nm(\alpha)=l$. Pero $\Nm(\alpha)$
+es igual a $(x+\frac{y}{2})^{2}+(\frac{y}{2})^{2}p$. As\'{\i}, $l$ es primo,
+$y\not =0$ y $\Nm(\alpha)\geq p/4$. Rec\'{\i}procamente, asumamos que $(ii)'$ se
+cumple. Entonces, si $\frak{l}\subset\bb{Z}[w]$ es un ideal primo, y vale
+$\Nm(\frak{l})<\sqrt{p/3}$, dado $l$ primo que divide a $\Nm(\frak{l})$, es
+$l<\sqrt{p/3}$. En particular, $(l/p)=-1$, por hip\'{o}tesis, y $\frak{l}=(l)$ es
+un ideal principal. Todo ideal de norma menor que $\sqrt{p/3}$ es, entonces,
+principal. Pero toda clase en $\Cl(\bb{Z}[w])$ contiene un elemento con esta
+propiedad.
+
+El resto de la demostraci\'{o}n (excepto las equivalencias con (iii)) es,
+tambi\'{e}n, elemental.
+\end{proof}
+
+Sea $p\equiv 3\,(\rm{mod}\,4)$ un primo, $3<p<75$, y sea $m=(p+1)/4$. En este caso,
+por (iv)', $h(-p)=1$ es equivalente a que $m$ y $m+2$ sean primos. Esto \'{u}ltimo
+es cierto para $m$ en el conjunto $\{3,5,11,17\}$. El primo $p$ es un de
+$11$, $19$, $43$ o $67$.
+
+Sea $\Lambda=\omega_{1}\bb{Z}\oplus\omega_{2}\bb{Z}$ un ret\'{\i}culo en $\bb{C}$,
+generado por $\omega_{1}$ y $\omega_{2}$ tales que
+$\omega_{1}/\omega_{2}\in\frak{h}$. Los puntos de $N$-torsi\'{o}n de
+$\bb{C}/\Lambda$ conforman el grupo
+\begin{math}
+\langle(\omega_{1}/N)+\Lambda\rangle\times
+\langle(\omega_{2}/N)+\Lambda\rangle
+\end{math}
+isomorfo a $(\bb{Z}/N\bb{Z})^{2}$. Sea $\mu_{N}$ el grupo de ra\'{\i}ces
+$N$-\'{e}simas de la unidad en $\bb{C}$, $\mu_{N}=\langle e^{2\pi i/N}\rangle$.
+Dados $P$ y $Q$ en $\bb{C}/\Lambda$ de $N$-torsi\'{o}n, existe
+$\gamma\in\MM{2}(\bb{Z}/N\bb{Z})$ tal que
+
+\begin{align*}
+\begin{bmatrix}
+P\\Q
+\end{bmatrix} & \,=\,\gamma
+\begin{bmatrix}
+(\omega_{1}/N)+\Lambda\\(\omega_{2}/N)+\Lambda
+\end{bmatrix}\text{ .}
+\end{align*}
+Definimos $e_{N}(P,Q):=e^{2\pi i\det(\gamma)/N}$, el \textit{pairing} de Weil en
+$P$ y $Q$. Esto define, v\'{\i}a la correspondencia con curvas el\'{\i}pticas
+definidas sobre $\bb{C}$, una aplicaci\'{o}n,
+$E[N]\times E[N]\rightarrow\mu_{N}$, en pares de puntos de $N$-torsi\'{o}n de una
+curva el\'{\i}ptica $E$.
+
+Sean $E$ y $E'$ dos curvas complejas, y sean $(P,Q)$ y $(P',Q')$ pares de puntos de
+orden $N$ en $E$ y en $E'$, respectivamente, tales que
+$e_{N}(P,Q)=e_{N}(P',Q')=e^{2\pi i/N}=\zeta_{N}$. La dupla $E$, junto con $(P,Q)$
+se dice relacionada con $E'$, con $(P',Q')$, si existe un isomorfismo
+$E\xrightarrow{\sim}E'$ (definido sobre $\bb{C}$) tal que $P\mapsto P'$ y
+$Q\mapsto Q'$. \'{E}sta es una relaci\'{o}n de equivalencia, y denotamos $S'(N)$
+al conjunto que resulta de tomar las clses de equivalencia correspondientes en
+
+\begin{align*}
+& \left\lbrace (E,(P,Q))\,:\,E\text{ curva el\'{\i}ptica sobre }\bb{C},
+e_{N}(P,Q)=\zeta_{N}\right\rbrace\text{ ,}
+\end{align*}
+y con $[E,(P,Q)]$ a la clase de $(E,(P,Q))$.
+
+Sea, ahora, $\Gamma(N)$ el subgrupo principal de congruencia de nivel $N$, el
+n\'{u}cleo del morfismo sobreyectivo
+$\SL{2}(\bb{Z})\rightarrow\SL{2}(\bb{Z}/N\bb{Z})$ dado por reducir coordenadas
+\textit{modulo} $N$. Sean $Y'(N)$ la superficie de Riemann
+$\Gamma(N)\backs\frak{h}$, y $X'(N)=\Gamma(N)\backs\frak{h}^{*}$ su
+compactificaci\'{o}n agregando las c\'{u}spides correspondientes a $\Gamma(N)$
+[[Diamond, Shurman]]. El conjunto $S'(N)$ est\'{a} dado por
+
+\begin{align*}
+& \left\lbrace [\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]\,:\,\tau\in\frak{h} \right\rbrace
+\text{ ,}
+\end{align*}
+y dos puntos $[\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]$ y $[\bb{C}/\Lambda_{\tau'},\,
+(\tau'/N+\Lambda_{\tau'},1/N+\Lambda_{\tau'})]$ son iguales, si, y s\'{o}lo si
+$\Gamma(N)\tau=\Gamma(N)\tau'$. La aplicaci\'{o}n $[\bb{C}/\Lambda_{\tau},\,
+(\tau/N+\Lambda_{\tau},1/N+\Lambda_{\tau})]\mapsto\Gamma(N)\tau$ da una
+biyecci\'{o}n entre $S'(N)$ y la curva $Y'(N)$. Es decir, $X'(N)$ parametriza
+(clases de equivalencia de) curvas el\'{\i}pticas junto con un par de generadores
+de la $N$-torsi\'{o}n y con un \textit{pairing} particular.
+
+Las curvas en las que fijaremos nestra atenci\'{o}n ser\'{a}n ciertos cocientes
+de las curvas $X'(N)$. Sea $E/\bb{C}$ una curva el\'{\i}ptica, y sea $E[N]$ su
+subgrupo de $N$-torsi\'{o}n. Fijar un isomorfismo
+$\varphi:\,E[N]\xrightarrow{\sim}(\bb{Z}/N\bb{Z})^{2}$ equivale a dar una base de
+$E[N]$, es decir, dos puntos $P$ y $Q$ de $E$ que generen $E[N]$. En este sentido,
+la informaci\'{o}n relativa a la torsi\'{o}n que brinda un par $(E,\varphi)$ es
+menos espec\'{\i}fica que la contenida en los pares $(E,(P,Q))$. Dados dos pares
+$(E,\varphi)$ y $(E',\varphi')$, los mismos son equivalentes, si existe un
+isomorfismo $E\xrightarrow{\sim}E'$ tal que $\varphi\mapsto\varphi'$, es decir,
+si $\{P,Q\}$ es la base de $E[N]$ y $\{P',Q'\}$ la de $E'[N]$, $P\mapsto P'$ y
+$Q\mapsto Q'$. La relaci\'{o}n es la misma; simplemente estamos permiti\'{e}ndonos
+ver otros puntos que antes, en $X'(N)$, no consideramos. \'{E}sta es una
+relaci\'{o}n de equivalencia, y denotamos $S(N)$ al conjunto de clases de pares
+$(E,\varphi)$ (denotadas $[E,\varphi]$) por dicha relaci\'{o}n.
+
+Sea $E/\bb{C}$ una curva el\'{\i}ptica, y sea
+$\varphi:\,E[N]\rightarrow(\bb{Z}/N\bb{Z})^{2}$ una estructura de nivel. Sea
+$e_{N}:\,E[N]\times E[N]\rightarrow\mu_{N}$ una forma alternada, no degenerada,
+el \textit{pairing} de Weil, sea $\zeta_{N}:=e^{2\pi i/N}$ y $\zeta(\varphi)$ la
+ra\'{\i}z de la unidad
+
+\begin{align*}
+\zeta(\varphi) & \,:=\,e_{N}\left(
+\varphi^{-1}\left(\begin{bmatrix}1\\0\end{bmatrix}\right),\,
+\varphi^{-1}\left(\begin{bmatrix}0\\1\end{bmatrix}\right)\right)
+\text{ .}
+\end{align*}
+
+El par $(E,\varphi)$ es equivalente a uno de la forma
+$(\bb{C}/\Lambda,\,(\tau/N+\Lambda_{\tau},1/N+\Lambda))$, $\tau\in\frak{h}$, si,
+y s\'{o}lo si $\zeta(\varphi)=\zeta_{N}$.
+
+En general, la forma alternada $e_{N}$ determina una funci\'{o}n
+$S(N)\rightarrow\mu_{N}$. Haciendo de \'{e}sta una funci\'{o}n continua, vemos
+que se puede obtener una superficie de Riemann compacta $X(N)$ a partir de $S(N)$,
+y, como $e_{N}(aP+bQ,cP+dQ)=e_{N}(P,Q)^{\det(\gamma)}$, para
+\begin{math}\gamma=
+\left[\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right]\in\GL{2}(\bb{Z}/N\bb{Z})
+\end{math}, la curva $X(N)$ es disconexa.
+M\'{a}s precisamente, es la uni\'{o}n disjunta de $\phi(N)$ componentes. Cada una
+de estas componentes es una copia de $X'(N)$ y est\'{a}n en correspondencia con
+las ra\'{\i}ces primitivas $N$-\'{e}simas de $1$: si $\zeta_{N}^{k}$ es una de
+ellas, la componente correspondiente es la que contiene las clases $[E,\varphi]$
+con $\zeta(\varphi)=\zeta_{N}^{k}$. [[Booher, sec. 7]] [[Deligne, Rapoport]].
+Para ser m\'{a}s claros, el grupo $\GL{2}(\bb{Z}/N\bb{Z})$ act\'{u}a sobre los
+puntos no cuspidales de la curva compactificada $X(N)$. Esta acci\'{o}n est\'{a}
+determinada por $(E,\phi)\mapsto(E,\gamma\circ\varphi)$.
+
+Sea $H$ un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ tal que
+$\det(H)=(\bb{Z}/N\bb{Z})^{\times}$. A trav\'{e}s del determinante,
+$\GL{2}(\bb{Z}/N\bb{Z})$ permuta las componentes de la curva $X(N)$. Como la
+imagen de $H$ por $\det(\cdot)$ es todo $(\bb{Z}/N\bb{Z})^{\times}$, el cociente
+$H\backs X(N)$ es conexo. En el caso en que $H$ es igual a todo el grupo general
+lineal, obtenemos $X(1)=\SL{2}(\bb{Z})\backs\frak{h}^{*}$.
+
+Dado un subgrupo arbitrario $H$ de $\GL{2}(\bb{Z}/N\bb{Z})$, llamamos $H'$ a la
+intersecci\'{o}n $H\cap\SL{2}(\bb{Z}/N\bb{Z})$, y $\Gamma_{H}$ a la preimagen de
+$H'$ por $\SL{2}(\bb{Z})\rightarrow\SL{2}(\bb{Z}/N\bb{Z})$. Notando que
+$\Gamma_{H}$ es un subgrupo de congruencia (de nivel $N$), definimos
+
+\begin{align*}
+X_{H} & \,:=\,\Gamma_{H}\backs\frak{h}^{*}\text{ .}
+\end{align*}
+Esta curva se identifica con el cociente $H'\backs X'(N)$, y tambi\'{e}n con
+$H\backs X(N)$, si $\det(H)=(\bb{Z}/N\bb{Z})^{\times}$. En otras palabras, $X_{H}$
+es el cociente de $X'(N)$ por la acci\'{o}n del subgrupo de automorfismos
+determinado por $H'$.
+%En particular, $H'$ act\'{u}a sobre el conjunto de c\'{u}spides de $X'(N)$,
+%de manera que las c\'{u}spides de $X_{H}$ se identifican con las \'{o}rbitas
+%de  esta acci\'{o}n.
+
+Necesitaremos saber en qu\'{e} casos estas curvas est\'{a}n definidas sobre
+$\bb{Q}$.
+
+\begin{propoDefinidasSobreQ}
+Sea $H$ un subgrupo de $\GL{2}(\bb{Z}/N\bb{Z})$ tal que su imagen por el
+determinante cubra $(\bb{Z}/N\bb{Z})^{\times}$. Entonces $X_{H}=H\backs X(N)$ es
+una variedad algebraica conexa definida sobre $\bb{Q}$.
+\end{propoDefinidasSobreQ}
+El enunciado de esta proposici\'{o}n, como su demostraci\'{o}n se pueden encontrar
+en [[Booher, thm. 43]].
+
+\begin{proof}
+Primero se definen ciertas funciones modulares para el grupo $\Gamma(N)$
+[[Diamond, Shurman]]: sea $v=(c_{v},d_{v})$ un par donde $c_{v}$ y $d_{v}$ son
+enteros y sus reducciones no son ambas divisibles por $N$, es decir,
+$\overline{v}(\overline{c_{v}},\overline{d_{v}})\not =0$ en $(\bb{Z}/N\bb{Z})^{2}$.
+Dado $(\bb{C}/\Lambda,(P,Q))$ con $e_{N}(P.Q)=\zeta_{N}$, definimos
+
+\begin{align*}
+F_{0}^{\overline{v}}(\bb{C}/\Lambda,(P,Q)) & \,=\,
+\frac{g_{2}(\Lambda)}{g_{3}(\Lambda)\wp_{\Lambda}(c_{v}P+d_{v}Q)\text{ ,}
+\end{align*}
+donde $g_{2}$ y $g_{3}$ son las funciones que se obtienen de las series de
+Eisenstein $G_{4}$ y $G_{6}$, y $\wp_{\Lambda}$ es la funci\'{o}n de
+Weierstra{\ss} del ret\'{\i}culo $\Lambda$. De manera equivalente, si
+$\tau\in\frak{h}$, podemos definir
+
+\begin{align*}
+f_{0}^{\overline{v}}(\tau) & \,=\,
+\frac{g_{2}(\tau)}{g_{3}(\tau)}\wp_{\tau}(\frac{c_{v}\tau+d_{v}}{N})
+\text{ ,}
+\end{align*}
+y
+\begin{math}
+f_{0}^{\overline{v}}(\tau)=
+F_{0}^{\overline{v}}(\bb{C}/\Lambda_{\tau},(\tau/N,1/N))
+\end{math}.
+Las funciones $F_{0}^{\overline{v}}$ no dependen de la clase de
+$(\bb{C}/\Lambda,(P,Q))$, y las funciones $f_{0}^{\overline{v}}$ no dependen de
+la \'{o}rbita $\Gamma(N)\tau\subset\frak{h}$. Se veifica que \'{e}stas son
+funciones invariantes por $\Gamma(N)$ y meromorfas, tanto en $\frak{h}$, como en
+las c\'{u}spides de $\Gamma(N)$. Es decir, son funciones meromorfas en $X'(N)$.
+
+Sea $\bb{C}(X'(N))$ el cuerpo de funciones meromorfas en $X'(N)$, y sea
+
+\begin{align*}
+\theta & \,:\,\SL{2}(\bb{Z})\rightarrow\rm{Aut}(\bb{C}(X'(N)))\,|\\
+ & \gamma\mapsto(
+\theta(\gamma):\,f\mapsto f^{\theta(\gamma)}=f\circ\gamma)\text{ .}
+\end{align*}
+Esta aplicaci\'{o}n es un morfismo de grupos, y $\ker(\theta)$ contiene a
+$\widetilde{\Gamma}(N):=\{\pm\}\Gamma(N)$. Notemos, por otra parte, que dos
+funciones $f_{0}^{\overline{u}}$ y $f_{0}^{\overline{v}}$ son iguales, si, y
+s\'{o}lo si $\overline{u}=\pm\overline{v}$, pues $\wp_{\tau}(z)=\wp_{\tau}(z')$,
+si, y s\'{o}lo si $z+\Lambda_{\tau}=\pm z'+\Lambda_{\tau}$. Adem\'{a}s,
+\begin{math}
+(f_{0}^{\overline{v}})^{\theta(\gamma)}=
+f_{0}^{\overline{v}}\circ\gamma=f_{0}^{\overline{v\gamma}}$
+\end{math},
+con lo que, como $f_{0}^{\overline{v}}\in\bb{C}(X'(N))$, el n\'{u}cleo
+$\ker(\theta)$ est\'{a} contenido en $\widetilde{\Gamma}(N)$.
+
+Ahora, $\theta(\SL{2}(\bb{Z}))$ es un subgrupo del grupo de automorfismos del
+cuerpo $\bb{C}(X'(N))$, y su cuerpo fijo es $\bb{C}(X(1))=\bb{C}(j)$. En
+definitiva, la extensi\'{o}n $\bb{C}(X'(N))/\bb{C}(X(1))$ es galoisiana con
+grupo de Galois
+
+\begin{align*}
+\theta(\SL{2}(\bb{Z}))& \,\simeq\,\SL{2}(\bb{Z})/\widetilde{\Gamma}(N)
+\,\simeq\,\SL{2}(\bb{Z}/N\bb{Z})/\{\pm 1\}\text{ .}
+\end{align*}
+El mismo argumento que los \'{u}nicos elementos de $\SL{2}(\bb{Z})$ que act\'{u}an
+trivialmente sobre
+\begin{math}
+\bb{C}(j,\{f_{0}^{\pm\overline{v}}\,:\,
+\pm\overline{v}\in((\bb{Z}/N\bb{Z})^{2}\smallsetminus\{(0,0)\})/\{\pm 1\}\})
+\end{math}
+son los pertenecientes a $\widetilde{\Gamma}(N)$. Lo mismo es cierto para el
+cuerpo $\bb{C}(j,f_{0}^{\pm\overline{(0,1)}},f_{0}^{\pm\overline{(1,0)}})$, que
+coincide, entonces, con $\bb{C}(X'(N))$.
+
+El siguiente paso consiste en demostrar que la extensi\'{o}n
+$\bb{Q}(\mu_{N},j,\{f_{0}^{\pm\overline{v}}\})/\bb{Q}(j)$ tambi\'{e}n es Galois y
+que su grupo se identifica con $\GL{2}(\bb{Z}/N\bb{Z})/\{\pm 1\}$.
+
+Finalmente, si $H\subset\GL{2}(\bb{Z}/N\bb{Z})$ es un subgrupo que satisface
+$\det(H)=(\bb{Z}/N\bb{Z})^{\times}$, definimos los cuerpos
+
+\begin{align*}
+K_{1} & \,=\,\bb{Q}(\mu_{N},j,\{f_{0}^{\pm\overline{v}}\})^{\Gamma_{H}}\\
+K_{2} & \,=\,\bb{C}(j,\{f_{0}^{\pm\overline{v}}\})^{H'/\{\pm 1\}}\text{ .}
+\end{align*}
+Un poco de Teor\'{\i}a de Galois muestra que
+$K_{1}=\bb{Q}(j,\{f_{0}^{\pm\overline{v}}\})^{H'/\{\pm 1\}}$ y que
+$K_{1}\cap\overline{\bb{Q}}=\bb{Q}$, correspondi\'{e}ndose con una curva
+poryectiva, no singular, y esta curva est\'{a} definida sobre $\bb{Q}$.
+Con respecto a $K_{2}$, este cuerpo tiene que ser el cuerpo de funciones del
+cociente $H'\backs X'(N)$, ya que, para $f\in\bb{C}(X'(N))$,
+$f^{\theta(\gamma)}=f\circ\gamma$. Ahora bien, el cuerpo de funciones de la
+curva definida sobre los n\'{u}meros complejos que se obtiene a partir de las
+ecuaciones que definen la curva correspondiente al cuerpo funcional $K_{1}$,
+coincide con $K_{2}$. Es decir, $H\backs X(N)$ es isomorfa sobre $\bb{C}$ a una
+curva definida sobre $\bb{Q}$. Usaremos la misma notaci\'{o}n para referirnos
+tanto a $H\backs X(N)$ como a su modelo sobre $\bb{Q}$.
+
+\end{proof}

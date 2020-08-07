@@ -1,0 +1,91 @@
+
+\paragraph{}
+El objectivo de esta monograf\'{\i}a es repasar algunas de las soluciones al
+problema del n\'{u}mero de clases igual a $1$%
+% para cuerpos de n\'{u}meros cuadr\'{a}ticos imaginarios%
+, con un inter\'{e}s particular en una interpretaci\'{o}n modular. Concretamente,
+nos interesar\'{a} entender la relaci\'{o}n entre \'{o}rdenes en cuerpos
+cuadr\'{a}ticos imaginarios y puntos enteros en las curvas modulares asociadas a
+subgrupos de Cartan \textit{non-split} de $\GL{2}(\bb{Z}/N\bb{Z})$ y sus
+normalizadores. Esta relaci\'{o}n aparece mencionada en \cite{serre}, y, a lo largo
+de los \'{u}ltimos cuarenta a\~{n}os han ido aparenciendo soluciones al problema
+basadas en un estudio de estas curvas.
+
+Comenzamos este trabajo enunciando el teorema de Stark-Heegner y,
+siguiendo \cite{serre}, verificamos parte del enunciado. A continuaci\'{o}n,
+en la secci\'{o}n \ref{sec:generalidades},
+describimos, en mayor o menor detalle, algunas de las
+propiedades de los objetos de inter\'{e}s: definimos los subgrupos de Cartan
+\textit{non-split} y los objetos modulares correspondientes. Si $\Gamma(N)$ es
+un subgrupo principal de congruencia de nivel $N$, dado un subgrupo
+$H$ de $\GL{2}(\bb{Z}/N\bb{Z})$, podemos asociarle una superficie de Riemann
+como cociente del semiplano complejo superior, $X_{H}$, y un cociente de una curva,
+$H\backs X(N)$, donde $X(N)$ es, esencialmente, una uni\'{o}n disjunta de copias
+de $\Gamma(N)\backs\frak{h}^{*}$.
+%Estos objetos se
+%identifican con cocientes de ciertas curvas (disconexas) emparentadas con
+%$\Gamma(N)\backs\frak{h}^{*}$, el cociente (su compactificaci\'{o}n) del
+%semiplano complejo superior por un subgrupo principal de congruencia.
+%
+%Bajo ciertas condiciones sobre el subgrupo $H$ podemos identificar ambos.
+%Para terminar, analizamos algunas de las demostraciones del teorema que
+%utilizan de manera esencial estos objetos%
+% -informaci\'{o}n sobre sus c\'{u}spides, puntos el\'{\i}pticos, ramificaci\'{o}n%
+Para terminar, en la secci\'{o}n \ref{sec:soluciones}, resumimos diversas
+demostraciones del teorema de Stark-Heegner cuyo punto de contacto es la
+interpretaci\'{o}n modular del problema.
+
+\paragraph{}
+Si llamamos $X(1)$ a la superficie de Riemann $\SL{2}(\bb{Z})\backs\frak{h}^{*}$,
+se puede ver que existen morfismos naturales $X_{H}\rightarrow X(1)$. Si la
+curva $X_{H}$ est\'{a} definida sobre $\bb{Q}$, dicho morfismo tambi\'{e}n
+es un $\bb{Q}$-morfismo, y resulta ser relativamente sencillo, directo,
+determinar si un punto de $X_{H}$ es \emph{\'{\i}ntegro} en funci\'{o}n de
+propiedades que pueda tener su imagen en $X(1)$.
+
+Existen distintas maneras de determinar los puntos enteros sobre las curvas
+$X_{H}$; cada uno de ellos indica una conexi\'{o}n con un objeto distinto. En
+\cite{kenkuLevelSeven}, se obtiene una parametrizaci\'{o}n de
+la curva $X_{ns}^{+}(7)$ (ver m\'{a}s adelante secci\'{o}n \ref{sec:generalidades})
+por medio de la relaci\'{o}n con formas de Klein, de acuerdo con la descripci\'{o}n
+en \cite{ligozat}. En \cite{baranLevelNine}, \cite{baranNormalizers}, \cite{booher}
+y \cite{chenLevelFive}, el m\'{e}todo consiste en extraer, de las parametrizaciones
+de las curvas correspondientes, ecuaciones diof\'{a}nticas. Determinar las
+soluciones a estas ecuaciones permite, luego, determinar los puntos enteros en cada
+caso.
+En \cite{schoofTzanakisLevelEleven}, la metodolog\'{\i}a para determinar puntos
+enteros es completamente distinta, basada en formas lineales en logaritmos y en la
+existencia de un isomorfismo entre $X_{ns}^{+}(11)$, la curva modular estudiada en
+el trabajo citado, y una curva el\'{\i}ptica.
+
+Independientemente del m\'{e}todo, la conexi\'{o}n
+con el problema del n\'{u}mero de clases, y la motivaci\'{o}n que por este lado
+pueda venir para estudiar las curvas asociadas a subgrupos de Cartan de
+$\GL{2}(\bb{Z}/N\bb{Z})$, ya se encuentra en las observaciones de Serre en el
+ap\'{e}ndice a \cite{serre}.
+El problema de determinar los cuerpos cuyo n\'{u}mero de clases es igual a $1$
+no es la \'{u}nica motivaci\'{o}n para estudiar las curvas asociadas a distintos
+tipos de subgrupos de $\GL{2}(\bb{Z}/N\bb{Z})$. Como se ver\'{a} en los ejemplos,
+no es cierto que exista una correspondencia entre cuerpos cuadr\'{a}ticos
+imaginarios de n\'{u}mero de clase $1$ y puntos \'{\i}ntegros en las curvas
+$X_{ns}^{+}(N)$. Estas curvas parametrizan clases de isomorfismo de curvas
+el\'{\i}pticas incorporando una \emph{estructura de nivel}. En estos t\'{e}rminos,
+no todos los puntos \'{\i}ntegros de $X_{ns}^{+}(N)$ est\'{a}n asociados a curvas
+el\'{\i}pticas con multiplicaci\'{o}n compleja; los que s\'{\i}, tendr\'{a}n que
+ver con \'{o}rdenes en cuerpos cuadr\'{a}ticos imaginarios. Seg\'{u}n
+\cite{baranAnExceptionalIso}, contar puntos en curvas asociadas a subgrupos de
+Cartan \textit{non-split} de $\GL{2}(\bb{Z}/N\bb{Z})$ y sus normalizadores est\'{a}
+relacionado con el siguiente problema: determinar si existe una constante
+tal que, para todo primo $p$ mayor que dicha constante, si $E$ es una curva
+el\'{\i}ptica sin multiplicaci\'{o}n compleja, entonces la representaci\'{o}n de
+Galois \textit{modulo} $p$ asociada es sobreyectiva. El problema parece reducirse a
+determinar si existe una constante $C>0$ tal que, si $p>C$, entonces los \'{u}nicos
+puntos $\bb{Q}$-racionales en $X_{ns}^{+}(p)$ son puntos CM, puntos asociados a
+curvas el\'{\i}pticas con multiplicaci\'{o}n compleja.
+
+Por otro lado, el tipo de soluciones mencionado permite relacionar y encarar desde
+un mismo punto algunas de las demostraciones ya existentes del teorema
+de Stark-Heegner: la soluci\'{o}n presentada en \cite{chenLevelFive} es
+una interpretaci\'{o}n modular de la soluci\'{o}n dada por Siegel, y en
+\cite{booher}, siguiendo la sugerencia en \cite{serre}, se intenta hacer lo
+mismo con la demostraci\'{o}n de Heegner.

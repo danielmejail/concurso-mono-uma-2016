@@ -1,0 +1,222 @@
+A diferencia de las curvas consideradas en las soluciones anteriores
+($N=3$, $5$, $7$, $8$, $9$), la curva de nivel $11$, $X_{ns}^{+}(11)$
+es $\bb{Q}$-isomorfa a la curva de g\'{e}nero $1$ dada por la primera
+de las siguientes ecuaciones de Weierstra{\ss}:
+
+\begin{align*}
+y^{2}\,+\,y & \,=\,x^{3}\,-\,x^{2}\,-\,7x\,+\,10\text{ ,}\\
+y^{2}\,+\,11y & \,=\,x^{3}\,+\,11x^{2}\,+\,33x\text{ .}
+\end{align*}
+La segunda de estas ecuaciones se obtiene tras reemplzar $x$ e $y$ por
+$x+4$ e $y+5$, y determina una curva isomorfa, que denotaremos $C$.
+Entonces, al igual que $X_{ns}^{+}(11)$, la curva el\'{\i}ptica $C$
+parametriza clases de isomorfismo de curvas el\'{\i}pticas con cierta
+estructura de nivel. En \cite{schoofTzanakisLevelEleven} se demuestra que un punto
+$\bb{Q}$-racional de $C$, $P$, corresponde a una curva el\'{\i}ptica
+cuyo $j$-invariante es un entero (racional), si, y s\'{o}lo si
+$P=(x,y)$ tiene la propiedad de que $x/(xy-11)$ pertenece a $\bb{Z}$.
+El problema de contar los puntos enteros de $X_{ns}^{+}(11)$ se
+convierte en el problema de contar los puntos racionales de $C$ cuyas
+coordenadas tienen esta propiedad. El resultado central en
+\cite{schoofTzanakisLevelEleven} es:
+
+\begin{teoSchoofTzanakis}\label{thm:teoSchoofTzanakis}
+Sea $C$ la curva el\'{\i}ptica dada por la ecuaci\'{o}n de
+Weierstra{\ss}
+
+\begin{align*}
+y^{2}\,+\,11y & \,=\,x^{3}\,+\,11x^{2}\,+\,33x\text{ .}
+\end{align*}
+Existen \'{u}nicamente siete puntos $P=(x,y)$ en $C(\bb{Q})$ tales que
+$x/(xy-11)$ sea un n\'{u}mero entero.
+\end{teoSchoofTzanakis}
+Por lo tanto, $X_{ns}^{+}(11)$ cuenta s\'{o}lo con siete puntos
+enteros. Por otro lado, estos puntos enteros vienen exclusivamente
+de \'{o}rdenes en cuerpos cuadr\'{a}ticos imaginarios: el primo $11$ es
+inerte en los \'{o}rdenes cuadr\'{a}ticos con n\'{u}mero de clases
+$1$ y de discriminante $-3$, $-4$, $-12$, $-16$, $-27$, $-67$ y $-163$.
+En particular, si
+$|d|$ es suficientemente grande, si $d<-44$ por ejemplo, como $11$ es
+inerte en un orden de discriminante $d$, su n\'{u}mero de clases no
+podr\'{a} ser igual a $1$, excepto que $d$ sea uno de los ya
+mencionados. Esta soluci\'{o}n del problema difiere del resto en que
+el g\'{e}nero de la curva modular es $1$ (si bien para $N=24$ el
+g\'{e}nero tambi\'{e}n es $1$, la soluci\'{o}n, en ese caso, viene de
+considerar parametrizaciones de las curvas de g\'{e}nero $0$
+$X_{ns}^{+}(3)$ y $X_{ns}^{+}(8)$ \cite{booher}).
+Resumimos, a continuaci\'{o}n, la demostraci\'{o}n del teorema
+\ref{thm:teoSchoofTzanakis}.
+
+En la ecuaci\'{o}n que define a $C$, reemplazando $y$ por
+$(y-11)/2$ y luego $y/2$ por $y$, obtenemos
+
+\begin{align*}
+y^{2} & \,=\,x^{3}\,+\,11x^{2}\,+\,33x\,+\,\frac{121}{4}
+\,=:\,q(x)\text{ .}
+\end{align*}
+Llamemos $\widetilde{C}$ a la curva el\'{\i}ptica que esta ecuaci\'{o}n
+determina.
+El polinomio $q$ tiene un \'{u}nico cero en $\bb{R}$. En particular,
+dado que, si $(x,y)$ es un punto de orden $2$ de $\widetilde{C}$,
+$y$ debe ser igual a $0$ y $x$ una ra\'{\i}z de $q$, el subgrupo
+$\widetilde{C}[2]$ no puede estar contenido en $\widetilde{C}(\bb{R})$.
+Esto implica que
+$\widetilde{C}(\bb{R})$ es isomorfo a $\bb{R}/\bb{Z}$ y, en particular,
+tiene una \'{u}nica componente conexa. Todo esto es cierto, tambi\'{e}n,
+para la curva $C$.
+
+Sea $t$ la funci\'{o}n en $C$ definida por la expresi\'{o}n
+$t=y-(11/x)$. Si $(x,y)$ es un cero de $t$, entonces $x$ es un cero del
+polinomio $x^{5}+11x^{4}+33x^{3}-121x-121$. Las ra\'{\i}ces de este
+polinomio son reales, con lo cual, los (cinco) puntos $(x,y)$ que son
+ceros de la funci\'{o}n $t$ son todos reales. El morfismo
+$j:\,X_{ns}^{+}(11)\rightarrow\bb{P}^{1}$ determina un morfismo de la
+curva el\'{\i}ptica $C$ en $\bb{P}^{1}$ a trav\'{e}s de un
+isomorfismo definido sobre $\bb{Q}$ entre $X_{ns}^{+}(11)$ y $C$.
+Este isomorfismo es elegido de manera que las c\'{u}spides de
+$X_{ns}^{+}(11)$, que son cinco, se coprrespondan con los ceros de $t$
+(ver \cite{schoofTzanakisLevelEleven}, y las referencias que all\'{\i} se
+encuentran).
+
+Sea $\omega=\omega_{C}=dx/(2y+11)$ el diferencial invariante de $C$.
+La integral $\int_{\cal{O}}^{P}\,\omega$ (donde $\cal{O}$ es el
+punto neutro de la curva el\'{\i}ptica y $P$ un punto arbitrario)
+no est\'{a} bien definida como elemento de $\bb{C}$, pero las
+posibles ambig\"{u}edades surgen de la elecci\'{o}n del camino entre
+los puntos. As\'{\i}, \textit{modulo} el ret\'{\i}culo que se le asocia
+a $C$ v\'{\i}a sus per\'{\i}odos, podemos definir $\lambda(P)$ como el
+valor de esta integral \textit{modulo} el ret\'{\i}culo. Ahora, si
+$P$ es un punto real de $C$, entonces existe un camino que lo une con
+$\cal{O}$ y que est\'{a} contenido en $C(\bb{R})$. Esto muestra que
+$\lambda(P)$ es un n\'{u}mero real, si $P$ es un punto real. El grupo
+de puntos reales de $C$ es isomorfo a $\bb{R}/\bb{Z}$ v\'{\i}a la
+aplicaci\'{o}n $\lambda$ y la elecci\'{o}n de un per\'{\i}odo real
+para $C$. Por ejemplo, (identificando las curvas $C$ y $\widetilde{C}$)
+se puede tomar
+$\Omega:=\int_{r}^{\infty}\,dx/\sqrt{q(x)}$, donde $r$ es la
+ra\'{\i}z real del polinomio $q$ definido antes.
+% [[silverman, ACE cap.V?]].
+
+Antes de pasar a la demostraci\'{o}n, es necesaria una \'{u}ltima
+definici\'{o}n. Si $f$ es una funci\'{o}n en la curva $C$ y si no es
+constante, dado un punto racional, $P\in C(\bb{Q})$, definimos la
+altura de $P$ (respecto de $f$) como el producto
+$H_{f}(P):=\prod_{v}\,\rm{max}\{1,|f(P)|_{v}\}$, donde $v$ recorre
+los lugares de $\bb{Q}$. La altura logar\'{\i}tmica asociada es
+$h_{f}(P):=\rm{log}(H_{f}(P))$ y, finalmente, si $f$ es, adem\'{a}s,
+una funci\'{o}n par, la altura can\'{o}nica se define como
+
+\begin{align*}
+\widehat{h}(P) & \,:=\,\frac{1}{\rm{deg}(f)}
+\rm{lim}_{n\rightarrow\infty}\,\frac{h_{f}([2^{n}]P)}{4^{n}}\text{ .}
+\end{align*}
+La funci\'{o}n $t=y-(11/x)$ no es par, pero se la puede relacionar con
+la altura can\'{o}nica: si $P\in C(\bb{Q})$, entonces
+$\widehat{h}(P)$ est\'{a} acotada por $(1/3)h_{t}(P)+4,52$.
+
+La idea de la demostraci\'{o}n del teorema \ref{thm:teoSchoofTzanakis} es
+traducir las restricciones sobre un punto $(x,y)$ tal que
+$x/(xy-11)\in\bb{Z}$ en estimaciones de una forma lineal en logaritmos.
+Supongamos que el rango del grupo $C(\bb{Q})$ es $r\geq 1$, y sean
+$P_{1},\,\dots,\,P_{r}$ generadores de la parte libre. Todo punto $P$
+se puede escribir como una combinaci\'{o}n
+$m_{1}P_{1}+\,\dots\,+m_{r}P_{r}+T$, donde los $m_{i}$ son enteros y $T$ es
+un punto de torsi\'{o}n.
+%Por otro lado, el punto $\cal{O}$ es un polo de $t$,
+%entonces, si buscamos puntos racionales $P=(x,y)$ tales que $x/(xy-11)$ sea
+%mayor que cierta constante $M$, resulta que, en estos puntos $|t(P)|$ est\'{a}
+%acotado por $1/M$; usando $t$ como est\'{a}ndar, estos puntos est\'{a}n
+%alejados de la identidad.
+El primer objetivo es obtener una cota para $|t(P)|$
+dependiente de los coeficientes $m_{i}$ y, as\'{\i}, pasar a
+una cota superior sobre cierta forma lineal en $\lambda(P_{i})$ y en $\Omega$.
+El rango de la curva el\'{\i}ptica $C$ es $r=1$, lo
+que hace que sea m\'{a}s sencillo estimar la forma lineal. El mismo m\'{e}todo,
+aplicado a encontrar puntos enteros en una curva el\'{\i}ptica de rango no
+necesariamente igual a $1$ est\'{a} descripto en \cite{stroekerTzanakis}.
+
+Sea $P=(x,y)$ un punto de $C$, y sea $k\in\bb{Z}$ tal que
+$k=x/(xy-11)$. Entonces $t(P)=y-(11/x)$ es igual a $1/k$. Si $k$ es
+mayor que $20$, exite un \'{u}nico punto $Q\in C$, correspondiente a
+una de las c\'{u}spides de $X_{ns}^{+}(11)$ y un intervalo $I$ contenido
+en $U:=\{\widetilde{P}\in C(\bb{R})\,:\,t(\widetilde{P})<1/20\}$
+tal que $P,Q\in I$ (lema 2.1 en \cite{schoofTzanakisLevelEleven}). Si $\omega$ es el
+diferencial invariante de $C$, entonces $\omega=dx/F_{y}=-dy/F_{x}$.
+Si $f$ es una funci\'{o}n en la curva, su diferencial, $df$, es igual a
+
+\begin{align*}
+df & \,=\,f_{x}dx\,+\,f_{y}dy\,=\,
+\left(f_{x}F_{y}\,-\,f_{y}F_{x}\right)\,\omega\text{ .}
+\end{align*}
+Denotaremos con $g$ al t\'{e}rmino entre par\'{e}ntesis.
+Como $P$ y $Q$ pertenecen al intervalo $I$, podemos considerar
+que $\int_{Q}^{P}\,\omega$ es la integral de $Q$ a $P$ por
+un camino contenido en $I$. En $I$, el valor de $|g|$ se puede
+acotar por $1$, y as\'{\i}
+
+\begin{align*}
+\left|\int_{Q}^{P}\omega\right| & \,=\,
+\left|\int_{0}^{t(P)}\frac{dt}{g}\right|\,\leq|t(P)|
+\text{ .}
+\end{align*}
+Entonces, para alg\'{u}n entero $m$, tenemos la cota
+$|\lambda(P)-\lambda(Q)+m\Omega|\leq|t(P)|$. Por otra parte, como
+$Q$ corresponde a una c\'{u}spide, $\lambda(Q)=(m'/11)\Omega$
+para alg\'{u}n entero $m'$ (ver lema 3.1 en \cite{schoofTzanakisLevelEleven}), y,
+al ser $1/t(P)$ un entero, la altura logar\'{\i}tmica $h_{t}(P)$ del
+punto $P$ es igual a $-\rm{log}|t(P)|$. En definitiva, la siguiente cota
+es v\'{a}lida para cualquier punto $P$ tal que $1/t(P)$ sea un entero
+mayor que $20$.
+
+\begin{align*}
+\left| n\frac{\Omega}{11}\,-\,\lambda(P) \right| &
+\,<\,\rm{exp}(13,56-3\widehat{h}(P))\text{ .}
+\end{align*}
+
+El grupo $C(\bb{Q})$ es c\'{\i}clico infinito, generado por
+$P_{0}=(0,0)$. Si $P$ es un punto como los considerados en el
+p\'{a}rrafo anterior, $P=[m]P_{0}$. De esta igualdad se obtiene una
+cota superior sobre la forma lineal $n\Omega-m\lambda(11P_{0})$. Por
+otro lado, por el hecho de que $P_{0}$ no es un punto de torsi\'{o}n
+de la curva, se puede obtener una cota inferior.
+Si $|m|\geq 12$, se deduce que $|m|$ debe estar acotado por una
+constante $A$. En principio, la cota dada por $A$ no es suficiente,
+pero, se puede deducir que
+$|n\Omega-m\lambda(11P_{0})|\leq 0,4\Omega/|m|$. En particular,
+
+\begin{align*}
+\left| \frac{n}{m}\,-\,\frac{\lambda(11P_{0})}{\Omega} \right|
+&\,<\,\frac{1}{2m^{2}}\text{ .}
+\end{align*}
+Calculando los valores de $\lambda(11P_{0})$ y de $\Omega$ con
+precisi\'{o}n suficiente, se verifica que cualquier aproximaici\'{o}n
+$p_{k}/q_{k}$ por fracciones continuas del cociente
+$\lambda(11P_{0})/\Omega$, o bien no satisface $q_{k}<A$, o bien no
+satisface la cota superior sobre
+$|p_{k}\Omega-q_{k}\lambda(11P_{0})|$.
+Se deduce que el entero $|m|$ tiene que ser menor a $12$. Luego
+se verifica que los \'{u}nicos puntos $P=(x,y)=mP_{0}$ tales que
+$x/(xy-11)$ es un n\'{u}mero entero son aquellos para los que
+$m$ es igual a $-2$, $-1$, $0$, $1$, $2$, $3$ o a $4$.
+
+Resta ver qu\'{e} sucede si $k\leq 20$. En este caso, se verifica que
+$x/(xy-11)=k$ tiene soluciones con $(x,y)\in C(\bb{Q})$, s\'{o}lo si
+$k$ es igual a $2$, $0$, $-2$, $-6$ o a $-8$. Los puntos que quedan
+determinados por este valor de $k$ son los mismos que en el p\'{a}rrafo
+anterior: $mP_{0}$ con $m$ como arriba.
+
+\begin{obsGenUno}\label{thm:obsGenUno}
+ Ya mencionamos que una particularidad de esta soluci\'{o}n es que %borra ``de la''
+ hace uso de una curva de g\'{e}nero $1$. Sin embargo, esto no quiere decir %agrega puntuaci\'{o}n
+ que los m\'{e}todos utilizados para estudiar las curvas de g\'{e}nero $0$
+ no sean \'{u}tiles en este caso.
+ De hecho, en \cite{baranNormalizers} se
+ estudian las curvas $X_{ns}^{+}(21)$ de g\'{e}nero $1$ y
+ $X_{ns}^{+}(16)$ y $X_{ns}^{+}(20)$ de g\'{e}nero $2$.
+ Por \'{u}ltimo mencionamos que un estudio de las representaciones cuspidales
+ de los grupos $\GL{2}(\bb{F}_{p})$ permite tratar la curva
+ $X_{ns}^{+}(13)$ de g\'{e}nero $3$ y obtener una ecuaci\'{o}n sobre $\bb{Q}$
+ para la misma \cite{baranAnExceptionalIso}.
+
+\end{obsGenUno}
+
